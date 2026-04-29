@@ -1,15 +1,12 @@
 # File-based release hints
-release:major:
-  - any:
-      - changed-files:
-          - any-glob-to-any-file: ['.github/workflows/**', 'claude-code-arsenal/skills/**', 'claude-code-arsenal/agents/**']
-
+# Adding/updating skills or agents = new capabilities → minor
 release:minor:
   - any:
       - changed-files:
-          - any-glob-to-any-file: ['scripts/**']
+          - any-glob-to-any-file: ['claude-code-arsenal/skills/**', 'claude-code-arsenal/agents/**', 'scripts/**']
 
+# Docs, CI config, repo infra = patch
 release:patch:
   - any:
       - changed-files:
-          - any-glob-to-any-file: ['README.md', 'CONTRIBUTING.md', '.github/**', 'claude-code-arsenal/README.md']
+          - any-glob-to-any-file: ['README.md', 'CONTRIBUTING.md', 'CHANGELOG.md', 'SECURITY.md', 'docs/**', 'examples/**', '.github/**', 'claude-code-arsenal/README.md']
