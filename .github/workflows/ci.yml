@@ -57,3 +57,4 @@ jobs:
         run: |
           node scripts/generate-readme-catalog.mjs
           git diff --exit-code README.md
+          git diff --exit-code docs/catalog.md
