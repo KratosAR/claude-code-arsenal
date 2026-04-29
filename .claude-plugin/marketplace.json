@@ -1,0 +1,41 @@
+{
+  "description": "169 skills + 38 agents from Claude Code CLI, packaged as a Cowork-installable plugin",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-code-arsenal-marketplace",
+  "plugins": [
+    {
+      "tags": [
+        "claude-code",
+        "development",
+        "arsenal"
+      ],
+      "category": "workflow",
+      "author": {
+        "name": "Gonza Mendoza",
+        "email": "mendoza.gonza.m@gmail.com"
+      },
+      "strict": false,
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": [
+        "claude-code",
+        "skills",
+        "agents",
+        "tdd",
+        "code-review",
+        "development"
+      ],
+      "name": "claude-code-arsenal",
+      "description": "169 skills + 38 agents: TDD, code review, security, planning, multi-language patterns",
+      "source": "./claude-code-arsenal",
+      "homepage": "https://github.com/KratosAR/claude.usage.advisor/tree/marketplace"
+    }
+  ],
+  "owner": {
+    "name": "Gonza Mendoza",
+    "email": "mendoza.gonza.m@gmail.com"
+  },
+  "metadata": {
+    "description": "Claude Code battle-tested skills and agents for Cowork"
+  }
+}

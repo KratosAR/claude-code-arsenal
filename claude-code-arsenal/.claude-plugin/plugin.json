@@ -1,0 +1,18 @@
+{
+  "keywords": [
+    "claude-code",
+    "development",
+    "code-review",
+    "tdd",
+    "agents",
+    "skills"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "email": "mendoza.gonza.m@gmail.com",
+    "name": "Gonza Mendoza"
+  },
+  "license": "MIT",
+  "description": "Tu arsenal completo de Claude Code traido a Cowork: 169 skills + 38 agents para development, code review, planning y mas.",
+  "name": "claude-code-arsenal"
+}
