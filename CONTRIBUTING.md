@@ -60,6 +60,23 @@ Thanks for contributing.
 - `docs: ...`
 - `chore: ...`
 
+### Scripts
+
+Run these locally before opening a PR:
+
+```bash
+# Regenerate docs/catalog.md and the README catalog section
+node scripts/generate-readme-catalog.mjs
+
+# Validate that CATALOG:START / CATALOG:END markers exist in README
+node scripts/validate-readme-catalog.mjs
+
+# Check that required repo paths exist
+node scripts/validate-structure.mjs
+```
+
+The CI runs all three automatically on every PR.
+
 ### Security
 
-If you find sensitive content or a security risk, open a private issue or contact the maintainer before publishing details.
+If you find sensitive content or a security risk, open a private issue or contact the maintainer before publishing details. See [SECURITY.md](./SECURITY.md) for the full policy.
