@@ -1,0 +1,15 @@
+# File-based release hints
+release:major:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file: ['.github/workflows/**', 'claude-code-arsenal/skills/**', 'claude-code-arsenal/agents/**']
+
+release:minor:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file: ['scripts/**']
+
+release:patch:
+  - any:
+      - changed-files:
+          - any-glob-to-any-file: ['README.md', 'CONTRIBUTING.md', '.github/**', 'claude-code-arsenal/README.md']

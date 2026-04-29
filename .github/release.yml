@@ -1,0 +1,17 @@
+changelog:
+  exclude:
+    labels:
+      - skip-changelog
+  categories:
+    - title: "Breaking Changes"
+      labels:
+        - release:major
+    - title: "Features"
+      labels:
+        - release:minor
+    - title: "Fixes & Docs"
+      labels:
+        - release:patch
+    - title: "Other Changes"
+      labels:
+        - "*"

@@ -1,0 +1,65 @@
+name: PR Release Labels
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  label-release:
+    name: Label PR for Release Notes
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Label by changed files
+        uses: actions/labeler@v5
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Label by PR title convention
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request;
+            const number = pr.number;
+            const title = (pr.title || '').toLowerCase();
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const allReleaseLabels = ['release:major', 'release:minor', 'release:patch'];
+
+            const existing = await github.paginate(github.rest.issues.listLabelsOnIssue, {
+              owner,
+              repo,
+              issue_number: number,
+              per_page: 100,
+            });
+
+            const existingNames = new Set(existing.map((l) => l.name));
+
+            let desired = null;
+            if (title.startsWith('feat!:') || title.includes('breaking change')) desired = 'release:major';
+            else if (title.startsWith('feat:')) desired = 'release:minor';
+            else if (title.startsWith('fix:') || title.startsWith('docs:') || title.startsWith('chore:')) desired = 'release:patch';
+
+            if (!desired) {
+              core.info('No conventional title prefix detected.');
+              return;
+            }
+
+            const toRemove = allReleaseLabels.filter((l) => l !== desired && existingNames.has(l));
+            if (toRemove.length > 0) {
+              for (const label of toRemove) {
+                await github.rest.issues.removeLabel({ owner, repo, issue_number: number, name: label });
+              }
+            }
+
+            if (!existingNames.has(desired)) {
+              await github.rest.issues.addLabels({ owner, repo, issue_number: number, labels: [desired] });
+            }
+
+            core.info(`Applied label: ${desired}`);

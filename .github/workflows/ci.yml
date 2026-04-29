@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality-gate:
+    name: Lint, Links and Structure
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Lint Markdown
+        uses: DavidAnson/markdownlint-cli2-action@v18
+        with:
+          globs: |
+            **/*.md
+            !**/node_modules/**
+
+      - name: Check README links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          args: >-
+            --verbose
+            --no-progress
+            --accept 200,206,301,302,429
+            --retry-wait-time 2
+            --max-retries 2
+            README.md
+
+      - name: Validate repository structure
+        run: node scripts/validate-structure.mjs
+
+      - name: Validate README catalog markers
+        run: node scripts/validate-readme-catalog.mjs
+
+      - name: Verify README catalog is up to date
+        run: |
+          node scripts/generate-readme-catalog.mjs
+          git diff --exit-code README.md

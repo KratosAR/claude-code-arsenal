@@ -1,20 +1,13 @@
-# Claude Code Arsenal
+# Claude Code Arsenal (Plugin)
 
-Tu arsenal completo de Claude Code CLI portado a Cowork.
+ES: Este directorio contiene el plugin consumido por Cowork.
+EN: This directory contains the plugin consumed by Cowork.
 
-## Que incluye
+For installation, contribution, and branch policies / Para instalacion, contribucion y politicas de ramas:
 
-- **169 skills** custom (TDD, code review, security, architecture, lenguajes especificos, etc.)
-- **38 agents** especializados (planner, architect, code-reviewer, security-reviewer, build-resolvers por lenguaje, etc.)
+- `../README.md`
 
-## Como usar
+## Content / Contenido
 
-Una vez instalado en Cowork, las skills se invocan via la tool `Skill` o automaticamente cuando coincide el trigger en la descripcion. Los agents estan disponibles via la tool `Agent` con `subagent_type`.
-
-## Origen
-
-Skills y agents importados desde `~/.claude/skills/` y `~/.claude/agents/` (Claude Code CLI config).
-
-## Autor
-
-Gonza Mendoza (mendoza.gonza.m@gmail.com)
+- `skills/`
+- `agents/`
