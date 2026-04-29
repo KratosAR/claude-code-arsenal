@@ -53,6 +53,9 @@ jobs:
       - name: Validate README catalog markers
         run: node scripts/validate-readme-catalog.mjs
 
+      - name: Validate skill and agent frontmatter
+        run: node scripts/validate-frontmatter.mjs
+
       - name: Verify README catalog is up to date
         run: |
           node scripts/generate-readme-catalog.mjs
