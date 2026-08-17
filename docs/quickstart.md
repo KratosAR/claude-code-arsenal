@@ -7,12 +7,17 @@ De cero a tu primera skill funcionando en menos de 2 minutos.
 
 ## Option A — Install via Claude Code plugin marketplace (recommended)
 
+Arsenal is split into 3 packs so you only load the context you'll use:
+
 ```text
 /plugin marketplace add KratosAR/claude-code-arsenal
-/plugin install claude-code-arsenal@claude-code-arsenal-marketplace
+
+/plugin install arsenal-core@claude-code-arsenal-marketplace           # 75 skills + 14 agents
+/plugin install arsenal-languages@claude-code-arsenal-marketplace      # 45 skills + 14 agents
+/plugin install arsenal-marketing-ops@claude-code-arsenal-marketplace  # 49 skills + 10 agents
 ```
 
-Done. All 169 skills and 38 agents are now available.
+Not sure which? Start with `arsenal-core` alone — add the others only when you need them.
 
 Also installable via Cowork: **Settings → Plugins → Add marketplace** → `https://github.com/KratosAR/claude-code-arsenal` → branch `main` → Install.
 
@@ -20,12 +25,17 @@ Also installable via Cowork: **Settings → Plugins → Add marketplace** → `h
 
 ## Opción A — Instalar via el marketplace de plugins de Claude Code (recomendado)
 
+Arsenal está dividido en 3 packs para que solo cargues el contexto que vas a usar:
+
 ```text
 /plugin marketplace add KratosAR/claude-code-arsenal
-/plugin install claude-code-arsenal@claude-code-arsenal-marketplace
+
+/plugin install arsenal-core@claude-code-arsenal-marketplace           # 75 skills + 14 agentes
+/plugin install arsenal-languages@claude-code-arsenal-marketplace      # 45 skills + 14 agentes
+/plugin install arsenal-marketing-ops@claude-code-arsenal-marketplace  # 49 skills + 10 agentes
 ```
 
-Listo. Las 169 skills y 38 agentes están disponibles.
+¿No estás seguro cuál? Empezá solo con `arsenal-core` — sumá los otros cuando los necesites.
 
 También instalable via Cowork: **Settings → Plugins → Add marketplace** → `https://github.com/KratosAR/claude-code-arsenal` → branch `main` → Install.
 
@@ -38,7 +48,7 @@ git clone https://github.com/KratosAR/claude-code-arsenal.git
 cd claude-code-arsenal
 ```
 
-Point your Claude Code config to `claude-code-arsenal/skills/` and `claude-code-arsenal/agents/`.
+Point your Claude Code config to the skills/ and agents/ folders of whichever pack(s) you want, e.g. `arsenal-core/skills/` and `arsenal-core/agents/`.
 
 ---
 

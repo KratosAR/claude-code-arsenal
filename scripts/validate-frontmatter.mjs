@@ -9,8 +9,7 @@ import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
 const repoRoot = process.cwd();
-const skillsDir = path.join(repoRoot, "claude-code-arsenal", "skills");
-const agentsDir = path.join(repoRoot, "claude-code-arsenal", "agents");
+const PACKS = ["arsenal-core", "arsenal-languages", "arsenal-marketing-ops"];
 
 const REQUIRED_FIELDS = ["name", "description"];
 
@@ -60,49 +59,58 @@ const parseFrontmatter = (content) => {
 };
 
 const violations = [];
+let totalSkills = 0;
+let totalAgents = 0;
 
-// Validate skills (each is a directory containing SKILL.md)
-const skillEntries = await readdir(skillsDir, { withFileTypes: true });
-for (const entry of skillEntries) {
-  if (!entry.isDirectory()) continue;
-  const filePath = path.join(skillsDir, entry.name, "SKILL.md");
-  let content;
-  try {
-    content = await readFile(filePath, "utf8");
-  } catch {
-    violations.push(`MISSING  ${path.relative(repoRoot, filePath)}`);
-    continue;
-  }
+for (const pack of PACKS) {
+  const skillsDir = path.join(repoRoot, pack, "skills");
+  const agentsDir = path.join(repoRoot, pack, "agents");
 
-  const fm = parseFrontmatter(content);
-  if (!fm) {
-    violations.push(`NO_FRONTMATTER  ${path.relative(repoRoot, filePath)}`);
-    continue;
-  }
+  // Validate skills (each is a directory containing SKILL.md)
+  const skillEntries = await readdir(skillsDir, { withFileTypes: true });
+  for (const entry of skillEntries) {
+    if (!entry.isDirectory()) continue;
+    totalSkills++;
+    const filePath = path.join(skillsDir, entry.name, "SKILL.md");
+    let content;
+    try {
+      content = await readFile(filePath, "utf8");
+    } catch {
+      violations.push(`MISSING  ${path.relative(repoRoot, filePath)}`);
+      continue;
+    }
 
-  for (const field of REQUIRED_FIELDS) {
-    if (!fm[field] || fm[field].trim() === "") {
-      violations.push(`MISSING_FIELD(${field})  ${path.relative(repoRoot, filePath)}`);
+    const fm = parseFrontmatter(content);
+    if (!fm) {
+      violations.push(`NO_FRONTMATTER  ${path.relative(repoRoot, filePath)}`);
+      continue;
+    }
+
+    for (const field of REQUIRED_FIELDS) {
+      if (!fm[field] || fm[field].trim() === "") {
+        violations.push(`MISSING_FIELD(${field})  ${path.relative(repoRoot, filePath)}`);
+      }
     }
   }
-}
 
-// Validate agents (each is a .md file in agentsDir)
-const agentEntries = await readdir(agentsDir, { withFileTypes: true });
-for (const entry of agentEntries) {
-  if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
-  const filePath = path.join(agentsDir, entry.name);
-  const content = await readFile(filePath, "utf8");
+  // Validate agents (each is a .md file in agentsDir)
+  const agentEntries = await readdir(agentsDir, { withFileTypes: true });
+  for (const entry of agentEntries) {
+    if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
+    totalAgents++;
+    const filePath = path.join(agentsDir, entry.name);
+    const content = await readFile(filePath, "utf8");
 
-  const fm = parseFrontmatter(content);
-  if (!fm) {
-    violations.push(`NO_FRONTMATTER  ${path.relative(repoRoot, filePath)}`);
-    continue;
-  }
+    const fm = parseFrontmatter(content);
+    if (!fm) {
+      violations.push(`NO_FRONTMATTER  ${path.relative(repoRoot, filePath)}`);
+      continue;
+    }
 
-  for (const field of REQUIRED_FIELDS) {
-    if (!fm[field] || fm[field].trim() === "") {
-      violations.push(`MISSING_FIELD(${field})  ${path.relative(repoRoot, filePath)}`);
+    for (const field of REQUIRED_FIELDS) {
+      if (!fm[field] || fm[field].trim() === "") {
+        violations.push(`MISSING_FIELD(${field})  ${path.relative(repoRoot, filePath)}`);
+      }
     }
   }
 }
@@ -116,4 +124,4 @@ if (violations.length > 0) {
   process.exit(1);
 }
 
-console.log(`[frontmatter] All ${skillEntries.filter((e) => e.isDirectory()).length} skills and ${agentEntries.filter((e) => e.name.endsWith(".md")).length} agents have valid frontmatter.`);
+console.log(`[frontmatter] All ${totalSkills} skills and ${totalAgents} agents have valid frontmatter.`);

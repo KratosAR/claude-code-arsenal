@@ -16,7 +16,7 @@ npx @nanonets/graft init
 
 # 2. arsenal — skills + agents (once per Claude Code install)
 /plugin marketplace add KratosAR/claude-code-arsenal
-/plugin install claude-code-arsenal@claude-code-arsenal-marketplace
+/plugin install arsenal-core@claude-code-arsenal-marketplace
 ```
 
 ## Example flow

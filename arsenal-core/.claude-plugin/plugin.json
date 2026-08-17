@@ -1,0 +1,35 @@
+{
+  "name": "arsenal-core",
+  "version": "1.0.0",
+  "description": "Core dev workflow skills + agents from claude-code-arsenal: TDD, debugging, planning, architecture, security review, MCP patterns — no language-specific or marketing content.",
+  "author": {
+    "name": "Gonza Mendoza",
+    "email": "mendoza.gonza.m@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "development",
+    "arsenal",
+    "core"
+  ],
+  "agents": [
+    "./agents/architect.md",
+    "./agents/build-error-resolver.md",
+    "./agents/chief-of-staff.md",
+    "./agents/code-reviewer.md",
+    "./agents/database-reviewer.md",
+    "./agents/doc-updater.md",
+    "./agents/docs-lookup.md",
+    "./agents/e2e-runner.md",
+    "./agents/harness-optimizer.md",
+    "./agents/loop-operator.md",
+    "./agents/planner.md",
+    "./agents/refactor-cleaner.md",
+    "./agents/security-reviewer.md",
+    "./agents/tdd-guide.md"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

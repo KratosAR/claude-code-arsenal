@@ -32,10 +32,17 @@ Stop spending hours configuring your AI assistant. Install this once and get:
 
 ## Install in Claude Code (1 minute)
 
+Arsenal is split into 3 packs so you only load the context you'll actually use — install one, two, or all three:
+
 ```text
 /plugin marketplace add KratosAR/claude-code-arsenal
-/plugin install claude-code-arsenal@claude-code-arsenal-marketplace
+
+/plugin install arsenal-core@claude-code-arsenal-marketplace           # 75 skills + 14 agents — TDD, debugging, planning, architecture
+/plugin install arsenal-languages@claude-code-arsenal-marketplace      # 45 skills + 14 agents — per-language patterns, testing, reviewers
+/plugin install arsenal-marketing-ops@claude-code-arsenal-marketplace  # 49 skills + 10 agents — ads, brand/design, non-coding ops
 ```
+
+Not sure which one? Start with `arsenal-core` — it's the general dev workflow pack with no language- or industry-specific content.
 
 Also installable via Cowork: **Settings → Plugins → Add marketplace** → `https://github.com/KratosAR/claude-code-arsenal` → branch `main` → Install.
 
@@ -88,7 +95,13 @@ If this project saves you time, leave a ⭐ — it helps others find it.
 <!-- CATALOG:START -->
 ## Catalog / Catalogo
 
-**169 skills · 38 agents** — [Browse the full catalog →](./docs/catalog.md)
+**169 skills · 38 agents across 3 packs** — [Browse the full catalog →](./docs/catalog.md)
+
+| Pack | Skills | Agents | Install |
+| --- | --- | --- | --- |
+| `arsenal-core` | 75 | 14 | `/plugin install arsenal-core@claude-code-arsenal-marketplace` |
+| `arsenal-languages` | 45 | 14 | `/plugin install arsenal-languages@claude-code-arsenal-marketplace` |
+| `arsenal-marketing-ops` | 49 | 10 | `/plugin install arsenal-marketing-ops@claude-code-arsenal-marketplace` |
 
 ### Featured skills
 

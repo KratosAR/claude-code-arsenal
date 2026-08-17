@@ -1,14 +1,19 @@
 import { access } from "node:fs/promises";
 import { constants } from "node:fs";
 
+const PACKS = ["arsenal-core", "arsenal-languages", "arsenal-marketing-ops"];
+
 const requiredPaths = [
   "README.md",
   "CONTRIBUTING.md",
   "LICENSE",
   ".github/CODEOWNERS",
   ".github/pull_request_template.md",
-  "claude-code-arsenal/skills",
-  "claude-code-arsenal/agents"
+  ...PACKS.flatMap((pack) => [
+    `${pack}/skills`,
+    `${pack}/agents`,
+    `${pack}/.claude-plugin/plugin.json`
+  ])
 ];
 
 const checkPathExists = async (path) => {

@@ -1,0 +1,31 @@
+{
+  "name": "arsenal-marketing-ops",
+  "version": "1.0.0",
+  "description": "Ads audits (7 platforms), brand/design, and non-coding ops skills from claude-code-arsenal: logistics, customs, investor materials, production scheduling, and more.",
+  "author": {
+    "name": "Gonza Mendoza",
+    "email": "mendoza.gonza.m@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "development",
+    "arsenal",
+    "marketing-ops"
+  ],
+  "agents": [
+    "./agents/audit-budget.md",
+    "./agents/audit-compliance.md",
+    "./agents/audit-creative.md",
+    "./agents/audit-google.md",
+    "./agents/audit-meta.md",
+    "./agents/audit-tracking.md",
+    "./agents/copy-writer.md",
+    "./agents/creative-strategist.md",
+    "./agents/format-adapter.md",
+    "./agents/visual-designer.md"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

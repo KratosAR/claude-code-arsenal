@@ -1,0 +1,35 @@
+{
+  "name": "arsenal-languages",
+  "version": "1.0.0",
+  "description": "Per-language patterns, testing, security, and reviewer/build-resolver agents from claude-code-arsenal: Python, Go, Rust, Kotlin, Swift, Java, C++, Perl, Django, Laravel, Spring Boot, and more.",
+  "author": {
+    "name": "Gonza Mendoza",
+    "email": "mendoza.gonza.m@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "development",
+    "arsenal",
+    "languages"
+  ],
+  "agents": [
+    "./agents/cpp-build-resolver.md",
+    "./agents/cpp-reviewer.md",
+    "./agents/flutter-reviewer.md",
+    "./agents/go-build-resolver.md",
+    "./agents/go-reviewer.md",
+    "./agents/java-build-resolver.md",
+    "./agents/java-reviewer.md",
+    "./agents/kotlin-build-resolver.md",
+    "./agents/kotlin-reviewer.md",
+    "./agents/python-reviewer.md",
+    "./agents/pytorch-build-resolver.md",
+    "./agents/rust-build-resolver.md",
+    "./agents/rust-reviewer.md",
+    "./agents/typescript-reviewer.md"
+  ],
+  "skills": [
+    "./skills/"
+  ]
+}

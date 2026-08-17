@@ -1,33 +1,45 @@
 {
-  "description": "169 skills + 38 agents for Claude Code, packaged as an installable plugin marketplace",
+  "description": "169 skills + 38 agents for Claude Code, split into 3 installable packs so you only pay context for what you use",
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "claude-code-arsenal-marketplace",
   "plugins": [
     {
-      "tags": [
-        "claude-code",
-        "development",
-        "arsenal"
-      ],
+      "tags": ["claude-code", "development", "arsenal", "core"],
       "category": "workflow",
-      "author": {
-        "name": "Gonza Mendoza",
-        "email": "mendoza.gonza.m@gmail.com"
-      },
+      "author": { "name": "Gonza Mendoza", "email": "mendoza.gonza.m@gmail.com" },
       "strict": false,
-      "version": "1.0.1",
+      "version": "1.0.0",
       "license": "MIT",
-      "keywords": [
-        "claude-code",
-        "skills",
-        "agents",
-        "tdd",
-        "code-review",
-        "development"
-      ],
-      "name": "claude-code-arsenal",
-      "description": "169 skills + 38 agents: TDD, code review, security, planning, multi-language patterns",
-      "source": "./claude-code-arsenal",
+      "keywords": ["claude-code", "skills", "agents", "tdd", "code-review", "planning"],
+      "name": "arsenal-core",
+      "description": "75 skills + 14 agents: TDD, debugging, planning, architecture, security review, MCP patterns. No language-specific or marketing content.",
+      "source": "./arsenal-core",
+      "homepage": "https://github.com/KratosAR/claude-code-arsenal"
+    },
+    {
+      "tags": ["claude-code", "development", "arsenal", "languages"],
+      "category": "workflow",
+      "author": { "name": "Gonza Mendoza", "email": "mendoza.gonza.m@gmail.com" },
+      "strict": false,
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["claude-code", "skills", "agents", "python", "golang", "rust", "kotlin", "swift", "java"],
+      "name": "arsenal-languages",
+      "description": "45 skills + 14 agents: per-language patterns, testing, security, and reviewers for Python, Go, Rust, Kotlin, Swift, Java, C++, Perl, Django, Laravel, Spring Boot, and more.",
+      "source": "./arsenal-languages",
+      "homepage": "https://github.com/KratosAR/claude-code-arsenal"
+    },
+    {
+      "tags": ["claude-code", "arsenal", "marketing", "ads", "ops"],
+      "category": "workflow",
+      "author": { "name": "Gonza Mendoza", "email": "mendoza.gonza.m@gmail.com" },
+      "strict": false,
+      "version": "1.0.0",
+      "license": "MIT",
+      "keywords": ["ads", "marketing", "design", "logistics", "non-coding"],
+      "name": "arsenal-marketing-ops",
+      "description": "49 skills + 10 agents: ads audits across 7 platforms, brand/design, and non-coding ops (logistics, customs, investor materials, production scheduling).",
+      "source": "./arsenal-marketing-ops",
       "homepage": "https://github.com/KratosAR/claude-code-arsenal"
     }
   ],
@@ -36,6 +48,6 @@
     "email": "mendoza.gonza.m@gmail.com"
   },
   "metadata": {
-    "description": "Claude Code battle-tested skills and agents"
+    "description": "Claude Code battle-tested skills and agents, split by use case"
   }
 }
