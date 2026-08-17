@@ -8,6 +8,8 @@
 [![Stars](https://img.shields.io/github/stars/KratosAR/claude-code-arsenal?style=social)](https://github.com/KratosAR/claude-code-arsenal)
 [![License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
 
+![Demo: tdd-workflow skill writing a test, running it red, implementing, then green](./media/demo.gif)
+
 ---
 
 ## What is this?
