@@ -1,7 +1,7 @@
 # Claude Code Arsenal
 
-**169 skills · 38 agents** that supercharge Claude Code — installable in one click via Cowork.  
-**169 skills · 38 agentes** para potenciar Claude Code — instalable en un click via Cowork.
+**169 skills · 38 agents** — stop writing the same TDD setup, code review checklist, or ads audit prompt from scratch every project. Install once, invoke by name.  
+**169 skills · 38 agentes** — dejá de reescribir el mismo setup de TDD, checklist de code review o prompt de auditoría de ads en cada proyecto. Instalá una vez, invocá por nombre.
 
 [![CI](https://github.com/KratosAR/claude-code-arsenal/actions/workflows/ci.yml/badge.svg)](https://github.com/KratosAR/claude-code-arsenal/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/KratosAR/claude-code-arsenal)](https://github.com/KratosAR/claude-code-arsenal/releases)
@@ -12,7 +12,7 @@
 
 ## What is this?
 
-A curated, production-ready collection of Claude Code **skills** and **agents** compatible with the [Cowork](https://github.com/KratosAR/claude-code-arsenal) marketplace format.
+A curated, production-ready collection of Claude Code **skills** and **agents**, packaged as a native [Claude Code plugin marketplace](https://docs.claude.com/en/docs/claude-code/plugins) (also installable via Cowork).
 
 Stop spending hours configuring your AI assistant. Install this once and get:
 
@@ -24,14 +24,18 @@ Stop spending hours configuring your AI assistant. Install this once and get:
 - **Content & creative** — ad copy, UI/UX, article writing, research with citations
 - **Build error resolvers** for 7 stacks — gets your build green fast
 
+> Pairs well with codebase-context tools like [graft](https://github.com/nanonets/graft) — graft gets Claude the *what* (your codebase structure), arsenal gets it the *how* (battle-tested workflows).
+
 ---
 
-## Install in Cowork (1 minute)
+## Install in Claude Code (1 minute)
 
-1. Open Cowork → **Settings → Plugins → Add marketplace**
-2. URL: `https://github.com/KratosAR/claude-code-arsenal` · Branch: `main`
-3. Click **Install** on `claude-code-arsenal`
-4. Restart if prompted
+```text
+/plugin marketplace add KratosAR/claude-code-arsenal
+/plugin install claude-code-arsenal@claude-code-arsenal-marketplace
+```
+
+Also installable via Cowork: **Settings → Plugins → Add marketplace** → `https://github.com/KratosAR/claude-code-arsenal` → branch `main` → Install.
 
 → Full guide: [docs/quickstart.md](./docs/quickstart.md)
 

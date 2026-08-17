@@ -5,27 +5,29 @@ De cero a tu primera skill funcionando en menos de 2 minutos.
 
 ---
 
-## Option A — Install via Cowork marketplace (recommended)
+## Option A — Install via Claude Code plugin marketplace (recommended)
 
-1. Open Cowork and go to **Settings → Plugins → Add marketplace**
-2. Enter the repository URL: `https://github.com/KratosAR/claude-code-arsenal`
-3. Select branch: `main`
-4. Click **Install** on the `claude-code-arsenal` plugin
-5. Restart Cowork if prompted
+```text
+/plugin marketplace add KratosAR/claude-code-arsenal
+/plugin install claude-code-arsenal@claude-code-arsenal-marketplace
+```
 
 Done. All 169 skills and 38 agents are now available.
 
+Also installable via Cowork: **Settings → Plugins → Add marketplace** → `https://github.com/KratosAR/claude-code-arsenal` → branch `main` → Install.
+
 ---
 
-## Opción A — Instalar via marketplace de Cowork (recomendado)
+## Opción A — Instalar via el marketplace de plugins de Claude Code (recomendado)
 
-1. Abre Cowork y ve a **Settings → Plugins → Add marketplace**
-2. Ingresa la URL del repositorio: `https://github.com/KratosAR/claude-code-arsenal`
-3. Selecciona branch: `main`
-4. Haz clic en **Install** sobre el plugin `claude-code-arsenal`
-5. Reinicia Cowork si te lo pide
+```text
+/plugin marketplace add KratosAR/claude-code-arsenal
+/plugin install claude-code-arsenal@claude-code-arsenal-marketplace
+```
 
 Listo. Las 169 skills y 38 agentes están disponibles.
+
+También instalable via Cowork: **Settings → Plugins → Add marketplace** → `https://github.com/KratosAR/claude-code-arsenal` → branch `main` → Install.
 
 ---
 
