@@ -37,6 +37,7 @@ commentary: Validate every asset in the manifest. Be precise about which dimensi
    - etc.; load only platforms present in the manifest
 
 3. **Validate each asset** using Python/Pillow via Bash:
+
    ```bash
    python3 -c "
    from PIL import Image
@@ -138,7 +139,7 @@ commentary: Validate every asset in the manifest. Be precise about which dimensi
 ## Platform Size Limits
 
 | Platform | Image Size Limit | Notes |
-|----------|-----------------|-------|
+| ---------- | ----------------- | ------- |
 | Meta | 30MB | JPG/PNG |
 | LinkedIn | 5MB | PNG/JPG |
 | TikTok | 500MB | Video; image N/A |
@@ -148,9 +149,11 @@ commentary: Validate every asset in the manifest. Be precise about which dimensi
 ## Fallback: No Pillow Installed
 
 If Pillow is not installed, use the `file` command as fallback:
+
 ```bash
 file [filepath]
 ```
+
 This provides format info but not exact dimensions. Note in the report:
 "Dimension validation skipped. Pillow not installed. Install with: pip install Pillow>=11.0.0"
 

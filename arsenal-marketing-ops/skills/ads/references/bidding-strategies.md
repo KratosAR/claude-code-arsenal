@@ -71,6 +71,7 @@ SPECIAL CASES:
 ```
 
 ### Attribution Model (Google)
+
 - **DDA (Data-Driven Attribution) is now MANDATORY default** (September 2025)
 - Only two models remain: DDA and Last Click
 - All rule-based models deprecated (first-click, linear, time decay, position-based)
@@ -80,11 +81,13 @@ SPECIAL CASES:
 ### Portfolio Bid Strategies
 
 When to use portfolios:
+
 - Multiple campaigns each with <15 conv, but combined >30
 - Need cross-campaign budget optimization
 - **CPC Cap Hack**: Only way to set max CPC bid on tCPA/tROAS
 
 Rules:
+
 - Minimum 3 campaigns per portfolio for meaningful data
 - Group campaigns with similar target CPAs/ROAS
 - Never mix brand and non-brand in same portfolio
@@ -92,7 +95,7 @@ Rules:
 ### Transition Triggers (Google)
 
 | From | To | Trigger |
-|------|----|---------|
+| ------ | ---- | --------- |
 | Maximize Clicks | Maximize Conversions | 15+ conversions in 30 days |
 | Maximize Conversions | Target CPA | CPA SD <20% over 14 days + 30+ conv |
 | Target CPA | Target ROAS | 50+ conv + dynamic values available |
@@ -161,6 +164,7 @@ NOTE: Advantage+ Sales/Leads auto-enable CBO
 **Exit criteria:** 50 conversions per week per ad set
 
 **Reset triggers (avoid during learning):**
+
 - Budget change >20%
 - Any targeting change
 - Creative edit (even text)
@@ -168,6 +172,7 @@ NOTE: Advantage+ Sales/Leads auto-enable CBO
 - Pausing >7 days
 
 **If "Learning Limited":**
+
 1. Broaden audience
 2. Increase budget
 3. Switch to higher-funnel event (AddToCart instead of Purchase)
@@ -240,6 +245,7 @@ GMV Max (TikTok Shop):
 ```
 
 ### Budget Rules
+
 - Campaign minimum: $50/day
 - Ad group minimum: $20/day
 - Budget should be ≥50× target CPA per ad group (provides sufficient learning room)
@@ -273,7 +279,7 @@ PMax on Microsoft:
 ## Cross-Platform Bidding Red Flags
 
 | Red Flag | Severity | Platform | Action |
-|----------|----------|----------|--------|
+| ---------- | ---------- | ---------- | -------- |
 | Broad Match + Manual CPC | Critical | Google | Switch to Smart Bidding or Exact Match |
 | tCPA <50% of actual CPA | Critical | Google | Unrealistic target; set at 1.1-1.2× historical |
 | Smart Bidding with <15 conv/month | High | Google | Use Manual CPC or Maximize Clicks |

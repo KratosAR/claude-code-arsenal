@@ -5,7 +5,7 @@
 ## Strategy Selection
 
 | Strategy | Slides | Goal | Audience |
-|----------|--------|------|----------|
+| ---------- | -------- | ------ | ---------- |
 | YC Seed Deck | 10-12 | Raise seed funding | VCs |
 | Guy Kawasaki | 10 | Pitch in 20 min | Investors |
 | Series A | 12-15 | Raise Series A | Growth VCs |
@@ -25,6 +25,7 @@
 ## Common Structures
 
 ### YC Seed Deck (10 slides)
+
 1. Title/Hook
 2. Problem
 3. Solution
@@ -39,6 +40,7 @@
 **Emotion arc:** curiosity→frustration→hope→confidence→trust→urgency
 
 ### Sales Pitch (9 slides)
+
 1. Personalized Hook
 2. Their Problem
 3. Cost of Inaction
@@ -52,6 +54,7 @@
 **Emotion arc:** connection→frustration→fear→hope→trust→confidence→urgency
 
 ### Product Demo (6 slides)
+
 1. Hook/Problem
 2. Solution Overview
 3. Live Demo/Screenshots
@@ -85,7 +88,7 @@ python .claude/skills/design-system/scripts/search-slides.py "series a funding" 
 ## Matching Strategy to Context
 
 | Context | Recommended Strategy |
-|---------|---------------------|
+| --------- | --------------------- |
 | Raising money | YC Seed, Series A, Guy Kawasaki |
 | Selling product | Sales Pitch, Product Demo |
 | Internal update | QBR, All-Hands, Board Meeting |

@@ -12,7 +12,7 @@ profile. Uses banana-claude as the image generation provider.
 ## Quick Reference
 
 | Command | What it does |
-|---------|-------------|
+| --------- | ------------- |
 | `/ads generate` | Generate all images from campaign-brief.md |
 | `/ads generate --platform meta` | Generate Meta assets only |
 | `/ads generate --prompt "text" --ratio 9:16` | Standalone generation without brief |
@@ -38,6 +38,7 @@ display setup instructions and exit.
 ### Step 2: Locate Source Files
 
 Check for:
+
 - `campaign-brief.md` → primary source for prompts and dimensions
 - `brand-profile.json` → brand color/style injection (optional but recommended)
 
@@ -49,6 +50,7 @@ generation job list.
 #### Step 2b: Standalone Mode
 
 Ask the user:
+
 1. Generation prompt (what should the image show?)
 2. Target platform (to set correct dimensions)
 3. Output filename (optional)
@@ -58,6 +60,7 @@ Then skip to Step 5.
 ### Step 3: Read Provider Config
 
 Load `~/.claude/skills/ads/references/image-providers.md` to confirm:
+
 - Active provider pricing (show user the cost estimate)
 - Rate limits for current tier
 - Batch API availability
@@ -65,6 +68,7 @@ Load `~/.claude/skills/ads/references/image-providers.md` to confirm:
 ### Step 4: Read Platform Specs
 
 For each platform in the campaign brief, load the relevant spec reference:
+
 - `~/.claude/skills/ads/references/meta-creative-specs.md`
 - `~/.claude/skills/ads/references/google-creative-specs.md`
 - `~/.claude/skills/ads/references/tiktok-creative-specs.md`
@@ -78,6 +82,7 @@ Create banana brand preset from brand-profile.json if one does not already exist
 at `~/.banana/presets/{brand-slug}.json`.
 
 Select banana domain mode based on campaign brief content:
+
 - **Product**: e-commerce, packshots
 - **Editorial**: brand awareness, lifestyle
 - **Cinema**: video thumbnails, dramatic
@@ -90,6 +95,7 @@ Spawn the `visual-designer` agent using the Task tool with `context: fork`,
 passing the selected domain mode and preset name.
 
 The agent will:
+
 - Parse the image generation briefs from campaign-brief.md
 - Inject brand colors and mood from brand-profile.json
 - Use banana-claude with the configured domain mode for each asset
@@ -115,6 +121,7 @@ in generation-manifest.json.
 ### Step 10: Report Results
 
 Present a summary:
+
 ```
 Generation complete:
 
@@ -136,6 +143,7 @@ Generation complete:
 ## Cost Transparency
 
 Before generating, estimate and show the cost:
+
 - Count the number of image briefs in campaign-brief.md
 - Show estimated cost based on banana pricing tiers
 - If >$1.00, ask for confirmation before proceeding

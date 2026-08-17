@@ -36,6 +36,7 @@ Modern approach to customize Tailwind using CSS:
 ```
 
 **Usage:**
+
 ```html
 <div class="bg-brand-500 font-display shadow-glow rounded-large">
   Custom themed element
@@ -161,6 +162,7 @@ Create reusable utility classes:
 ```
 
 **Usage:**
+
 ```html
 <div class="content-auto">Optimized rendering</div>
 <pre class="tab-4">Code with 4-space tabs</pre>
@@ -178,6 +180,7 @@ Create custom state variants:
 ```
 
 **Usage:**
+
 ```html
 <div data-theme="midnight">
   <div class="theme-midnight:bg-navy-900">
@@ -267,6 +270,7 @@ Extract repeated utility patterns:
 ```
 
 **Usage:**
+
 ```html
 <button class="btn-primary">Click me</button>
 <input class="input-field" />
@@ -293,6 +297,7 @@ export default {
 ```
 
 **Typography plugin:**
+
 ```html
 <article class="prose lg:prose-xl">
   <h1>Styled article</h1>
@@ -301,6 +306,7 @@ export default {
 ```
 
 **Forms plugin:**
+
 ```html
 <!-- Automatically styled form elements -->
 <input type="text" />
@@ -423,6 +429,7 @@ export default {
 ```
 
 **Usage:**
+
 ```html
 <!-- Class-based -->
 <html class="dark">

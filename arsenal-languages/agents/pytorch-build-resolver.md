@@ -44,7 +44,7 @@ python -c "import torch; x = torch.randn(2,3).cuda(); print('CUDA tensor test: O
 ## Common Fix Patterns
 
 | Error | Cause | Fix |
-|-------|-------|-----|
+| ------- | ------- | ----- |
 | `RuntimeError: mat1 and mat2 shapes cannot be multiplied` | Linear layer input size mismatch | Fix `in_features` to match previous layer output |
 | `RuntimeError: Expected all tensors to be on the same device` | Mixed CPU/GPU tensors | Add `.to(device)` to all tensors and model |
 | `CUDA out of memory` | Batch too large or memory leak | Reduce batch size, add `torch.cuda.empty_cache()`, use gradient checkpointing |
@@ -82,6 +82,7 @@ print(f'Max allocated: {torch.cuda.max_memory_allocated()/1e9:.2f} GB')
 ```
 
 Common memory fixes:
+
 - Wrap validation in `with torch.no_grad():`
 - Use `del tensor; torch.cuda.empty_cache()`
 - Enable gradient checkpointing: `model.gradient_checkpointing_enable()`
@@ -99,6 +100,7 @@ Common memory fixes:
 ## Stop Conditions
 
 Stop and report if:
+
 - Same error persists after 3 fix attempts
 - Fix requires changing the model architecture fundamentally
 - Error is caused by hardware/driver incompatibility (recommend driver update)

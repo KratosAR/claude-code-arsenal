@@ -26,7 +26,7 @@ Unified design skill: brand, tokens, UI, logo, CIP, slides, banners, social phot
 ## Sub-skill Routing
 
 | Task | Sub-skill | Details |
-|------|-----------|---------|
+| ------ | ----------- | --------- |
 | Brand identity, voice, assets | `brand` | External skill |
 | Tokens, specs, CSS vars | `design-system` | External skill |
 | shadcn/ui, Tailwind, code | `ui-styling` | External skill |
@@ -122,7 +122,7 @@ Load `references/slides-create.md` for the creation workflow.
 ### Slides: Knowledge Base
 
 | Topic | File |
-|-------|------|
+| ------- | ------ |
 | Creation Guide | `references/slides-create.md` |
 | Layout Patterns | `references/slides-layout-patterns.md` |
 | HTML Template | `references/slides-html-template.md` |
@@ -146,7 +146,7 @@ Load `references/banner-sizes-and-styles.md` for complete sizes and styles refer
 ### Banner: Quick Size Reference
 
 | Platform | Type | Size (px) |
-|----------|------|-----------|
+| ---------- | ------ | ----------- |
 | Facebook | Cover | 820 x 312 |
 | Twitter/X | Header | 1500 x 500 |
 | LinkedIn | Personal | 1584 x 396 |
@@ -159,7 +159,7 @@ Load `references/banner-sizes-and-styles.md` for complete sizes and styles refer
 ### Banner: Top Art Styles
 
 | Style | Best For |
-|-------|----------|
+| ------- | ---------- |
 | Minimalist | SaaS, tech |
 | Bold Typography | Announcements |
 | Gradient | Modern brands |
@@ -203,7 +203,7 @@ python3 ~/.claude/skills/design/scripts/icon/generate.py --prompt "user profile"
 ### Icon: Top Styles
 
 | Style | Best For |
-|-------|----------|
+| ------- | ---------- |
 | outlined | UI interfaces, web apps |
 | filled | Mobile apps, nav bars |
 | duotone | Marketing, landing pages |
@@ -234,7 +234,7 @@ Load `references/social-photos-design.md` for sizes, templates, best practices.
 ### Social Photos: Key Sizes
 
 | Platform | Size (px) | Platform | Size (px) |
-|----------|-----------|----------|-----------|
+| ---------- | ----------- | ---------- | ----------- |
 | IG Post | 1080×1080 | FB Post | 1200×630 |
 | IG Story | 1080×1920 | X Post | 1200×675 |
 | IG Carousel | 1080×1350 | LinkedIn | 1200×627 |
@@ -257,7 +257,7 @@ Load `references/social-photos-design.md` for sizes, templates, best practices.
 ## References
 
 | Topic | File |
-|-------|------|
+| ------- | ------ |
 | Design Routing | `references/design-routing.md` |
 | Logo Design Guide | `references/logo-design.md` |
 | Logo Styles | `references/logo-style-guide.md` |
@@ -279,7 +279,7 @@ Load `references/social-photos-design.md` for sizes, templates, best practices.
 ## Scripts
 
 | Script | Purpose |
-|--------|---------|
+| -------- | --------- |
 | `scripts/logo/search.py` | Search logo styles, colors, industries |
 | `scripts/logo/generate.py` | Generate logos with Gemini AI |
 | `scripts/logo/core.py` | BM25 search engine for logo data |

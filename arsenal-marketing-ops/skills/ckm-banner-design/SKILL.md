@@ -26,6 +26,7 @@ Design banners across social, ads, web, and print formats. Generates multiple ar
 ### Step 1: Gather Requirements (AskUserQuestion)
 
 Collect via AskUserQuestion:
+
 1. **Purpose** — social cover, ad banner, website hero, print, or creative asset?
 2. **Platform/size** — which platform or custom dimensions?
 3. **Content** — headline, subtext, CTA, logo placement?
@@ -37,10 +38,12 @@ Collect via AskUserQuestion:
 
 1. Activate `ui-ux-pro-max` skill for design intelligence
 2. Use Chrome browser to research Pinterest for design references:
+
    ```
    Navigate to pinterest.com → search "[purpose] banner design [style]"
    Screenshot 3-5 reference pins for art direction inspiration
    ```
+
 3. Select 2-3 complementary art direction styles from references:
    `references/banner-sizes-and-styles.md`
 
@@ -57,11 +60,13 @@ For each art direction option:
 2. **Generate visual elements** with `ai-artist` + `ai-multimodal` skills
 
    **a) Search prompt inspiration** (6000+ examples in ai-artist):
+
    ```bash
    python3 .claude/skills/ai-artist/scripts/search.py "<banner style keywords>"
    ```
 
    **b) Generate with Standard model** (fast, good for backgrounds/patterns):
+
    ```bash
    .claude/skills/.venv/bin/python3 .claude/skills/ai-multimodal/scripts/gemini_batch_process.py \
      --task generate --model gemini-2.5-flash-image \
@@ -70,6 +75,7 @@ For each art direction option:
    ```
 
    **c) Generate with Pro model** (4K, complex illustrations/hero visuals):
+
    ```bash
    .claude/skills/.venv/bin/python3 .claude/skills/ai-multimodal/scripts/gemini_batch_process.py \
      --task generate --model gemini-3-pro-image-preview \
@@ -78,8 +84,9 @@ For each art direction option:
    ```
 
    **When to use which model:**
+
    | Use Case | Model | Quality |
-   |----------|-------|---------|
+   | ---------- | ------- | --------- |
    | Backgrounds, gradients, patterns | Standard (Flash) | 2K, fast |
    | Hero illustrations, product shots | Pro | 4K, detailed |
    | Photorealistic scenes, complex art | Pro | 4K, best quality |
@@ -101,6 +108,7 @@ After designing HTML banners, export each to PNG using `chrome-devtools` skill:
 
 1. **Serve HTML files** via local server (python http.server or similar)
 2. **Screenshot each banner** at exact platform dimensions:
+
    ```bash
    # Export banner to PNG at exact dimensions
    node .claude/skills/chrome-devtools/scripts/screenshot.js \
@@ -108,7 +116,9 @@ After designing HTML banners, export each to PNG using `chrome-devtools` skill:
      --width 1500 --height 500 \
      --output "assets/banners/{campaign}/{variant}-{size}.png"
    ```
+
 3. **Auto-compress** if >5MB (Sharp compression built-in):
+
    ```bash
    # With custom max size threshold
    node .claude/skills/chrome-devtools/scripts/screenshot.js \
@@ -118,6 +128,7 @@ After designing HTML banners, export each to PNG using `chrome-devtools` skill:
    ```
 
 **Output path convention** (per `assets-organizing` skill):
+
 ```
 assets/banners/{campaign}/
 ├── minimalist-1500x500.png
@@ -134,6 +145,7 @@ assets/banners/{campaign}/
 ### Step 5: Present Options & Iterate
 
 Present all exported images side-by-side. For each option show:
+
 - Art direction style name
 - Exported PNG preview (use `ai-multimodal` skill to display if needed)
 - Key design rationale
@@ -144,7 +156,7 @@ Iterate based on user feedback until approved.
 ## Banner Size Quick Reference
 
 | Platform | Type | Size (px) | Aspect Ratio |
-|----------|------|-----------|--------------|
+| ---------- | ------ | ----------- | -------------- |
 | Facebook | Cover | 820 × 312 | ~2.6:1 |
 | Twitter/X | Header | 1500 × 500 | 3:1 |
 | LinkedIn | Personal | 1584 × 396 | 4:1 |
@@ -160,7 +172,7 @@ Full reference: `references/banner-sizes-and-styles.md`
 ## Art Direction Styles (Top 10)
 
 | Style | Best For | Key Elements |
-|-------|----------|--------------|
+| ------- | ---------- | -------------- |
 | Minimalist | SaaS, tech | White space, 1-2 colors, clean type |
 | Bold Typography | Announcements | Oversized type as hero element |
 | Gradient | Modern brands | Mesh gradients, chromatic blends |

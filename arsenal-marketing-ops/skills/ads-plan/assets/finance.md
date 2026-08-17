@@ -15,20 +15,23 @@
 ## Compliance Requirements
 
 ### Special Ad Category (Meta)
+
 - **Credit ads** (loans, mortgages, credit cards): must declare Special Ad Category
 - **Restricted targeting**: no age, gender, ZIP code targeting
 - **Minimum radius**: 15 miles
 - **Special Ad Audiences**: instead of lookalikes
 
 ### Google Financial Services Policies
+
 - Mortgage, loan, and credit ads: must display APR, fees, repayment terms
 - Crypto ads: only allowed with Google certification in approved countries
 - Complex speculative products (CFDs, spread betting): restricted
 - Local regulations: state-specific licensing requirements must be met
 
 ### Required Disclosures
+
 | Product Type | Required Disclosures |
-|-------------|---------------------|
+| ------------- | --------------------- |
 | Loans/Mortgages | APR, fees, repayment example, lender NMLS |
 | Credit Cards | APR range, annual fee, issuer name |
 | Insurance | "Not a guarantee" disclaimers, license numbers |
@@ -36,6 +39,7 @@
 | Banking | FDIC insured, equal housing lender (if applicable) |
 
 ### Compliance Review Process
+
 - All ad copy requires legal/compliance team approval
 - Typical review cycle: 3-7 business days
 - Pre-approved copy library recommended (reduces iteration time)
@@ -44,7 +48,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | Google Search | Primary | 40-50% | High-intent financial product queries |
 | LinkedIn | Primary | 20-30% | B2B finance, wealth management, corporate solutions |
 | Meta (FB/IG) | Secondary | 15% | Awareness, education, retargeting |
@@ -101,6 +105,7 @@ Account; LinkedIn (B2B Financial Products)
 ## Creative Strategy
 
 ### What Works for Financial Services
+
 - **Rate callouts**: "APY as high as X.XX%" (attention-grabbing, verifiable)
 - **Calculator tools**: interactive landing pages (mortgage, savings, ROI calculators)
 - **Security messaging**: "FDIC Insured", "Bank-level encryption", "A+ BBB rated"
@@ -110,6 +115,7 @@ Account; LinkedIn (B2B Financial Products)
 - **Award/rating badges**: J.D. Power, Bankrate, NerdWallet ratings
 
 ### Creative Compliance Checklist
+
 - [ ] Required disclosures included (APR, fees, terms)
 - [ ] "Past performance" disclaimer (investments)
 - [ ] License/NMLS number displayed (lending)
@@ -119,6 +125,7 @@ Account; LinkedIn (B2B Financial Products)
 - [ ] State-specific variations if needed
 
 ### Ad Copy Framework
+
 - **Headline**: [Product] + [Key Benefit] + [Rate/Offer]
 - **Description**: [Value prop] + [Trust signal] + [Disclosure] + [CTA]
 - **Example**: "Personal Loans from 6.99% APR | No Origination Fees | Check Your Rate in 2 Minutes: No Credit Impact. FDIC Insured. NMLS #123456"
@@ -126,6 +133,7 @@ Account; LinkedIn (B2B Financial Products)
 ## Targeting Strategy
 
 ### Google
+
 - **Keywords**: [product] rates, best [product] 2026, [product] calculator, [product] near me
 - **Negative keywords**: free, scam, complaint, lawsuit, jobs
 - **Audiences**: in-market for financial services, financial planning, insurance
@@ -133,12 +141,14 @@ Account; LinkedIn (B2B Financial Products)
 - **Ad schedule**: business hours + evening research (7-10 PM peak for financial research)
 
 ### Meta (Special Ad Category for Credit Products)
+
 - **Broad targeting**: let algorithm optimize with good creative
 - **Special Ad Audiences**: based on converters/applicants
 - **Retargeting**: website visitors, video viewers, partial applications
 - **Cannot use**: ZIP code, age, gender targeting for credit products
 
 ### LinkedIn (B2B Financial Products)
+
 - **Job titles**: CFO, VP Finance, Treasury, Risk Management
 - **Company size/industry**: match your ICP
 - **Seniority**: Director+ for enterprise financial products
@@ -147,7 +157,7 @@ Account; LinkedIn (B2B Financial Products)
 ## Budget Guidelines
 
 | Metric | Financial Services Benchmark |
-|--------|----------------------------|
+| -------- | ---------------------------- |
 | Google CPC | $3.46-$3.77 (varies widely by product) |
 | Google CTR | 4.65-8.33% |
 | Google CVR | 2.55-3.50% |
@@ -158,8 +168,9 @@ Account; LinkedIn (B2B Financial Products)
 | Min monthly budget | $8,000+ (Google + LinkedIn minimum viable) |
 
 ### Budget by Financial Product
+
 | Product | Monthly Budget | Primary Channel |
-|---------|---------------|-----------------|
+| --------- | --------------- | ----------------- |
 | Personal loans | $5,000-$15,000 | Google Search |
 | Mortgage | $10,000-$50,000 | Google + Meta |
 | Insurance | $3,000-$10,000 | Google + Meta |
@@ -170,7 +181,7 @@ Account; LinkedIn (B2B Financial Products)
 ## Bidding Strategy Selection
 
 | Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
+| ---------- | -------------------- | -------------------- |
 | Google | <15 | Maximize Clicks (cap CPC) |
 | Google | 15-29 | Maximize Conversions |
 | Google | 30+ | Target CPA |
@@ -184,7 +195,7 @@ Account; LinkedIn (B2B Financial Products)
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | CPA (lead/application) | Baseline | -15% | -25% |
 | Application Start → Complete Rate | Track | 30%+ | 40%+ |
 | Cost per Funded Loan/Account | Track | Baseline | Optimize |

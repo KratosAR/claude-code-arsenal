@@ -169,16 +169,19 @@
 Choose the right framework based on campaign goal and audience temperature:
 
 **Cold audiences (unaware of brand):**
+
 - Awareness goal: AIDA or Star-Story-Solution
 - Consideration goal: BAB or PAS
 - Conversion goal: AIDA with strong CTA
 
 **Warm audiences (engaged but not converted):**
+
 - Consideration goal: PAS or 4P
 - Conversion goal: FAB or BAB
 - Retargeting goal: PAS with urgency
 
 **Hot audiences (past customers, high intent):**
+
 - Upsell goal: FAB or 4P
 - Retention goal: Star-Story-Solution
 - Re-engagement goal: BAB with new offer

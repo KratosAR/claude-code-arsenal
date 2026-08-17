@@ -7,11 +7,13 @@ Theme configuration, CSS variables, dark mode, and component customization.
 ### Next.js App Router
 
 **1. Install next-themes:**
+
 ```bash
 npm install next-themes
 ```
 
 **2. Create theme provider:**
+
 ```tsx
 // components/theme-provider.tsx
 "use client"
@@ -28,6 +30,7 @@ export function ThemeProvider({
 ```
 
 **3. Wrap app:**
+
 ```tsx
 // app/layout.tsx
 import { ThemeProvider } from "@/components/theme-provider"
@@ -51,6 +54,7 @@ export default function RootLayout({ children }) {
 ```
 
 **4. Theme toggle component:**
+
 ```tsx
 import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
@@ -140,11 +144,13 @@ shadcn/ui uses CSS variables for theming. Variables defined in `globals.css`:
 ### Color Format
 
 Values use HSL format without `hsl()` wrapper for better opacity control:
+
 ```css
 --primary: 222.2 47.4% 11.2%;  /* H S L */
 ```
 
 Usage in Tailwind:
+
 ```css
 background: hsl(var(--primary));
 background: hsl(var(--primary) / 0.5);  /* 50% opacity */
@@ -217,7 +223,7 @@ Change colors by modifying CSS variables in `globals.css`:
 
 ### Method 2: Theme Generator
 
-Use shadcn/ui theme generator: https://ui.shadcn.com/themes
+Use shadcn/ui theme generator: <https://ui.shadcn.com/themes>
 
 Select base color, generate theme, copy CSS variables.
 
@@ -238,6 +244,7 @@ Create theme variants with data attributes:
 ```
 
 Apply theme:
+
 ```tsx
 <div data-theme="violet">
   <Button>Violet theme</Button>
@@ -280,6 +287,7 @@ const buttonVariants = cva(
 ```
 
 Usage:
+
 ```tsx
 <Button variant="gradient" size="xl">Custom Button</Button>
 ```
@@ -358,6 +366,7 @@ Control border radius globally:
 ```
 
 Components use radius variable:
+
 ```tsx
 className="rounded-lg"  /* Uses var(--radius) */
 ```

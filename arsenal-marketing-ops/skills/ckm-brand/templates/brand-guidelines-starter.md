@@ -6,7 +6,7 @@
 ## Quick Reference
 
 | Element | Value |
-|---------|-------|
+| --------- | ------- |
 | Primary Color | #2563EB |
 | Secondary Color | #8B5CF6 |
 | Primary Font | Inter |
@@ -33,7 +33,7 @@
 ### Neutral Palette
 
 | Name | Hex | RGB | Usage |
-|------|-----|-----|-------|
+| ------ | ----- | ----- | ------- |
 | Background | #FFFFFF | rgb(255,255,255) | Page backgrounds |
 | Surface | #F9FAFB | rgb(249,250,251) | Cards, sections |
 | Text Primary | #111827 | rgb(17,24,39) | Headings, body text |
@@ -43,7 +43,7 @@
 ### Semantic Colors
 
 | State | Hex | Usage |
-|-------|-----|-------|
+| ------- | ----- | ------- |
 | Success | #22C55E | Positive actions, confirmations |
 | Warning | #F59E0B | Cautions, pending states |
 | Error | #EF4444 | Errors, destructive actions |
@@ -70,7 +70,7 @@
 ### Type Scale
 
 | Element | Size (Desktop) | Size (Mobile) | Weight | Line Height |
-|---------|----------------|---------------|--------|-------------|
+| --------- | ---------------- | --------------- | -------- | ------------- |
 | H1 | 48px | 32px | 700 | 1.2 |
 | H2 | 36px | 28px | 600 | 1.25 |
 | H3 | 28px | 24px | 600 | 1.3 |
@@ -94,7 +94,7 @@
 ### Variants
 
 | Variant | File | Use Case |
-|---------|------|----------|
+| --------- | ------ | ---------- |
 | Full Horizontal | logo-full-horizontal.svg | Headers, documents |
 | Stacked | logo-stacked.svg | Square spaces |
 | Icon Only | logo-icon.svg | Favicons, small spaces |
@@ -107,7 +107,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Minimum Size
 
 | Context | Minimum Width |
-|---------|---------------|
+| --------- | --------------- |
 | Digital - Full Logo | 120px |
 | Digital - Icon | 24px |
 | Print - Full Logo | 35mm |
@@ -128,7 +128,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Brand Personality
 
 | Trait | Description |
-|-------|-------------|
+| ------- | ------------- |
 | **Professional** | Expert knowledge, authoritative yet approachable |
 | **Helpful** | Solution-focused, actionable guidance |
 | **Clear** | Direct communication, jargon-free |
@@ -137,7 +137,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Voice Chart
 
 | Trait | We Are | We Are Not |
-|-------|--------|------------|
+| ------- | -------- | ------------ |
 | Professional | Expert, knowledgeable | Stuffy, corporate |
 | Helpful | Supportive, empowering | Patronizing |
 | Clear | Direct, concise | Vague, wordy |
@@ -146,7 +146,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Tone by Context
 
 | Context | Tone | Example |
-|---------|------|---------|
+| --------- | ------ | --------- |
 | Marketing | Engaging, benefit-focused | "Create campaigns that convert." |
 | Documentation | Clear, instructional | "Run the command to start." |
 | Error messages | Calm, solution-focused | "Try refreshing the page." |
@@ -155,7 +155,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Prohibited Terms
 
 | Avoid | Reason |
-|-------|--------|
+| ------- | -------- |
 | Revolutionary | Overused |
 | Best-in-class | Vague claim |
 | Seamless | Overused |
@@ -194,7 +194,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Buttons
 
 | Type | Background | Text | Border Radius |
-|------|------------|------|---------------|
+| ------ | ------------ | ------ | --------------- |
 | Primary | #2563EB | #FFFFFF | 8px |
 | Secondary | Transparent | #2563EB | 8px |
 | Tertiary | Transparent | #6B7280 | 8px |
@@ -202,7 +202,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Spacing Scale
 
 | Token | Value | Usage |
-|-------|-------|-------|
+| ------- | ------- | ------- |
 | xs | 4px | Tight spacing |
 | sm | 8px | Compact elements |
 | md | 16px | Standard spacing |
@@ -213,7 +213,7 @@ Minimum clear space = height of the logo icon (mark)
 ### Border Radius
 
 | Element | Radius |
-|---------|--------|
+| --------- | -------- |
 | Buttons | 8px |
 | Cards | 12px |
 | Inputs | 8px |
@@ -235,7 +235,7 @@ Always prepend to image generation prompts:
 ### Style Keywords
 
 | Category | Keywords |
-|----------|----------|
+| ---------- | ---------- |
 | **Lighting** | {e.g., soft lighting, dramatic, natural} |
 | **Mood** | {e.g., professional, energetic, calm} |
 | **Composition** | {e.g., centered, rule of thirds, minimal} |
@@ -257,11 +257,13 @@ Always prepend to image generation prompts:
 ### Example Prompts
 
 **Hero Banner:**
+
 ```
 {Example prompt for hero banners}
 ```
 
 **Social Media Post:**
+
 ```
 {Example prompt for social graphics}
 ```

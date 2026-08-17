@@ -21,6 +21,7 @@ user-invokable: false
 ## What to Analyze
 
 ### Conversion Tracking (25% weight)
+
 - Google tag (gtag.js) installed and firing on all pages
 - Enhanced Conversions active (hashed first-party data)
 - Consent Mode v2 implemented (required for EU/EEA)
@@ -31,6 +32,7 @@ user-invokable: false
 - Conversion lag analysis (are conversions still trickling in?)
 
 ### Wasted Spend (20% weight)
+
 - Search Terms Report reviewed (last 30 days minimum)
 - Negative keyword coverage adequate (shared lists + campaign-level)
 - Display placement audit (exclude low-quality sites)
@@ -40,6 +42,7 @@ user-invokable: false
 - Geographic targeting precise (no wasted international spend)
 
 **Negative Keyword Rules (critical: bad negatives kill campaigns):**
+
 - NEVER suggest Broad Match negatives unless explicitly justified; they block too broadly
 - Default to **Exact Match** `[keyword]` for specific irrelevant queries
 - Use **Phrase Match** `"keyword"` for irrelevant intent patterns
@@ -49,6 +52,7 @@ user-invokable: false
 - Review existing negatives for over-blocking (are any negatives accidentally blocking converting queries?)
 
 ### Account Structure (15% weight)
+
 - Campaign-level organization follows business logic
 - Ad groups themed tightly (15-20 keywords max per group)
 - RSA ad groups have ≥3 active ads
@@ -57,6 +61,7 @@ user-invokable: false
 - Campaign labels/naming conventions consistent
 
 ### Keywords (15% weight)
+
 - Match type strategy appropriate (Exact → Phrase → Broad progression)
 - Quality Score distribution (aim ≥7 average)
 - Low QS keywords flagged (<5 = FAIL, 5-6 = WARNING)
@@ -65,6 +70,7 @@ user-invokable: false
 - Keyword bid adjustments set for devices/locations/audiences
 
 ### Ads (15% weight)
+
 - RSA: ≥8 unique headlines, ≥3 descriptions per ad group
 - RSA: ad strength "Good" or "Excellent" (not "Poor" or "Average")
 - Pin usage minimal and strategic (over-pinning reduces RSA flexibility)
@@ -73,6 +79,7 @@ user-invokable: false
 - Ad copy includes CTA, value proposition, differentiators
 
 ### Settings (10% weight)
+
 - Bid strategy appropriate for campaign maturity and goals
 - Budget pacing: no campaigns limited by budget (unless intentional)
 - Ad schedule aligned with business hours/conversion patterns
@@ -107,6 +114,7 @@ and campaign structure automatically instead of requiring manual exports.
 ## PMax Deep Dive
 
 If Performance Max campaigns exist, additionally evaluate:
+
 - Asset group diversity (text, images, video, feeds)
 - Audience signals configured (custom segments, lists, demographics)
 - URL expansion settings reviewed (opt-out of irrelevant pages)
@@ -118,6 +126,7 @@ If Performance Max campaigns exist, additionally evaluate:
 ## AI Max for Search (2026)
 
 If AI Max for Search is available/active:
+
 - Broad Match + AI Max integration evaluated
 - Auto-generated headline performance monitored
 - Search term categories reviewed for relevance
@@ -126,7 +135,7 @@ If AI Max for Search is available/active:
 ## Key Thresholds
 
 | Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
+| -------- | ------ | --------- | ------ |
 | Quality Score (avg) | ≥7 | 5-6 | <5 |
 | CTR (Search) | ≥6.66% | 3-6.66% | <3% |
 | CVR (Search) | ≥7.52% | 3-7.52% | <3% |
@@ -151,6 +160,7 @@ Settings:            XX/100  ██████████  (10%)
 ```
 
 ### Deliverables
+
 - `GOOGLE-ADS-REPORT.md`: Full 74-check findings with pass/warning/fail
 - Wasted spend estimate (monthly $ value)
 - Quick Wins sorted by impact

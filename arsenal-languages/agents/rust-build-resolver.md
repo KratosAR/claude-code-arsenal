@@ -43,7 +43,7 @@ if command -v cargo-audit >/dev/null; then cargo audit; else echo "cargo-audit n
 ## Common Fix Patterns
 
 | Error | Cause | Fix |
-|-------|-------|-----|
+| ------- | ------- | ----- |
 | `cannot borrow as mutable` | Immutable borrow active | Restructure to end immutable borrow first, or use `Cell`/`RefCell` |
 | `does not live long enough` | Value dropped while still borrowed | Extend lifetime scope, use owned type, or add lifetime annotation |
 | `cannot move out of` | Moving from behind a reference | Use `.clone()`, `.to_owned()`, or restructure to take ownership |
@@ -129,6 +129,7 @@ grep "rust-version" Cargo.toml
 ## Stop Conditions
 
 Stop and report if:
+
 - Same error persists after 3 fix attempts
 - Fix introduces more errors than it resolves
 - Error requires architectural changes beyond scope

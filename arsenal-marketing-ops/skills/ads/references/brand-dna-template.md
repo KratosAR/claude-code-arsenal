@@ -81,7 +81,7 @@ consume brand data must use these exact field names and value types.
 Score interpretation: 1 = extreme left pole, 10 = extreme right pole, 5 = neutral.
 
 | Field | 1 (Left) | 10 (Right) | Ad Implication |
-|-------|----------|------------|----------------|
+| ------- | ---------- | ------------ | ---------------- |
 | `formal_casual` | Very formal, corporate | Very casual, conversational | Headlines tone |
 | `rational_emotional` | Data-driven, logical | Emotionally evocative | Story vs stats |
 | `playful_serious` | Fun, humorous | Serious, no-nonsense | CTA phrasing |
@@ -153,7 +153,7 @@ og:image meta tag               → imagery.style (analyze dominant visual)
 ### Voice scoring heuristics
 
 | Signal | Scoring |
-|--------|---------|
+| -------- | --------- |
 | Uses "you" and "your" frequently | formal_casual +2 (casual) |
 | Industry jargon in hero text | expert_accessible -2 (expert) |
 | Short sentences (≤10 words) | bold_subtle +1 (bold) |
@@ -182,6 +182,7 @@ no [imagery.forbidden joined by comma]"
 ```
 
 Example output:
+
 ```
 "person using laptop, professional photography, clean backgrounds good negative space,
 brand colors #1A2E4A and #F4A623, trustworthy modern approachable atmosphere,

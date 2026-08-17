@@ -14,6 +14,7 @@ Use subagents for *fact gathering and extraction* (docs, examples, signatures, g
 ### Subagent Reporting Contract (MANDATORY)
 
 Each subagent response must include:
+
 1. Sources consulted (files/URLs) and what was read
 2. Concrete findings (exact API names/signatures; exact file paths/locations)
 3. Copy-ready snippet locations (example files/sections to copy)
@@ -26,6 +27,7 @@ Reject and redeploy the subagent if it reports conclusions without sources.
 ### Phase 0: Documentation Discovery (ALWAYS FIRST)
 
 Before planning implementation, deploy "Documentation Discovery" subagents to:
+
 1. Search for and read relevant documentation, examples, and existing patterns
 2. Identify the actual APIs, methods, and signatures available (not assumed)
 3. Create a brief "Allowed APIs" list citing specific documentation sources

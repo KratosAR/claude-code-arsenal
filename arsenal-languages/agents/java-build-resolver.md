@@ -46,7 +46,7 @@ Run these in order:
 ## Common Fix Patterns
 
 | Error | Cause | Fix |
-|-------|-------|-----|
+| ------- | ------- | ----- |
 | `cannot find symbol` | Missing import, typo, missing dependency | Add import or dependency |
 | `incompatible types: X cannot be converted to Y` | Wrong type, missing cast | Add explicit cast or fix type |
 | `method X in class Y cannot be applied to given types` | Wrong argument types or count | Fix arguments or check overloads |
@@ -134,6 +134,7 @@ grep -A5 "annotationProcessorPaths\|annotationProcessor" pom.xml build.gradle
 ## Stop Conditions
 
 Stop and report if:
+
 - Same error persists after 3 fix attempts
 - Fix introduces more errors than it resolves
 - Error requires architectural changes beyond scope

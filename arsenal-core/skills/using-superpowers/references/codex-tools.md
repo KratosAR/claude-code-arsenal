@@ -3,7 +3,7 @@
 Skills use Claude Code tool names. When you encounter these in a skill, use your platform equivalent:
 
 | Skill references | Codex equivalent |
-|-----------------|------------------|
+| ----------------- | ------------------ |
 | `Task` tool (dispatch subagent) | `spawn_agent` (see [Named agent dispatch](#named-agent-dispatch)) |
 | Multiple `Task` calls (parallel) | Multiple `spawn_agent` calls |
 | Task returns result | `wait` |

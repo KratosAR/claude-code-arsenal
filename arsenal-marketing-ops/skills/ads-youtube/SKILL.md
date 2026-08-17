@@ -21,6 +21,7 @@ user-invokable: false
 ## Campaign Types Assessment
 
 ### Skippable In-Stream (TrueView)
+
 - Length: 12s minimum, 15-30s recommended (can be longer)
 - Bidding: Target CPV or Target CPA
 - Skip rate benchmark: 65-80% is normal
@@ -28,24 +29,28 @@ user-invokable: false
 - Evaluate: hook quality in first 5 seconds, CTA card usage
 
 ### Non-Skippable In-Stream
+
 - Length: up to 60s (expanded 2025; previously 15s/20s)
 - Bidding: Target CPM
 - Best for: brand awareness, reach campaigns
 - Evaluate: message completeness, frequency capping, optimal length testing
 
 ### Bumper Ads
+
 - Length: exactly 6s (non-skippable)
 - Bidding: Target CPM
 - Best for: reach extension, brand reinforcement
 - Evaluate: single-message focus, brand visibility throughout
 
 ### YouTube Shorts Ads
+
 - Format: vertical 9:16 (1080x1920)
 - Length: up to 60s
 - Best for: younger demographics, mobile-first
 - Evaluate: native feel (not repurposed horizontal), sound-on optimization
 
 ### Demand Gen (replaces Discovery)
+
 - Placements: YouTube Home Feed, Watch Next, Discover, Gmail
 - Formats: image + video carousel, product feeds
 - Evaluate: creative diversity, product feed quality, audience signals
@@ -53,18 +58,21 @@ user-invokable: false
 ## Creative Quality Assessment
 
 ### Hook Analysis (First 5 Seconds)
+
 - Does the video capture attention immediately?
 - Brand mention within first 5 seconds (recommended for awareness)
 - Problem/benefit statement upfront (recommended for action campaigns)
 - No slow intros, title cards, or logos-only openings
 
 ### Production Quality
+
 - Audio quality: clear, professional, background music appropriate
 - Visual quality: HD minimum (1080p), proper lighting
 - Subtitles/captions: present (85% of Facebook video watched muted, ~30% on YouTube)
 - End screen: CTA, subscribe button, related video cards
 
 ### Creative Volume
+
 - ≥3 video variations per campaign (different hooks, lengths, messages)
 - Mix of lengths tested (6s bumper + 15-60s non-skip + 30s skippable)
 - Vertical (9:16) and horizontal (16:9) versions available
@@ -73,6 +81,7 @@ user-invokable: false
 ## Audience Targeting
 
 ### YouTube-Specific Targeting Options
+
 - **Custom Intent**: target users searching for specific terms on YouTube/Google
 - **In-Market Audiences**: users actively researching purchase categories
 - **Affinity Audiences**: broad interest-based targeting for awareness
@@ -81,6 +90,7 @@ user-invokable: false
 - **Placement Targeting**: specific channels, videos, or topics
 
 ### Targeting Best Practices
+
 - Separate campaigns for prospecting vs retargeting
 - Layer audience signals in Demand Gen campaigns
 - Exclude converted users from prospecting campaigns
@@ -89,8 +99,9 @@ user-invokable: false
 ## Measurement
 
 ### Key YouTube Metrics
+
 | Metric | Benchmark | Notes |
-|--------|-----------|-------|
+| -------- | ----------- | ------- |
 | View Rate (skippable) | ≥15% | Higher = better hook |
 | CPV (skippable) | $0.01-0.10 | Varies by targeting |
 | VTR (bumper) | 90%+ | Non-skippable, should be near 100% |
@@ -99,6 +110,7 @@ user-invokable: false
 | Brand Lift | Measurable | Requires Google Brand Lift Study |
 
 ### Attribution Considerations
+
 - YouTube is upper/mid-funnel; don't judge by last-click alone
 - Use data-driven attribution in Google Ads
 - Track view-through conversions (important for video)
@@ -135,6 +147,7 @@ Measurement:        █████░░░░░  Attribution and tracking
 ```
 
 ### Deliverables
+
 - `YOUTUBE-ADS-REPORT.md`: Campaign-by-campaign analysis
 - Creative quality scorecard per video
 - Audience strategy recommendations

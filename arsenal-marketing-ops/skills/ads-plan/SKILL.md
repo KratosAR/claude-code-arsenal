@@ -9,6 +9,7 @@ user-invokable: false
 ## Process
 
 ### 1. Discovery
+
 - Business type, products/services, target audience
 - Current advertising status (active platforms, spend, performance)
 - Goals: brand awareness, lead generation, e-commerce sales, app installs
@@ -17,6 +18,7 @@ user-invokable: false
 - In-house team capacity vs agency needs
 
 ### 2. Competitive Analysis
+
 - Identify top 3-5 competitors
 - Analyze their ad presence across platforms (Google Ads Transparency, Meta Ad Library)
 - Estimate competitor spend levels and platform mix
@@ -24,6 +26,7 @@ user-invokable: false
 - Note keyword/audience gaps (opportunities competitors are missing)
 
 ### 3. Platform Selection
+
 - Load industry template from `assets/` directory
 - Match business type to recommended platform mix
 - Read `ads/references/budget-allocation.md` for platform selection matrix
@@ -38,12 +41,15 @@ user-invokable: false
 ### 4. Campaign Architecture
 
 #### Naming Convention
+
 ```
 [Platform]_[Objective]_[Audience]_[Geo]_[Date]
 ```
+
 Example: `META_CONV_Prospecting_US_2026Q1`
 
 #### Campaign Structure Template
+
 ```
 Account
 ├── Brand Campaign (always-on, protect brand terms)
@@ -68,15 +74,17 @@ Account
 ### 5. Budget Planning
 
 #### Monthly Budget Distribution
+
 Read `ads/references/budget-allocation.md` for the 70/20/10 framework.
 
 | Tier | Allocation | Purpose |
-|------|-----------|---------|
+| ------ | ----------- | --------- |
 | Proven (70%) | Primary platforms with proven ROI | Revenue engine |
 | Scaling (20%) | Platforms showing promise | Growth engine |
 | Testing (10%) | New platforms or strategies | Innovation |
 
 #### Budget Pacing
+
 - Month 1-2: heavy testing, expect higher CPA (learning)
 - Month 3-4: optimize based on data, tighten targeting
 - Month 5-6: scale winners, kill losers, expand
@@ -85,6 +93,7 @@ Read `ads/references/budget-allocation.md` for the 70/20/10 framework.
 ### 6. Creative Strategy
 
 #### Content Pillars
+
 - **Pain Point**: address specific problems your audience faces
 - **Social Proof**: testimonials, case studies, reviews
 - **Product Demo**: show the product/service in action
@@ -92,8 +101,9 @@ Read `ads/references/budget-allocation.md` for the 70/20/10 framework.
 - **Education**: teach something valuable related to your product
 
 #### Creative Production Plan
+
 | Priority | Asset Type | Platforms | Quantity |
-|----------|-----------|-----------|----------|
+| ---------- | ----------- | ----------- | ---------- |
 | P1 | Product/service videos (15-30s) | Meta, TikTok, YouTube | 5-10 |
 | P2 | Static images with copy | Google, Meta, LinkedIn | 10-15 |
 | P3 | Carousel/collection | Meta, LinkedIn | 3-5 |
@@ -105,7 +115,7 @@ Read `ads/references/budget-allocation.md` for the 70/20/10 framework.
 Before launching any ads, ensure tracking is configured:
 
 | Platform | Client-Side | Server-Side | Priority |
-|----------|------------|-------------|----------|
+| ---------- | ------------ | ------------- | ---------- |
 | Google | gtag.js | Enhanced Conversions, GTM SS | P1 |
 | Meta | Pixel | CAPI | P1 |
 | LinkedIn | Insight Tag | CAPI (2025) | P2 |
@@ -115,6 +125,7 @@ Before launching any ads, ensure tracking is configured:
 ### 8. Implementation Roadmap
 
 #### Phase 1: Foundation (Weeks 1-2)
+
 - Install all tracking pixels and server-side tracking
 - Set up conversion events and goals
 - Create campaign structure and naming conventions
@@ -122,12 +133,14 @@ Before launching any ads, ensure tracking is configured:
 - Produce first batch of creative assets
 
 #### Phase 2: Launch (Weeks 3-4)
+
 - Launch campaigns on primary platform(s) first
 - Set conservative budgets and bidding (Maximize Clicks / Lowest Cost)
 - Monitor daily for the first 7 days
 - Verify conversion tracking is firing correctly
 
 #### Phase 3: Optimize (Weeks 5-8)
+
 - Analyze initial data (minimum 2 weeks of data)
 - Adjust bidding strategies based on conversion volume
 - Kill underperforming ad groups/creatives (3x Kill Rule)
@@ -135,6 +148,7 @@ Before launching any ads, ensure tracking is configured:
 - Begin A/B testing (creative, landing pages, audiences)
 
 #### Phase 4: Scale (Weeks 9-12)
+
 - Scale winning campaigns (20% rule)
 - Expand to testing platforms (10% budget)
 - Implement advanced strategies (ABM, Shopping feeds, Smart+)
@@ -143,6 +157,7 @@ Before launching any ads, ensure tracking is configured:
 ## Industry Templates
 
 Load from `assets/` directory based on detected or specified business type:
+
 - `saas.md`: SaaS companies
 - `ecommerce.md`: E-commerce stores
 - `local-service.md`: Local service businesses
@@ -158,6 +173,7 @@ Load from `assets/` directory based on detected or specified business type:
 ## Output
 
 ### Deliverables
+
 - `ADS-STRATEGY.md`: Complete strategic advertising plan
 - `CAMPAIGN-ARCHITECTURE.md`: Campaign structure with naming conventions
 - `BUDGET-PLAN.md`: Budget allocation with monthly pacing
@@ -166,8 +182,9 @@ Load from `assets/` directory based on detected or specified business type:
 - `IMPLEMENTATION-ROADMAP.md`: Phased rollout timeline
 
 ### KPI Targets
+
 | Metric | Month 1 | Month 3 | Month 6 | Month 12 |
-|--------|---------|---------|---------|----------|
+| -------- | --------- | --------- | --------- | ---------- |
 | ROAS | Baseline | Target -20% | Target | Target +20% |
 | CPA | Baseline | Target +30% | Target | Target -10% |
 | CVR | Baseline | +10% | +20% | +30% |

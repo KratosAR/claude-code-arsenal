@@ -5,7 +5,7 @@ Design social media images via HTML/CSS rendering + screenshot export. Orchestra
 ## Platform Sizes
 
 | Platform | Type | Size (px) | Aspect |
-|----------|------|-----------|--------|
+| ---------- | ------ | ----------- | -------- |
 | Instagram | Post | 1080 x 1080 | 1:1 |
 | Instagram | Story/Reel | 1080 x 1920 | 9:16 |
 | Instagram | Carousel | 1080 x 1350 | 4:5 |
@@ -25,6 +25,7 @@ Design social media images via HTML/CSS rendering + screenshot export. Orchestra
 ### Step 1: Activate Project Management
 
 Invoke `project-management` skill to create persistent TODO tasks via Claude's native task orchestration. Break down into:
+
 - Requirement analysis task
 - Idea generation task(s)
 - HTML design task(s) — can parallelize per size/variant
@@ -36,6 +37,7 @@ Spawn parallel subagents for independent tasks (e.g., multiple HTML files for di
 ### Step 2: Analyze Requirements
 
 Parse user input for:
+
 - **Subject/topic** — what the social photo represents
 - **Target platforms** — which sizes needed (default: Instagram Post 1:1 + Story 9:16)
 - **Visual style** — minimalist, bold, gradient, photo-based, etc.
@@ -46,6 +48,7 @@ Parse user input for:
 ### Step 3: Generate Ideas
 
 Create 3-5 concept ideas that:
+
 - Match the input prompt/requirements
 - Consider platform-specific best practices
 - Vary in composition, color, typography approach
@@ -141,6 +144,7 @@ DELAY=5  # seconds for fonts/images to load
 ```
 
 Key flags:
+
 - `--virtual-time-budget=5000` — waits 5s virtual time for assets (Google Fonts, images) to load
 - `--hide-scrollbars` — prevents scrollbar artifacts in screenshots
 - `--window-size=WxH` — sets exact pixel dimensions
@@ -148,6 +152,7 @@ Key flags:
 #### Option B: chrome-devtools skill
 
 Invoke `/chrome-devtools` with instructions to:
+
 1. Open each HTML file in browser
 2. Set viewport to exact target dimensions
 3. Wait 3-5s for fonts/images to fully load
@@ -219,6 +224,7 @@ Use Chrome MCP or `chrome-devtools` skill to visually inspect each exported PNG:
 5. Repeat until all designs pass visual QA
 
 **Common issues to check:**
+
 - Fonts not loaded (fallback to system fonts)
 - Text overflow or clipping
 - Elements outside safe zone (central 80%)
@@ -270,6 +276,7 @@ Report structure:
 ### Step 8: Organize Output
 
 Invoke `assets-organizing` skill to organize all output files and reports:
+
 - Move/copy exported PNGs to proper asset directories
 - Ensure reports are in `plans/reports/` with correct naming
 - Clean up intermediate HTML files if requested
@@ -290,7 +297,7 @@ Invoke `assets-organizing` skill to organize all output files and reports:
 ### Art Direction Styles (Reuse from Banner)
 
 | Style | Best For | Key Elements |
-|-------|----------|--------------|
+| ------- | ---------- | -------------- |
 | Minimalist | SaaS, tech, luxury | Whitespace, single accent color, clean type |
 | Bold Typography | Announcements, quotes | Large type, high contrast, minimal imagery |
 | Gradient Mesh | Modern brands, apps | Fluid color transitions, floating elements |
@@ -312,7 +319,7 @@ Invoke `assets-organizing` skill to organize all output files and reports:
 ### Typography Hierarchy
 
 | Element | Min Size (at 1080px) | Weight |
-|---------|---------------------|--------|
+| --------- | --------------------- | -------- |
 | Headline | 48px | Bold/Black |
 | Subheadline | 32px | Semibold |
 | Body | 24px | Regular |
@@ -322,6 +329,7 @@ Invoke `assets-organizing` skill to organize all output files and reports:
 ## Security & Scope
 
 This sub-skill handles social media image design only. Does NOT handle:
+
 - Video content creation
 - Animation/motion graphics
 - Print production files (CMYK, bleed)

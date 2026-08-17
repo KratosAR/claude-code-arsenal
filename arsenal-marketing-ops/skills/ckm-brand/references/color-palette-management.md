@@ -5,6 +5,7 @@ Guidelines for defining, extracting, and enforcing brand colors.
 ## Color System Structure
 
 ### Hierarchy
+
 ```
 Primary Colors (1-2)
 ├── Main brand color - Used for CTAs, headers, key elements
@@ -29,6 +30,7 @@ Semantic Colors (4)
 ## Color Documentation Format
 
 ### Markdown Table
+
 ```markdown
 | Name | Hex | RGB | HSL | Usage |
 |------|-----|-----|-----|-------|
@@ -36,6 +38,7 @@ Semantic Colors (4)
 ```
 
 ### CSS Variables
+
 ```css
 :root {
   /* Primary */
@@ -57,6 +60,7 @@ Semantic Colors (4)
 ```
 
 ### Tailwind Config
+
 ```javascript
 colors: {
   primary: {
@@ -73,12 +77,14 @@ colors: {
 ## Accessibility Requirements
 
 ### Contrast Ratios (WCAG 2.1)
+
 | Level | Normal Text | Large Text | UI Components |
 |-------|-------------|------------|---------------|
 | AA | 4.5:1 | 3:1 | 3:1 |
 | AAA | 7:1 | 4.5:1 | 4.5:1 |
 
 ### Checking Contrast
+
 ```javascript
 // Formula for relative luminance
 function luminance(r, g, b) {
@@ -99,14 +105,18 @@ function contrastRatio(l1, l2) {
 ## Color Extraction
 
 ### From Images
+
 Use `extract-colors.cjs` script to:
+
 1. Load image file
 2. Extract dominant colors using k-means clustering
 3. Map to nearest brand colors
 4. Report compliance percentage
 
 ### From Brand Guidelines
+
 Parse markdown to extract:
+
 - Hex values from tables
 - CSS variable definitions
 - Color names and usage descriptions
@@ -114,12 +124,14 @@ Parse markdown to extract:
 ## Brand Compliance Validation
 
 ### Rules
+
 1. **Primary color ratio**: 60-70% of design
 2. **Secondary color ratio**: 20-30% of design
 3. **Accent color ratio**: 5-10% of design
 4. **Off-brand tolerance**: Max 20% non-palette colors
 
 ### Validation Output
+
 ```json
 {
   "compliance": 85,
@@ -138,12 +150,14 @@ Parse markdown to extract:
 ## Color Usage Guidelines
 
 ### Do's
+
 - Use primary for main CTAs and key elements
 - Maintain consistent hover/active states
 - Test all combinations for accessibility
 - Document color decisions
 
 ### Don'ts
+
 - Use more than 2-3 colors in single component
 - Mix warm and cool tones without intent
 - Use pure black (#000) for text (use #111 or similar)
@@ -152,6 +166,7 @@ Parse markdown to extract:
 ## Color Palette Examples
 
 ### Tech/SaaS
+
 ```
 Primary: #2563EB (Blue)
 Secondary: #8B5CF6 (Purple)
@@ -161,6 +176,7 @@ Text: #111827
 ```
 
 ### Marketing/Creative
+
 ```
 Primary: #F97316 (Orange)
 Secondary: #EC4899 (Pink)
@@ -170,6 +186,7 @@ Text: #1F2937
 ```
 
 ### Professional/Corporate
+
 ```
 Primary: #1E40AF (Navy)
 Secondary: #475569 (Slate)

@@ -23,17 +23,20 @@ Brand identity, voice, messaging, asset management, and consistency frameworks.
 ## Quick Start
 
 **Inject brand context into prompts:**
+
 ```bash
 node scripts/inject-brand-context.cjs
 node scripts/inject-brand-context.cjs --json
 ```
 
 **Validate an asset:**
+
 ```bash
 node scripts/validate-asset.cjs <asset-path>
 ```
 
 **Extract/compare colors:**
+
 ```bash
 node scripts/extract-colors.cjs --palette
 node scripts/extract-colors.cjs <image-path>
@@ -50,6 +53,7 @@ node scripts/inject-brand-context.cjs --json | head -20
 ```
 
 **Files synced:**
+
 - `docs/brand-guidelines.md` → Source of truth
 - `assets/design-tokens.json` → Token definitions
 - `assets/design-tokens.css` → CSS variables
@@ -63,7 +67,7 @@ node scripts/inject-brand-context.cjs --json | head -20
 ## References
 
 | Topic | File |
-|-------|------|
+| ------- | ------ |
 | Voice Framework | `references/voice-framework.md` |
 | Visual Identity | `references/visual-identity.md` |
 | Messaging | `references/messaging-framework.md` |
@@ -78,7 +82,7 @@ node scripts/inject-brand-context.cjs --json | head -20
 ## Scripts
 
 | Script | Purpose |
-|--------|---------|
+| -------- | --------- |
 | `scripts/inject-brand-context.cjs` | Extract brand context for prompt injection |
 | `scripts/sync-brand-to-tokens.cjs` | Sync brand-guidelines.md → design-tokens.json/css |
 | `scripts/validate-asset.cjs` | Validate asset naming, size, format |

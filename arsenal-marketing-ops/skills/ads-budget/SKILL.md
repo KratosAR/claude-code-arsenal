@@ -21,6 +21,7 @@ user-invokable: false
 ## Budget Allocation Framework
 
 ### 70/20/10 Rule
+
 - **70%** on proven channels (consistent ROAS/CPA targets met)
 - **20%** on scaling channels (showing promise, need more data)
 - **10%** on testing channels (new platforms, audiences, creatives)
@@ -28,7 +29,7 @@ user-invokable: false
 ### Platform Selection Matrix
 
 | Business Type | Primary | Secondary | Testing |
-|---------------|---------|-----------|---------|
+| --------------- | --------- | ----------- | --------- |
 | SaaS B2B | Google Search, LinkedIn | Meta, YouTube | TikTok, Microsoft |
 | E-commerce | Google Shopping, Meta | TikTok, YouTube | Microsoft, LinkedIn |
 | Local Service | Google Search, Google LSA | Meta | Microsoft, YouTube |
@@ -43,7 +44,7 @@ user-invokable: false
 ### Budget Sufficiency Rules
 
 | Platform | Minimum Daily | Learning Phase Budget |
-|----------|--------------|----------------------|
+| ---------- | -------------- | ---------------------- |
 | Google Search | $20/day | Sufficient for 15+ conv/month |
 | Google PMax | $50/day | Sufficient for algorithm optimization |
 | Meta | $20/day per ad set | ≥5x target CPA per ad set |
@@ -71,6 +72,7 @@ Start
 ```
 
 ### Meta Ads Bidding
+
 - **Lowest Cost (default)**: best for volume, may have CPA variance
 - **Cost Cap**: sets CPA ceiling, may reduce volume
 - **Bid Cap**: maximum bid per auction, most control
@@ -78,18 +80,21 @@ Start
 - **CBO vs ABO**: CBO for proven campaigns, ABO for testing
 
 ### LinkedIn Bidding
+
 - **Cost Per Send (CPS)**: for Message Ads
 - **Maximum Delivery**: for Sponsored Content (recommended)
 - **Manual CPC**: for tight budget control
 - **Target Cost**: for predictable CPA
 
 ### TikTok Bidding
+
 - **Lowest Cost**: maximize conversions within budget (volume)
 - **Cost Cap**: set maximum CPA (efficiency)
 - **Bid Cap**: maximum bid per impression
 - Budget ≥50x CPA per ad group for learning phase exit
 
 ### Microsoft Bidding
+
 - Mirror Google strategy but bid 20-35% lower
 - Enhanced CPC for manual campaigns
 - Target CPA / Target ROAS for automated
@@ -97,6 +102,7 @@ Start
 ## Scaling Assessment
 
 ### Ready to Scale (Green Light)
+
 - CPA consistently below target for 2+ weeks
 - ≥50 conversions per week (learning phase exited)
 - CTR stable or improving
@@ -104,13 +110,16 @@ Start
 - No creative fatigue signals
 
 ### 20% Rule
+
 Never increase budget by more than 20% at a time:
+
 - Week 1: $100/day → $120/day
 - Week 2: $120/day → $144/day
 - Week 3: $144/day → $173/day
 - Monitor 3-5 days after each increase for performance stability
 
 ### Scaling Methods
+
 1. **Vertical**: increase budget on winning campaigns (20% rule)
 2. **Horizontal**: duplicate winning campaigns to new audiences
 3. **Platform expansion**: add budget on new platforms
@@ -120,13 +129,15 @@ Never increase budget by more than 20% at a time:
 ## Kill List Assessment
 
 ### 3x Kill Rule
+
 - Any campaign/ad group with CPA >3x target → **flag for pause**
 - Review spend in last 14 days with no conversions → **flag for pause**
 - Creative with CTR >50% below platform benchmark → **flag for creative kill**
 
 ### Kill Decision Framework
+
 | Scenario | Data Required | Action |
-|----------|---------------|--------|
+| ---------- | --------------- | -------- |
 | CPA >3x target | ≥7 days data, ≥20 clicks | Pause immediately |
 | No conversions | ≥$100 spend or ≥50 clicks | Pause and diagnose |
 | CTR <50% of benchmark | ≥1,000 impressions | Kill creative, test new |
@@ -157,6 +168,7 @@ Budget Sufficiency:   █████░░░░░  XX/100
 ```
 
 ### Deliverables
+
 - `BUDGET-STRATEGY-REPORT.md`: Full allocation and bidding analysis
 - Current vs recommended budget split (pie chart data)
 - Bidding strategy recommendations per platform/campaign

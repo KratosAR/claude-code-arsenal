@@ -15,6 +15,7 @@
 ## Client Onboarding Checklist
 
 ### Discovery Phase (Week 1)
+
 - [ ] Business type identified (map to industry template)
 - [ ] Goals defined: brand awareness, leads, sales, app installs
 - [ ] Current advertising status: platforms, spend, performance history
@@ -26,6 +27,7 @@
 - [ ] Access granted: ad accounts, Google Analytics, CRM, product feed
 
 ### Technical Setup (Week 2)
+
 - [ ] Tracking audit: pixels, tags, conversions events verified
 - [ ] CAPI / server-side tracking configured (Meta, TikTok)
 - [ ] Enhanced Conversions enabled (Google, Microsoft)
@@ -36,6 +38,7 @@
 - [ ] Reporting dashboard configured
 
 ### Campaign Launch (Weeks 3-4)
+
 - [ ] Campaign architecture built (from industry template)
 - [ ] Ad copy written and client-approved
 - [ ] Creative assets produced or received
@@ -50,7 +53,7 @@
 Map each client to the appropriate industry template:
 
 | Client Type | Template | Key Considerations |
-|------------|----------|-------------------|
+| ------------ | ---------- | ------------------- |
 | SaaS | `saas.md` | Long sales cycle, demo/trial conversions |
 | E-commerce | `ecommerce.md` | Product feed, ROAS focus, seasonal |
 | Local Service | `local-service.md` | Call tracking, LSA, geo targeting |
@@ -65,8 +68,9 @@ Map each client to the appropriate industry template:
 ## Agency Platform Selection Matrix
 
 ### Client Budget → Platform Recommendations
+
 | Monthly Budget | Recommended Platforms | Reasoning |
-|---------------|----------------------|-----------|
+| --------------- | ---------------------- | ----------- |
 | $1,000-$3,000 | Google Search only | Focus on highest-intent channel |
 | $3,000-$5,000 | Google + Meta | Add prospecting/retargeting |
 | $5,000-$10,000 | Google + Meta + 1 secondary | Based on industry fit |
@@ -76,12 +80,14 @@ Map each client to the appropriate industry template:
 ## Reporting Framework
 
 ### Weekly Report (Internal)
+
 - Spend pacing (budget vs actual)
 - Key metric trends (CPA, ROAS, CTR, CVR)
 - Anomaly alerts (sudden performance drops)
 - Action items for the week
 
 ### Monthly Client Report
+
 - Executive summary (3-5 key takeaways)
 - KPI dashboard (target vs actual)
 - Platform-by-platform performance
@@ -90,6 +96,7 @@ Map each client to the appropriate industry template:
 - Budget allocation review
 
 ### Quarterly Business Review (QBR)
+
 - Goal progress (are we on track?)
 - MER analysis (blended efficiency)
 - Competitive landscape changes
@@ -98,8 +105,9 @@ Map each client to the appropriate industry template:
 - Next quarter strategy and goals
 
 ### Key Metrics by Client Type
+
 | Client Type | Primary KPI | Secondary KPIs |
-|------------|-------------|----------------|
+| ------------ | ------------- | ---------------- |
 | E-commerce | ROAS, MER | AOV, New Customer %, CVR |
 | SaaS | Pipeline, CPA | MQL→SQL rate, Demo bookings |
 | Lead Gen | CPL, Lead Quality | Show rate, Close rate |
@@ -109,12 +117,15 @@ Map each client to the appropriate industry template:
 ## Agency Operations
 
 ### Campaign Naming Convention (Standardized)
+
 ```
 [Client]_[Platform]_[Objective]_[Audience]_[Geo]_[Date]
 ```
+
 Example: `ACME_META_CONV_Lookalike1pct_US_2026Q1`
 
 ### QA Checklist (Before Launch)
+
 - [ ] Naming convention followed
 - [ ] Budget set correctly (daily/lifetime)
 - [ ] Targeting verified (geo, audience, exclusions)
@@ -127,8 +138,9 @@ Example: `ACME_META_CONV_Lookalike1pct_US_2026Q1`
 - [ ] Client approval documented
 
 ### Optimization Cadence
+
 | Frequency | Action |
-|-----------|--------|
+| ----------- | -------- |
 | Daily | Spend pacing check, anomaly detection |
 | 2x/week | Bid adjustments, creative performance review |
 | Weekly | Search term review, negative keyword updates |
@@ -137,12 +149,15 @@ Example: `ACME_META_CONV_Lookalike1pct_US_2026Q1`
 | Quarterly | Strategy review, platform mix evaluation, QBR |
 
 ### LinkedIn Accelerate (for B2B Clients)
+
 - Auto-optimized campaigns with 42% lower CPA and 21% lower CPL (LinkedIn benchmarks)
 - Recommend for SaaS, B2B Enterprise, Finance, and Agency clients
 - Combine with Thought Leader Ads for best results
 
 ### 3x Kill Rule (Agency Standard)
+
 Apply across all clients:
+
 - CPA >3x target for 7+ days → pause ad group/campaign
 - No conversions after $100 spend or 50 clicks → pause and diagnose
 - CTR >50% below benchmark after 1,000 impressions → kill creative
@@ -151,6 +166,7 @@ Apply across all clients:
 ## Scaling Client Accounts
 
 ### When to Scale (Green Light)
+
 - CPA consistently below target for 2+ weeks
 - Client satisfied with lead/sale quality
 - Creative pipeline can support increased volume
@@ -158,6 +174,7 @@ Apply across all clients:
 - Budget approved for increase
 
 ### 20% Rule (Applied Per Client)
+
 - Never increase budget >20% per week
 - Monitor 3-5 days after each increase
 - Document performance at each scale step

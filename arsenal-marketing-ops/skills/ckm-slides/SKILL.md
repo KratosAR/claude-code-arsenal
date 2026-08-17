@@ -29,7 +29,7 @@ Strategic HTML presentation design with data visualization.
 ## References (Knowledge Base)
 
 | Topic | File |
-|-------|------|
+| ------- | ------ |
 | Layout Patterns | `references/layout-patterns.md` |
 | HTML Template | `references/html-template.md` |
 | Copywriting Formulas | `references/copywriting-formulas.md` |

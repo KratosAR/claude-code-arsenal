@@ -5,6 +5,7 @@ Complete catalog of shadcn/ui components with usage patterns and installation.
 ## Installation
 
 **Add specific components:**
+
 ```bash
 npx shadcn@latest add button
 npx shadcn@latest add button card dialog  # Multiple
@@ -16,6 +17,7 @@ Components install to `components/ui/` with automatic dependency management.
 ## Form & Input Components
 
 ### Button
+
 ```tsx
 import { Button } from "@/components/ui/button"
 
@@ -30,6 +32,7 @@ Variants: `default | destructive | outline | secondary | ghost | link`
 Sizes: `default | sm | lg | icon`
 
 ### Input
+
 ```tsx
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -41,6 +44,7 @@ import { Label } from "@/components/ui/label"
 ```
 
 ### Form (with React Hook Form + Zod)
+
 ```tsx
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -80,6 +84,7 @@ function ProfileForm() {
 ```
 
 ### Select
+
 ```tsx
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
@@ -96,6 +101,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 ```
 
 ### Checkbox
+
 ```tsx
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
@@ -107,6 +113,7 @@ import { Label } from "@/components/ui/label"
 ```
 
 ### Radio Group
+
 ```tsx
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
@@ -124,6 +131,7 @@ import { Label } from "@/components/ui/label"
 ```
 
 ### Textarea
+
 ```tsx
 import { Textarea } from "@/components/ui/textarea"
 
@@ -131,6 +139,7 @@ import { Textarea } from "@/components/ui/textarea"
 ```
 
 ### Switch
+
 ```tsx
 import { Switch } from "@/components/ui/switch"
 import { Label } from "@/components/ui/label"
@@ -142,6 +151,7 @@ import { Label } from "@/components/ui/label"
 ```
 
 ### Date Picker
+
 ```tsx
 import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
@@ -168,6 +178,7 @@ const [date, setDate] = useState<Date>()
 ## Layout & Navigation
 
 ### Card
+
 ```tsx
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -186,6 +197,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 ```
 
 ### Tabs
+
 ```tsx
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -200,6 +212,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 ```
 
 ### Accordion
+
 ```tsx
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
@@ -220,6 +233,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 ```
 
 ### Navigation Menu
+
 ```tsx
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu"
 
@@ -239,6 +253,7 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 ## Overlays & Dialogs
 
 ### Dialog
+
 ```tsx
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 
@@ -256,6 +271,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 ```
 
 ### Drawer
+
 ```tsx
 import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer"
 
@@ -275,6 +291,7 @@ import { Drawer, DrawerClose, DrawerContent, DrawerDescription, DrawerFooter, Dr
 ```
 
 ### Popover
+
 ```tsx
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 
@@ -285,6 +302,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 ```
 
 ### Toast
+
 ```tsx
 import { useToast } from "@/hooks/use-toast"
 import { Button } from "@/components/ui/button"
@@ -302,6 +320,7 @@ const { toast } = useToast()
 ```
 
 ### Command
+
 ```tsx
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command"
 
@@ -319,6 +338,7 @@ import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, Command
 ```
 
 ### Alert Dialog
+
 ```tsx
 import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle, AlertDialogTrigger } from "@/components/ui/alert-dialog"
 
@@ -344,6 +364,7 @@ import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, 
 ## Feedback & Status
 
 ### Alert
+
 ```tsx
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 
@@ -359,6 +380,7 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 ```
 
 ### Progress
+
 ```tsx
 import { Progress } from "@/components/ui/progress"
 
@@ -366,6 +388,7 @@ import { Progress } from "@/components/ui/progress"
 ```
 
 ### Skeleton
+
 ```tsx
 import { Skeleton } from "@/components/ui/skeleton"
 
@@ -381,6 +404,7 @@ import { Skeleton } from "@/components/ui/skeleton"
 ## Display Components
 
 ### Table
+
 ```tsx
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
@@ -404,6 +428,7 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 ```
 
 ### Avatar
+
 ```tsx
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
@@ -414,6 +439,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 ```
 
 ### Badge
+
 ```tsx
 import { Badge } from "@/components/ui/badge"
 

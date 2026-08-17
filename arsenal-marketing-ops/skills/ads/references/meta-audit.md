@@ -7,7 +7,7 @@
 ## Quick Reference
 
 | Category | Weight | Check Count |
-|----------|--------|-------------|
+| ---------- | -------- | ------------- |
 | Pixel / CAPI Health | 30% | M01-M10 (10 checks) |
 | Creative (Diversity & Fatigue) | 30% | M25-M32 (8 checks) + M-CR1 through M-CR4 (4 extended) |
 | Account Structure | 20% | M11-M18 + M33-M40 (16 checks) + M-ST1, M-ST2 (2 extended) |
@@ -18,7 +18,7 @@
 ## Pixel / CAPI Health (30% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | M01 | Meta Pixel installed | Critical | Pixel firing on all pages | Firing on most pages (>90%) | Pixel not firing |
 | M02 | Conversions API (CAPI) active | Critical | Server-side events sending alongside pixel | CAPI planned but not deployed | No CAPI (30-40% data loss post-iOS 14.5) |
 | M03 | Event deduplication | Critical | event_id matching between pixel and CAPI events; ≥90% dedup rate | event_id present but <90% dedup rate | Missing event_id (double-counting) |
@@ -35,7 +35,7 @@
 ## Creative: Diversity & Fatigue (30% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | M25 | Creative format diversity | Critical | ≥3 formats active (static image, video, carousel) | 2 formats | Only 1 format used |
 | M26 | Creative volume per ad set | High | ≥5 creatives per ad set (ideal: 5-8 for Andromeda) | 3-4 creatives | <3 creatives per ad set |
 | M27 | Video aspect ratios | High | 9:16 vertical video present for Reels/Stories | Only 1:1 or 4:5 video | No video assets |
@@ -54,7 +54,7 @@
 ## Account Structure (20% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | M11 | Campaign count | High | ≤5 active campaigns per country/funnel stage | 6-8 campaigns per segment | >8 campaigns (over-fragmented) |
 | M12 | CBO vs ABO appropriateness | High | CBO for >$500/day; ABO for testing <$100/day | Mismatched but functional | CBO on <$100/day OR ABO on >$500/day |
 | M13 | Learning phase status | Critical | <30% of ad sets in "Learning Limited" | 30-50% Learning Limited | >50% ad sets "Learning Limited" |
@@ -79,7 +79,7 @@
 ## Audience & Targeting (20% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | M19 | Audience overlap | High | <20% overlap between active ad sets | 20-40% overlap | >40% overlap between ad sets |
 | M20 | Custom Audience freshness | High | Website Custom Audiences refreshed within 180 days | 180-365 days old | >365 days old or not created |
 | M21 | Lookalike source quality | Medium | Lookalike source ≥1,000 users from high-value events | 500-1,000 users | <500 users or low-value source |
@@ -100,7 +100,7 @@
 ## Quick Wins (Meta)
 
 | Check | Fix | Time |
-|-------|-----|------|
+| ------- | ----- | ------ |
 | M02: CAPI setup | Deploy via CAPI Gateway (simplified) or direct integration | 15 min (Gateway) |
 | M05: Domain verification | Verify domain in Business Manager | 5 min |
 | M09: Attribution window | Set to 7-day click / 1-day view in ad set settings | 2 min |
@@ -116,7 +116,7 @@
 If running ads in restricted categories, these ADDITIONAL checks apply:
 
 | Category | Requirement | Enforcement |
-|----------|-------------|-------------|
+| ---------- | ------------- | ------------- |
 | Housing | No ZIP code targeting, age 18-65+ only, no Lookalike | Campaign disapproval |
 | Employment | Same as Housing | Campaign disapproval |
 | Credit | Same as Housing | Campaign disapproval |

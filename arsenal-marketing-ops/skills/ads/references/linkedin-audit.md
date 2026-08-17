@@ -7,7 +7,7 @@
 ## Quick Reference
 
 | Category | Weight | Check Count |
-|----------|--------|-------------|
+| ---------- | -------- | ------------- |
 | Technical Setup | 25% | L01-L02 (2 checks) |
 | Audience Quality | 25% | L03-L09 (7 checks) |
 | Creative & Formats | 20% | L10-L13 (4 checks) |
@@ -29,7 +29,7 @@
 ## Audience Quality (25% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | L03 | Job title targeting precision | High | Specific job titles matching ICP (not just functions) | Broad function targeting only | No job title targeting |
 | L04 | Company size filtering | Medium | Company size matches ICP | Includes all sizes | N/A |
 | L05 | Seniority level targeting | High | Seniority appropriate for offer (C-suite for enterprise, Manager for mid-market) | Broad seniority targeting | Mismatched seniority level |
@@ -43,7 +43,7 @@
 ## Creative & Formats (20% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | L10 | Thought Leader Ads (TLAs) | High | TLAs active, receiving ≥30% of budget for B2B | TLAs tested but <30% budget | No TLAs (CPC $2.29-4.14 vs $13.23 standard) |
 | L11 | Ad format diversity | High | ≥2 formats tested (single image, video, document, carousel) | 1 format only | N/A |
 | L12 | Video ads present | Medium | Video ads tested | N/A | No video tested |
@@ -72,7 +72,7 @@
 ## Structure & Performance (scored across categories)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | L18 | Campaign objective alignment | High | Objective matches funnel stage | N/A | Objective mismatched to goal |
 | L19 | A/B testing active | Medium | Active A/B test on creative or audience | Test planned | No testing |
 | L20 | Frequency monitoring | High | Message frequency ≤1 per 30-45 days per user | 1 per 20-30 days | >1 per 20 days (inbox fatigue) |
@@ -87,7 +87,7 @@
 ## Quick Wins (LinkedIn)
 
 | Check | Fix | Time |
-|-------|-----|------|
+| ------- | ----- | ------ |
 | L01: Insight Tag | Install/verify Insight Tag on all pages | 10 min |
 | L10: Thought Leader Ads | Create TLA using employee organic posts | 10 min |
 | L14: Lead Gen Form fields | Reduce form to ≤5 fields | 5 min |
@@ -109,7 +109,7 @@
 ## LinkedIn-Specific Context
 
 | Fact | Value |
-|------|-------|
+| ------ | ------- |
 | Minimum audience for delivery | 500 members |
 | Recommended audience size | 50,000-300,000 |
 | Predictive Audiences seed | 300+ members |

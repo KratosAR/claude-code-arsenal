@@ -7,7 +7,7 @@
 ## Known GAQL Field Incompatibilities (API v20+)
 
 | Resource | Incompatible Field | Error | Fix |
-|----------|-------------------|-------|-----|
+| ---------- | ------------------- | ------- | ----- |
 | `search_term_view` | `campaign.status`, `ad_group.status` | INVALID_ARGUMENT | Filter status in application layer, not GAQL |
 | `search_term_view` | `search_term_view.status` | INVALID_ARGUMENT | Field deprecated/removed in v20 |
 | `asset_group_signal` | `audience_signal` | UNRECOGNIZED_FIELD | Use `resource_name` instead |
@@ -26,6 +26,7 @@
 ## Filter Scope Best Practices
 
 For active audits, filter to ENABLED resources only:
+
 - **Campaigns:** `campaign.status = 'ENABLED'` (not `!= 'REMOVED'`, which includes PAUSED)
 - **Ad groups:** ENABLED campaigns + non-removed groups
 - **Keywords:** ENABLED campaigns + non-removed groups + non-removed keywords
@@ -36,6 +37,7 @@ For active audits, filter to ENABLED resources only:
 ## Error Handling
 
 Track which data fetches failed and why. Report as a G-SYS1 diagnostic:
+
 - List all failed data sources with error messages
 - Provide per-check context on which checks were skipped due to missing data
 - Never silently skip checks; always explain why data is unavailable

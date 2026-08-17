@@ -14,7 +14,7 @@ LinkedIn, TikTok, Microsoft). Orchestrates 17 specialized sub-skills and
 ## Quick Reference
 
 | Command | What it does |
-|---------|-------------|
+| --------- | ------------- |
 | `/ads audit` | Full multi-platform audit with parallel subagent delegation |
 | `/ads google` | Google Ads deep analysis (Search, PMax, YouTube) |
 | `/ads meta` | Meta Ads deep analysis (FB, IG, Advantage+) |
@@ -51,6 +51,7 @@ If the user provides data upfront (e.g. "audit my Google Ads, I spend $5k/mo on 
 extract context from that and proceed without re-asking.
 
 Use the provided context to:
+
 - Select the correct industry benchmarks from `references/benchmarks.md`
 - Apply budget-appropriate recommendations (e.g. Smart Bidding requires 15+ conv/month)
 - Calibrate severity scoring (a $500/mo account has different priorities than $50k/mo)
@@ -58,6 +59,7 @@ Use the provided context to:
 ## Orchestration Logic
 
 When the user invokes `/ads audit`, delegate to subagents in parallel:
+
 1. **Collect context** (see Context Intake above; do this first)
 2. Collect account data (exports, screenshots, or pasted metrics)
 3. Detect business type and identify active platforms
@@ -72,6 +74,7 @@ sub-skill directly. Still collect context first if not already provided.
 ## Creative Workflow
 
 Sequential pipeline (each step is independently runnable):
+
 1. `/ads dna <url>` → `brand-profile.json` in current directory
 2. `/ads create` → reads profile + optional audit results → `campaign-brief.md`
 3. `/ads generate` → reads brief + profile → `ad-assets/` directory
@@ -84,6 +87,7 @@ instructions and exit; they never fail silently.
 ## Industry Detection
 
 Detect business type from ad account signals:
+
 - **SaaS**: trial_start/demo_request events, pricing page targeting, long attribution windows
 - **E-commerce**: purchase events, product catalog/feed, Shopping/PMax campaigns
 - **Local Service**: call extensions, location targeting, store visits, directions events
@@ -98,6 +102,7 @@ Detect business type from ad account signals:
 ## Quality Gates
 
 Hard rules (never violate these):
+
 - Never recommend Broad Match without Smart Bidding (Google)
 - 3x Kill Rule: flag any ad group/campaign with CPA >3x target for pause
 - Budget sufficiency: Meta ≥5x CPA per ad set, TikTok ≥50x CPA per ad group
@@ -152,7 +157,7 @@ Aggregate = Sum(Platform_Score x Platform_Budget_Share)
 ### Grading
 
 | Grade | Score | Action Required |
-|-------|-------|-----------------|
+| ------- | ------- | ----------------- |
 | A | 90-100 | Minor optimizations only |
 | B | 75-89 | Some improvement opportunities |
 | C | 60-74 | Notable issues need attention |
@@ -191,6 +196,7 @@ This skill orchestrates 17 specialized sub-skills:
 ## Subagents
 
 For parallel analysis during full audits:
+
 - `audit-google`: Google Ads checks (G01-G74)
 - `audit-meta`: Meta Ads checks (M01-M46)
 - `audit-creative`: Creative quality for LinkedIn, TikTok, Microsoft

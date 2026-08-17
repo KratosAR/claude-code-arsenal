@@ -20,6 +20,7 @@ user-invokable: false
 ## What to Analyze
 
 ### Creative Quality (30% weight)
+
 - ≥6 creatives per ad group (T05) [Critical]
 - All video 9:16 vertical 1080x1920 (T06) [Critical]
 - Native-looking content, not corporate/polished (T07)
@@ -34,18 +35,21 @@ user-invokable: false
 - Safe zone compliance: X:40-940, Y:150-1470 (T25)
 
 ### Technical Setup (25% weight)
+
 - TikTok Pixel installed and firing on all pages (T01)
 - Events API + ttclid passback active (T02)
 - Standard events configured (ViewContent, AddToCart, Purchase, CompleteRegistration)
 - Advanced matching parameters configured
 
 ### Bidding & Budget (20% weight)
+
 - Bid strategy matches goal: Lowest Cost for volume, Cost Cap for efficiency (T11)
 - Daily budget ≥50x target CPA per ad group (T12)
 - Learning phase: ≥50 conversions per 7 days per ad group (T13)
 - No edits during learning phase (resets learning)
 
 ### Structure & Settings (15% weight)
+
 - Separate campaigns for prospecting vs retargeting (T03)
 - Smart+ campaigns tested: 42% adoption, 1.41-1.67 ROAS (T04)
 - Search Ads Toggle enabled (T14)
@@ -53,6 +57,7 @@ user-invokable: false
 - Dayparting aligned with audience activity (T16)
 
 ### Performance (10% weight)
+
 - CTR ≥1.0% for in-feed ads (T17)
 - CPA within target, 3x Kill Rule applies (T18)
 - Average video watch time ≥6 seconds (T19)
@@ -63,6 +68,7 @@ TikTok is a creative-first platform. Unlike Google/Meta where targeting and bidd
 drive most performance, TikTok success depends primarily on creative quality.
 
 ### What Makes a TikTok Ad Work
+
 - **Native feel**: looks like organic content, not a polished ad
 - **Sound-on**: 93% of TikTok is consumed with sound (never run silent)
 - **Fast hooks**: capture attention in 1-2 seconds or lose the viewer
@@ -71,6 +77,7 @@ drive most performance, TikTok success depends primarily on creative quality.
 - **Vertical only**: 9:16 is non-negotiable (no letterboxed horizontal)
 
 ### Creative Testing Framework
+
 1. Test 3-5 hooks per winning concept
 2. Rotate creatives every 5-7 days (fatigue sets in fast)
 3. Kill underperformers after 3 days if CTR <0.5%
@@ -99,6 +106,7 @@ All critical text, logos, and CTAs must be within the safe zone:
 ## TikTok Shop Assessment
 
 If e-commerce, evaluate TikTok Shop setup:
+
 - Product catalog connected and synced
 - Product detail pages complete (images, descriptions, reviews)
 - Video Shopping Ads linking to in-app checkout
@@ -117,7 +125,7 @@ If e-commerce, evaluate TikTok Shop setup:
 ## TikTok Context
 
 | Setting | Value |
-|---------|-------|
+| --------- | ------- |
 | CPM | 40-60% cheaper than Meta |
 | Spark Ads CTR | ~3% (vs ~2% standard) |
 | Smart+ adoption | 42% of advertisers |
@@ -128,7 +136,7 @@ If e-commerce, evaluate TikTok Shop setup:
 ## Key Thresholds
 
 | Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
+| -------- | ------ | --------- | ------ |
 | CTR (in-feed) | ≥1.0% | 0.5-1.0% | <0.5% |
 | Creatives per ad group | ≥6 | 3-5 | <3 |
 | Video watch time | ≥6s | 3-6s | <3s |
@@ -151,6 +159,7 @@ Performance:       XX/100  ████████░░  (10%)
 ```
 
 ### Deliverables
+
 - `TIKTOK-ADS-REPORT.md`: Full 25-check findings with pass/warning/fail
 - Creative scorecard per ad (hook quality, safe zone, native feel)
 - Smart+ vs manual performance comparison

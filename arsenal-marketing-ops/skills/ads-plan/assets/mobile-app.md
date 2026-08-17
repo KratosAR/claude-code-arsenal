@@ -14,7 +14,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | Apple Search Ads | Primary | 25-30% | High-intent (searching App Store), iOS-specific, best CVR |
 | Google App (UAC) | Primary | 25-30% | Cross-network reach (Search, Play, YouTube, Display) |
 | Meta App Installs | Primary | 20-25% | Precise targeting, Advantage+ App Campaigns |
@@ -72,6 +72,7 @@ Account; TikTok
 ## Creative Strategy
 
 ### What Works for Mobile Apps
+
 - **App demo videos**: 15-30s showing core functionality
 - **Screen recordings**: actual app usage with finger taps/swipes
 - **UGC reactions**: users discovering the app for the first time
@@ -80,14 +81,16 @@ Account; TikTok
 - **Before/after**: life without app vs with app
 
 ### Creative by Platform
+
 | Platform | Format | Length | Notes |
-|----------|--------|--------|-------|
+| ---------- | -------- | -------- | ------- |
 | Meta | Video (9:16 + 1:1) | 15-30s | Multiple aspect ratios required |
 | Google UAC | Video + image + HTML5 | 15-30s video | Provide 20+ creative assets |
 | TikTok | Vertical video (9:16) | 15-30s | Native-looking, not polished |
 | Apple Search Ads | App Store screenshots | N/A | Custom Product Pages recommended |
 
 ### App Store Creative Alignment
+
 - Ad creative should match App Store listing (message match)
 - Custom Product Pages (Apple) for different ad campaigns
 - Custom Store Listings (Google Play) for different campaigns
@@ -96,22 +99,26 @@ Account; TikTok
 ## Targeting Strategy
 
 ### Meta
+
 - **Lookalikes**: 1% of highest-LTV users (best), subscribers, power users
 - **Interest-based**: app category interests, competitor apps
 - **Broad**: works well at scale with Advantage+ App Campaigns
 - **Exclusions**: existing app users (device-based), past installers
 
 ### Google UAC
+
 - **Targeting is automated**: Google optimizes across Search, YouTube, Play, Display
 - **Control levers**: creative assets, bid strategy, geography, language
 - **Budget**: minimum $50/day for algorithm learning
 
 ### Apple Search Ads
+
 - **Exact match**: high-intent category keywords, competitor names
 - **Broad match + Search Match**: keyword discovery
 - **Custom Product Pages**: match search intent to landing experience
 
 ### Deep Linking (Critical)
+
 - Deferred deep links: new users → install → open to specific content
 - Standard deep links: existing users → open to specific screen
 - Universal Links (iOS) and App Links (Android) configured
@@ -120,7 +127,7 @@ Account; TikTok
 ## Budget Guidelines
 
 | Metric | Mobile App Benchmark |
-|--------|---------------------|
+| -------- | --------------------- |
 | Meta CPI (iOS) | $3-$8 |
 | Meta CPI (Android) | $1-$4 |
 | Google UAC CPI | $1-$5 |
@@ -131,8 +138,9 @@ Account; TikTok
 | Min monthly budget | $5,000+ (Meta + UAC minimum viable) |
 
 ### Budget Allocation by App Type
+
 | App Type | Meta % | Google % | TikTok % | Apple % |
-|----------|--------|----------|----------|---------|
+| ---------- | -------- | ---------- | ---------- | --------- |
 | Gaming | 35% | 30% | 20% | 15% |
 | Subscription (utility) | 40% | 25% | 15% | 20% |
 | E-commerce app | 30% | 35% | 20% | 15% |
@@ -141,7 +149,7 @@ Account; TikTok
 ## Bidding Strategy Selection
 
 | Platform | Optimization Goal | Recommended Strategy |
-|----------|------------------|--------------------|
+| ---------- | ------------------ | -------------------- |
 | Meta | App installs (volume) | Lowest Cost (Advantage+ App Campaigns) |
 | Meta | In-app events | Cost Cap or ROAS Goal |
 | Google UAC | Install volume | Maximize Conversions (install) |
@@ -164,7 +172,7 @@ Account; TikTok
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | CPI | Baseline | -20% | -30% |
 | Day 1 Retention | Track | 30%+ | 35%+ |
 | Day 7 Retention | Track | 15%+ | 20%+ |

@@ -41,7 +41,7 @@ Run these in order:
 ## Common Fix Patterns
 
 | Error | Cause | Fix |
-|-------|-------|-----|
+| ------- | ------- | ----- |
 | `Unresolved reference: X` | Missing import, typo, missing dependency | Add import or dependency |
 | `Type mismatch: Required X, Found Y` | Wrong type, missing conversion | Add conversion or fix type |
 | `None of the following candidates is applicable` | Wrong overload, wrong argument types | Fix argument types or add explicit cast |
@@ -99,6 +99,7 @@ kotlin {
 ## Stop Conditions
 
 Stop and report if:
+
 - Same error persists after 3 fix attempts
 - Fix introduces more errors than it resolves
 - Error requires architectural changes beyond scope

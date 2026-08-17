@@ -13,7 +13,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | Google Search | Primary | 35-45% | High-intent keyword capture (trial, demo, pricing queries) |
 | LinkedIn | Primary | 30-40% | B2B audience targeting (job title, company, industry) |
 | Meta | Secondary | 15-25% | Retargeting, lookalikes, brand awareness |
@@ -48,6 +48,7 @@ Account
 ## Creative Strategy
 
 ### What Works for SaaS
+
 - **Product demos**: 30-60s screen recordings showing key workflows
 - **Customer testimonials**: video case studies with specific metrics (ROI, time saved)
 - **Comparison content**: side-by-side feature comparisons with competitors
@@ -55,8 +56,9 @@ Account
 - **ROI calculators**: interactive tools as lead magnets
 
 ### Creative by Funnel Stage
+
 | Stage | Format | Message |
-|-------|--------|---------|
+| ------- | -------- | --------- |
 | Awareness | Video, carousel | Industry problem → your category exists |
 | Consideration | Demo video, comparison | Why your product vs alternatives |
 | Decision | Testimonial, case study | Specific results, social proof |
@@ -65,18 +67,21 @@ Account
 ## Targeting Strategy
 
 ### Google Keywords
+
 - **Brand**: [brand name], [brand] pricing, [brand] vs [competitor]
 - **High intent**: [category] software, best [category] tool, [category] platform
 - **Competitor**: [competitor] alternative, [competitor] vs, switch from [competitor]
 - **Problem**: how to [problem your product solves], [workflow] automation
 
 ### LinkedIn Audiences
+
 - Job titles: VP/Director/Manager of [relevant function]
 - Company size: match your ICP (SMB, mid-market, enterprise)
 - Industries: your top-performing verticals
 - ABM: upload target account lists from CRM
 
 ### Exclusions (Critical)
+
 - Existing customers (CRM exclusion list)
 - Job seekers (LinkedIn: exclude "Job Seeker" interest)
 - Competitors (exclude competitor company employees)
@@ -85,7 +90,7 @@ Account
 ## Budget Guidelines
 
 | Metric | SaaS Benchmark |
-|--------|---------------|
+| -------- | --------------- |
 | Google Search CPC | $4.50-$8.00 |
 | Google Search CTR | 4.28% |
 | Google Search CVR | 1.65% |
@@ -99,7 +104,7 @@ Account
 ## Bidding Strategy Selection
 
 | Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
+| ---------- | -------------------- | -------------------- |
 | Google | <15 | Maximize Clicks (cap CPC) |
 | Google | 15-29 | Maximize Conversions |
 | Google | 30+ | Target CPA (recommended for SaaS) |
@@ -121,7 +126,7 @@ Account
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | Trial/Demo CPA | Baseline | Target +30% | Target |
 | MQL → SQL Rate | Baseline | +10% | +20% |
 | Pipeline Value | Tracking | 3x spend | 5x spend |

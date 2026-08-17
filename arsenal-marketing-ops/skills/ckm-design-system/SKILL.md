@@ -37,6 +37,7 @@ Component (component-specific)
 ```
 
 **Example:**
+
 ```css
 /* Primitive */
 --color-blue-600: #2563EB;
@@ -51,11 +52,13 @@ Component (component-specific)
 ## Quick Start
 
 **Generate tokens:**
+
 ```bash
 node scripts/generate-tokens.cjs --config tokens.json -o tokens.css
 ```
 
 **Validate usage:**
+
 ```bash
 node scripts/validate-tokens.cjs --dir src/
 ```
@@ -63,7 +66,7 @@ node scripts/validate-tokens.cjs --dir src/
 ## References
 
 | Topic | File |
-|-------|------|
+| ------- | ------ |
 | Token Architecture | `references/token-architecture.md` |
 | Primitive Tokens | `references/primitive-tokens.md` |
 | Semantic Tokens | `references/semantic-tokens.md` |
@@ -75,7 +78,7 @@ node scripts/validate-tokens.cjs --dir src/
 ## Component Spec Pattern
 
 | Property | Default | Hover | Active | Disabled |
-|----------|---------|-------|--------|----------|
+| ---------- | --------- | ------- | -------- | ---------- |
 | Background | primary | primary-dark | primary-darker | muted |
 | Text | white | white | white | muted-fg |
 | Border | none | none | none | muted-border |
@@ -84,7 +87,7 @@ node scripts/validate-tokens.cjs --dir src/
 ## Scripts
 
 | Script | Purpose |
-|--------|---------|
+| -------- | --------- |
 | `generate-tokens.cjs` | Generate CSS from JSON token config |
 | `validate-tokens.cjs` | Check for hardcoded values in code |
 | `search-slides.py` | BM25 search + contextual recommendations |
@@ -112,7 +115,7 @@ Brand-compliant presentations using design tokens + Chart.js + contextual decisi
 ### Source of Truth
 
 | File | Purpose |
-|------|---------|
+| ------ | --------- |
 | `docs/brand-guidelines.md` | Brand identity, voice, colors |
 | `assets/design-tokens.json` | Token definitions (primitive→semantic→component) |
 | `assets/design-tokens.css` | CSS variables (import in slides) |
@@ -136,7 +139,7 @@ python scripts/search-slides.py "cta" --context --position 9 --prev-emotion frus
 ### Decision System CSVs
 
 | File | Purpose |
-|------|---------|
+| ------ | --------- |
 | `data/slide-strategies.csv` | 15 deck structures + emotion arcs + sparkline beats |
 | `data/slide-layouts.csv` | 25 layouts + component variants + animations |
 | `data/slide-layout-logic.csv` | Goal → Layout + break_pattern flag |
@@ -168,6 +171,7 @@ python scripts/search-slides.py "cta" --context --position 9 --prev-emotion frus
 ### Pattern Breaking (Duarte Sparkline)
 
 Premium decks alternate between emotions for engagement:
+
 ```
 "What Is" (frustration) ↔ "What Could Be" (hope)
 ```
@@ -177,6 +181,7 @@ System calculates pattern breaks at 1/3 and 2/3 positions.
 ### Slide Requirements
 
 **ALL slides MUST:**
+
 1. Import `assets/design-tokens.css` - single source of truth
 2. Use CSS variables: `var(--color-primary)`, `var(--slide-bg)`, etc.
 3. Use Chart.js for charts (NOT CSS-only bars)
@@ -224,6 +229,7 @@ font-family: 'Space Grotesk';
 ### Reference Implementation
 
 Working example with all features:
+
 ```
 assets/designs/slides/claudekit-pitch-251223.html
 ```

@@ -172,6 +172,7 @@ Vercel OIDC federation is for **secure backend access** — letting your deploye
 **What OIDC does not do:** Authenticate the Vercel CLI in CI pipelines. All `vercel pull`, `vercel build`, and `vercel deploy` commands still require `--token=${{ secrets.VERCEL_TOKEN }}`.
 
 **When to use OIDC:**
+
 - Serverless functions that need to call AWS APIs (S3, DynamoDB, SQS)
 - Functions authenticating to GCP services via Workload Identity Federation
 - Any runtime service-to-service auth where you want to avoid storing static secrets in Vercel env vars
@@ -266,7 +267,7 @@ jobs:
 ## Global CLI Flags for CI
 
 | Flag | Purpose |
-|------|---------|
+| ------ | --------- |
 | `--token <token>` | Authenticate (required in CI) |
 | `--yes` / `-y` | Skip confirmation prompts |
 | `--scope <team>` | Execute as a specific team |
@@ -284,7 +285,7 @@ jobs:
 ## Deployment Strategy Matrix
 
 | Scenario | Strategy | Commands |
-|----------|----------|----------|
+| ---------- | ---------- | ---------- |
 | Standard team workflow | Git-push deploy | Push to main/feature branches |
 | Custom CI/CD (Actions, CircleCI) | Prebuilt deploy | `vercel build && vercel deploy --prebuilt` |
 | Monorepo with Turborepo | Affected + remote cache | `turbo run build --affected --remote-cache` |
@@ -296,7 +297,7 @@ jobs:
 ## Common Build Errors
 
 | Error | Cause | Fix |
-|-------|-------|-----|
+| ------- | ------- | ----- |
 | `ERR_PNPM_OUTDATED_LOCKFILE` | Lockfile doesn't match package.json | Run `pnpm install`, commit lockfile |
 | `NEXT_NOT_FOUND` | Root directory misconfigured | Set `rootDirectory` in Project Settings |
 | `Invalid next.config.js` | Config syntax error | Validate config locally with `next build` |

@@ -19,16 +19,19 @@ Proof Points (Why to believe)
 ## Core Statements
 
 ### Mission Statement
+
 ```
 We [action] for [audience] by [method] so they can [outcome].
 ```
 
 ### Vision Statement
+
 ```
 A world where [aspiration/change we want to see].
 ```
 
 ### Value Proposition
+
 ```
 For [target customer] who [need/problem],
 [Product/Brand] is a [category]
@@ -38,6 +41,7 @@ we [unique differentiator].
 ```
 
 ### Positioning Statement
+
 ```
 [Brand] is the [category] for [audience]
 who want [desired outcome]
@@ -47,13 +51,15 @@ because [reason to believe].
 ## Message Architecture
 
 ### Primary Message
+
 One sentence that captures your core value.
 
 ### Supporting Messages (3-5)
+
 Each addresses a different benefit or audience need.
 
 | Message | Audience Need | Proof Point |
-|---------|---------------|-------------|
+| --------- | --------------- | ------------- |
 | [Message 1] | [Need] | [Evidence] |
 | [Message 2] | [Need] | [Evidence] |
 | [Message 3] | [Need] | [Evidence] |

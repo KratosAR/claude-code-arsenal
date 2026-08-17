@@ -63,9 +63,11 @@ commentary: Never silently fail. Check banana MCP first; fall back to generate_i
 6. **Check for banana brand preset**: look for `~/.banana/presets/{brand-slug}.json`. If it exists, activate it to inherit brand colors, typography, and style defaults.
 
 7. **Construct the output path** for each asset:
+
    ```
    ./ad-assets/[platform]/[concept-slug]/[format]-[WxH]-v[N].png
    ```
+
    Example: `./ad-assets/meta/pain-point-hook/feed-1080x1350-v1.png`
 
 8. **Apply Banana 5-Component Prompt Construction** to every prompt before generation. See the section below.
@@ -110,6 +112,7 @@ Apply these rules after constructing the 5-component prompt:
 **Input brief:** SaaS pain-point hook for Meta Feed (4:5)
 
 **Constructed prompt:**
+
 ```
 [SUBJECT] #09090B dark background, #22C55E accent glow, abstract SEO dashboard silhouette
 [ACTION] anonymous rising data curve emerging from empty void
@@ -223,6 +226,7 @@ no readable words, no UI text, no data labels anywhere in image
 ## Output Summary
 
 After all generations, report to the user:
+
 ```
 Generated [N] ad assets ([N/3] briefs x 3 A/B/C variations):
   Hero: ./ad-assets/meta/concept-1/feed-1080x1350-v1.png (1080x1350) [consistency anchor]

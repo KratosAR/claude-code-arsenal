@@ -15,6 +15,7 @@
 ## Compliance Requirements
 
 ### HIPAA Marketing Rules
+
 - Never use patient data for ad targeting without explicit written authorization
 - Customer Match lists: use ONLY for exclusions, never for targeting with health data
 - Retargeting pixel data: cannot be combined with health condition data
@@ -22,8 +23,9 @@
 - Meta CAPI / Google Enhanced Conversions: ensure no PHI transmitted
 
 ### Platform-Specific Restrictions
+
 | Platform | Restriction | Certification |
-|----------|------------|---------------|
+| ---------- | ------------ | --------------- |
 | Google | Healthcare & medicines policy, LegitScript for rehab/pharmacy | LegitScript required for addiction treatment |
 | Meta | Restricted targeting for health conditions, no symptom targeting | N/A but policy-reviewed |
 | LinkedIn | Less restrictive, B2B healthcare marketing allowed | N/A |
@@ -31,6 +33,7 @@
 | Microsoft | Similar to Google, LegitScript for pharmacy | LegitScript required |
 
 ### LegitScript Certification
+
 - **Required for**: addiction treatment, online pharmacy, telehealth prescribing
 - **Process**: application, documentation review, site inspection (4-8 weeks)
 - **Cost**: $1,000-$2,000 annually
@@ -39,7 +42,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | Google Search | Primary | 50-60% | High-intent health queries, local search |
 | Meta (FB/IG) | Secondary | 20-25% | Awareness, community building, retargeting |
 | YouTube | Secondary | 10-15% | Patient education, doctor introductions, facility tours |
@@ -88,6 +91,7 @@ Account; Meta
 ## Creative Strategy
 
 ### What Works for Healthcare
+
 - **Doctor-to-camera videos**: builds trust, shows bedside manner
 - **Facility tours**: clean, modern environments reassure patients
 - **Patient testimonials**: with explicit consent, specific outcomes (within HIPAA)
@@ -96,8 +100,9 @@ Account; Meta
 - **Insurance/cost transparency**: "We accept [insurance]", "Affordable payment plans"
 
 ### Compliance-Safe Creative Guidelines
+
 | Do | Don't |
-|----|-------|
+| ---- | ------- |
 | Show facility and equipment | Guarantee specific medical outcomes |
 | Feature consenting patient testimonials | Use before/after for medical procedures (platform-specific) |
 | Educate about conditions generally | Diagnose or provide medical advice |
@@ -105,6 +110,7 @@ Account; Meta
 | Highlight board certifications | Make superiority claims without evidence |
 
 ### Ad Copy Framework
+
 - **Headline**: [Specialty/Condition] + [Location] + [Differentiator]
 - **Description**: [Benefit] + [Trust signal] + [CTA]
 - **Example**: "Board-Certified Orthopedic Surgeons in [City] | Same-Week Appointments | Call Now"
@@ -112,18 +118,21 @@ Account; Meta
 ## Targeting Strategy
 
 ### Google
+
 - **Location**: radius around practice locations (5-20 miles)
 - **Keywords**: [condition] treatment [city], [specialty] doctor near me, [procedure] cost
 - **Negative keywords**: home remedies, DIY, Wikipedia, jobs, salary, nursing school
 - **Ad schedule**: match office hours + evening research (common for health)
 
 ### Meta (Restricted Targeting)
+
 - **Cannot target**: specific health conditions, symptoms, medications
 - **Can target**: age ranges (general), geography, general wellness interests
 - **Retargeting**: website visitors, video viewers, lead form openers
 - **Lookalike/Special Ad Audiences**: based on existing patients (email list, with consent)
 
 ### Call Tracking
+
 - Dedicated tracking numbers per campaign
 - Call recording (check state consent laws; one-party vs two-party)
 - Minimum call duration for qualified lead (30+ seconds)
@@ -132,7 +141,7 @@ Account; Meta
 ## Budget Guidelines
 
 | Metric | Healthcare Benchmark |
-|--------|---------------------|
+| -------- | --------------------- |
 | Google CPC | $10-$40+ (specialty dependent) |
 | Google CTR | 4.90% |
 | Google CVR | 3.10% |
@@ -143,8 +152,9 @@ Account; Meta
 | Min monthly budget | $4,000+ (Google-first approach) |
 
 ### Budget by Practice Type
+
 | Practice Type | Monthly Budget | Notes |
-|-------------|---------------|-------|
+| ------------- | --------------- | ------- |
 | Single-provider practice | $2,000-$5,000 | Google Search focused |
 | Multi-location group | $5,000-$20,000 | Per-location campaigns |
 | Hospital system | $20,000-$100,000+ | Service line campaigns |
@@ -154,7 +164,7 @@ Account; Meta
 ## Bidding Strategy Selection
 
 | Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
+| ---------- | -------------------- | -------------------- |
 | Google | <15 | Maximize Clicks (cap CPC) |
 | Google | 15-29 | Maximize Conversions |
 | Google | 30+ | Target CPA (recommended for healthcare) |
@@ -164,7 +174,7 @@ Account; Meta
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | CPL (appointment) | Baseline | Target +20% | Target |
 | Cost per New Patient | Track | Baseline | Optimize |
 | Call Volume | Track | +20% | +40% |

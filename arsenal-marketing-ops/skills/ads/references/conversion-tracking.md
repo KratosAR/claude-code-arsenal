@@ -6,6 +6,7 @@
 ## Google Ads Conversion Tracking
 
 ### Required Stack
+
 ```
 1. Global Site Tag (gtag.js) → all pages
 2. Enhanced Conversions → hashed first-party data (email, phone, address, name)
@@ -15,6 +16,7 @@
 ```
 
 ### Enhanced Conversions
+
 - Sends SHA-256 hashed first-party data
 - Improves measurement by ~10% more measured conversions
 - Required for smart bidding accuracy in cookie-degraded environments
@@ -22,6 +24,7 @@
 - Works alongside standard conversion tracking
 
 ### Consent Mode v2
+
 ```javascript
 // Default (before consent)
 gtag('consent', 'default', {
@@ -39,12 +42,14 @@ gtag('consent', 'update', {
   'analytics_storage': 'granted'
 });
 ```
+
 - Enables conversion modeling for unconsented users
 - Advanced mode recovers 30-50% of lost conversions
 - Without implementation: 90-95% metric drops (enforcement tightened July 2025)
 - ~31% of users accept tracking cookies globally
 
 ### Attribution
+
 - **DDA (Data-Driven Attribution) is now MANDATORY default** (September 2025)
 - Only two models remain: DDA and Last Click
 - All rule-based models deprecated (first-click, linear, time decay, position-based)
@@ -52,12 +57,14 @@ gtag('consent', 'update', {
 - Windows: Click 1/3/7/30(default)/60/90 days; Engaged-view 3d; View-through 1d
 
 ### Customer Match
+
 - Requires 90 days of account history and $50,000+ lifetime spend for full access
 - Maximum membership duration: 540 days (changed April 7, 2025; previously infinite)
 - Use for RLSA, similar audiences, and Customer Match lists
 - First-party data source: CRM emails, phone numbers, addresses
 
 ### Conversion Setup Rules
+
 - Use Google Ads native tracking as PRIMARY for bidding (real-time data)
 - Import GA4 conversions for observation only
 - Never count both (double-counting)
@@ -65,6 +72,7 @@ gtag('consent', 'update', {
 - Only macro conversions as "Primary" for bidding optimization
 
 ### Duplicate Detection Accuracy
+
 - Only check **ENABLED** conversion actions for duplicates; exclude HIDDEN and REMOVED actions (they cannot cause double-counting)
 - Exclude Smart Campaign system-managed conversions (e.g., 'Smart campaign map clicks to call') from DDA and counting-type checks; their attribution model and counting type are locked by Google and cannot be changed by advertisers
 
@@ -73,6 +81,7 @@ gtag('consent', 'update', {
 ## Meta Ads Conversion Tracking
 
 ### Required Stack
+
 ```
 1. Meta Pixel → base code on all pages + standard events
 2. Conversions API (CAPI) → server-side event forwarding
@@ -81,14 +90,16 @@ gtag('consent', 'update', {
 ```
 
 ### Event Match Quality (EMQ) Scoring
+
 | Score | Rating | Action |
-|-------|--------|--------|
+| ------- | -------- | -------- |
 | <4.0 | Critical | Severe data loss; urgent fix needed |
 | 4.0-5.9 | Warning | Significant signal gaps |
 | 6.0-7.9 | Acceptable | Some optimization possible |
 | 8.0-10.0 | Excellent | Maximum signal strength |
 
 **Key parameters by impact:**
+
 - Email: +4.0 points
 - Phone: +3.0 points
 - External ID: significant
@@ -98,6 +109,7 @@ gtag('consent', 'update', {
 **87% of advertisers have poor EMQ**; fixing it improves performance 20-40%.
 
 ### Event Deduplication
+
 ```
 Same event_id + same event_name = deduplicated (correct)
 Missing event_id = potential double-counting (broken)
@@ -107,6 +119,7 @@ Target: 90%+ deduplication rate
 ```
 
 ### CAPI Performance Impact
+
 - Without CAPI: 30-40% data loss post-iOS 14.5 (pixel-only tracking is critically insufficient)
 - With CAPI: 15-20% performance increase over pixel-only
 - Bypasses ad blockers and iOS ATT limitations
@@ -114,6 +127,7 @@ Target: 90%+ deduplication rate
 - Offline Conversions API deprecated May 2025 → CAPI replaces
 
 ### Standard Events (Use These, Not Custom)
+
 ```
 Purchase, AddToCart, InitiateCheckout, AddPaymentInfo,
 Lead, CompleteRegistration, Subscribe, ViewContent,
@@ -122,6 +136,7 @@ FindLocation, Schedule, StartTrial, SubmitApplication
 ```
 
 ### Attribution
+
 - 7-day click / 1-day view (default and recommended)
 - Top 8 events configured in AEM (Aggregated Event Measurement)
 - Domain verification required in Business Manager
@@ -132,6 +147,7 @@ FindLocation, Schedule, StartTrial, SubmitApplication
 ## TikTok Ads Conversion Tracking
 
 ### Required Stack
+
 ```
 1. TikTok Pixel → base code + standard events on all pages
 2. Events API → server-side event forwarding
@@ -140,12 +156,14 @@ FindLocation, Schedule, StartTrial, SubmitApplication
 ```
 
 ### Key Difference: ttclid
+
 - TikTok Click ID (ttclid) comes in landing page URL parameters
 - MUST be captured and stored on first page load
 - MUST be sent back with all conversion events
 - Without ttclid: attribution breaks for many conversions
 
 ### Learning Phase
+
 - ~50 conversions in 7 days to exit learning
 - Budget ≥50× target CPA per ad group (provides sufficient learning room)
 
@@ -154,6 +172,7 @@ FindLocation, Schedule, StartTrial, SubmitApplication
 ## LinkedIn Ads Conversion Tracking
 
 ### Required Stack
+
 ```
 1. LinkedIn Insight Tag → all pages
 2. Conversions API (CAPI) → server-side events (launched 2025)
@@ -161,6 +180,7 @@ FindLocation, Schedule, StartTrial, SubmitApplication
 ```
 
 ### Best Practice: Track Full Funnel
+
 ```
 Stage 1: Lead (form submit, content download)
 Stage 2: MQL (marketing qualified)
@@ -168,11 +188,13 @@ Stage 3: SQL (sales qualified)
 Stage 4: Opportunity Created
 Stage 5: Deal Closed-Won
 ```
+
 - Import offline conversions within 90 days of click
 - Use for lead quality optimization (bid for SQLs not just leads)
 - Lead Gen Forms: 13% CVR (3.25× landing pages) but lower SQL rates
 
 ### Attribution
+
 - 30-day click / 7-day view window
 - Last touch model default
 
@@ -181,6 +203,7 @@ Stage 5: Deal Closed-Won
 ## Microsoft Ads Conversion Tracking
 
 ### Required Stack
+
 ```
 1. UET (Universal Event Tracking) tag → all pages
 2. Enhanced Conversions → improved matching
@@ -189,6 +212,7 @@ Stage 5: Deal Closed-Won
 ```
 
 ### Import Validation
+
 - If importing from Google: verify conversion goals transferred
 - Google-imported goals often break during import
 - Always validate conversion tracking after import
@@ -200,7 +224,7 @@ Stage 5: Deal Closed-Won
 ### Critical Checks (Run for All Platforms)
 
 | Check | Severity | Pass Criteria |
-|-------|----------|---------------|
+| ------- | ---------- | --------------- |
 | Primary conversion action exists | Critical | ≥1 active conversion per platform |
 | Server-side tracking active | Critical | CAPI/Server GTM/Events API configured |
 | Event deduplication | Critical | event_id matching (Meta), no double-counting |
@@ -213,6 +237,7 @@ Stage 5: Deal Closed-Won
 | First-party data utilization | High | Customer Match / Custom Audiences from CRM |
 
 ### Server-Side Tracking Priority
+
 ```
 IF business_type IN [ecommerce, lead_gen, saas]:
   server_side_tracking = CRITICAL

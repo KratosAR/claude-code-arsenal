@@ -286,7 +286,7 @@ new Chart(document.getElementById('revenueChart'), {
 ## CSS Variables Reference
 
 | Variable | Usage |
-|----------|-------|
+| ---------- | ------- |
 | `--color-primary` | Brand primary (CTA, highlights) |
 | `--color-background` | Slide background |
 | `--color-secondary` | Secondary elements |

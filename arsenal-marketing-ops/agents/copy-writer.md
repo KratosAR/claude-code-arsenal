@@ -41,14 +41,14 @@ commentary: Always validate character counts before writing. Never exceed limits
 
 3b. **Read** `ads/references/copy-frameworks.md` for ad copy framework templates and structures.
 
-4. **Write copy for each concept × platform combination**. Generate:
+1. **Write copy for each concept × platform combination**. Generate:
    - **5 headline variants** (ordered: most direct → most creative)
    - **3 primary text variants** (short → medium → punchy)
    - **3 CTA options** (from platform's predefined list + custom where allowed)
 
-5. **Validate every line** before writing it. Show the character count in parentheses.
+2. **Validate every line** before writing it. Show the character count in parentheses.
 
-6. **Append** `## Copy Deck` section to `campaign-brief.md`.
+3. **Append** `## Copy Deck` section to `campaign-brief.md`.
 
 ## Framework Application
 
@@ -81,29 +81,35 @@ Label each variant with its framework name in the copy deck (e.g., "[AIDA]" or "
 ## Character Limits by Platform
 
 ### Google RSA
+
 - Headlines: 30 chars max each (write 8 minimum, 15 max)
 - Descriptions: 90 chars max each (write 3 minimum)
 - Display paths: 15 chars each (2 paths)
 
 ### Meta (Facebook + Instagram)
+
 - Primary Text: 125 chars recommended (2,200 max, but truncated at 125 on mobile)
 - Headline: 40 chars max
 - Reels/Stories primary: 72 chars visible
 
 ### LinkedIn
+
 - Intro text: 150 chars recommended (600 max)
 - Headline: 70 chars recommended (200 max)
 - Description: 100 chars (desktop only)
 
 ### TikTok
+
 - Ad text: 100 chars max
 - Display name: 25 chars max
 
 ### Microsoft RSA (mirrors Google)
+
 - Headlines: 30 chars max, 3-15 per ad
 - Descriptions: 90 chars max, 2-4 per ad
 
 ### YouTube
+
 - Video title: 100 chars max
 - Video description: 5,000 chars max (only ~157 shown before "Show more")
 - CTA button text: 10 chars max
@@ -168,6 +174,7 @@ Path 2: [path]
 ## When brand-profile.json Has No Voice Data
 
 If `voice` fields are null or missing, default to:
+
 - Moderate formality (6/10)
 - Direct and confident tone
 - Action-oriented CTAs

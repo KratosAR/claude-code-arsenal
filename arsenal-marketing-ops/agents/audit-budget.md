@@ -48,8 +48,9 @@ When given ad account data:
 ## Check Assignment (24 Checks)
 
 ### LinkedIn Audience & Budget (9 checks)
+
 | ID | Check | Severity |
-|----|-------|----------|
+| ---- | ------- | ---------- |
 | L03 | Job title targeting precision (specific titles, not just functions) | High |
 | L04 | Company size filtering matches ICP | Medium |
 | L05 | Seniority level appropriate for offer | High |
@@ -61,8 +62,9 @@ When given ad account data:
 | L17 | Daily budget ≥$50 for Sponsored Content | High |
 
 ### TikTok Bidding & Structure (8 checks)
+
 | ID | Check | Severity |
-|----|-------|----------|
+| ---- | ------- | ---------- |
 | T03 | Separate campaigns for prospecting vs retargeting | High |
 | T04 | Smart+ campaigns tested (42% adoption, 1.41-1.67 ROAS) | Medium |
 | T11 | Bid strategy matches goal (Lowest Cost for volume, Cost Cap for efficiency) | High |
@@ -73,8 +75,9 @@ When given ad account data:
 | T16 | Dayparting aligned with audience activity | Low |
 
 ### Microsoft Syndication & Structure (7 checks)
+
 | ID | Check | Severity |
-|----|-------|----------|
+| ---- | ------- | ---------- |
 | MS04 | Search partner network reviewed, low-performers excluded | High |
 | MS05 | Audience Network enabled only if testing intentionally | Medium |
 | MS06 | Bid targets 20-35% lower than Google (CPC advantage) | High |
@@ -86,7 +89,7 @@ When given ad account data:
 ## Budget Sufficiency Rules
 
 | Platform | Minimum Daily Budget | Learning Phase Requirement |
-|----------|---------------------|--------------------------|
+| ---------- | --------------------- | -------------------------- |
 | LinkedIn | $50/day Sponsored Content | Sufficient for 15+ conversions/month |
 | TikTok | $50/day campaign, $20/day ad group | ≥50 conversions per 7 days |
 | Microsoft | No strict minimum | Sufficient for stable delivery |
@@ -94,6 +97,7 @@ When given ad account data:
 ## Cross-Platform Budget Assessment
 
 After evaluating individual checks, assess:
+
 - Total ad spend allocation across platforms vs. recommended split
 - Read `ads/references/budget-allocation.md` for platform selection matrix
 - Apply 70/20/10 rule: 70% proven channels, 20% scaling, 10% testing
@@ -103,6 +107,7 @@ After evaluating individual checks, assess:
 ## Output Format
 
 Write results to `budget-audit-results.md` with:
+
 - Budget & Bidding Score per platform
 - Per-check results table
 - Cross-platform budget allocation assessment

@@ -14,7 +14,7 @@ safe zone diagrams, copy limits, and prompt modifiers for each placement type.
 ## Image Specs by Placement
 
 | Placement | Ratio | Dimensions | Priority |
-|-----------|-------|-----------|----------|
+| ----------- | ------- | ----------- | ---------- |
 | Feed (preferred) | 4:5 | 1080×1350 | **Primary target** |
 | Feed (square) | 1:1 | 1080×1080 | High |
 | Stories | 9:16 | 1080×1920 | High |
@@ -51,6 +51,7 @@ Always generate this first. Generate 9:16 for Stories/Reels campaigns.
 in the center 1080×1300px zone.
 
 **Generation instruction for 9:16 prompts:**
+
 - Subject and key visual elements in top 60% of frame
 - Bottom 450px should be background only (solid color or soft gradient)
 - Vertical composition only; horizontal crops are rejected at upload
@@ -60,6 +61,7 @@ in the center 1080×1300px zone.
 ## Safe Zone: Feed (1080×1350, 4:5)
 
 No hard safe zone required. The full frame is visible. However:
+
 - Bottom 120px may be covered by the like/comment bar on mobile
 - Keep primary subject in upper 80% of frame
 
@@ -68,7 +70,7 @@ No hard safe zone required. The full frame is visible. However:
 ## Copy Limits
 
 | Component | Recommended | Platform Max |
-|-----------|------------|-------------|
+| ----------- | ------------ | ------------- |
 | Primary Text | 40-125 chars | 2,200 |
 | Headline | 27-40 chars | N/A |
 | Description | 20 chars (carousel) | N/A |
@@ -93,6 +95,7 @@ gets truncated with "See More" on mobile; the critical message must land in 125.
 ## Advantage+ Creative
 
 When Advantage+ Creative enhancements are enabled, Meta may:
+
 - Crop the image to different aspect ratios
 - Adjust brightness/contrast
 - Add music to static images
@@ -106,7 +109,7 @@ When Advantage+ Creative enhancements are enabled, Meta may:
 ## Video Specs (for storyboard reference)
 
 | Placement | Ratio | Resolution | Duration |
-|-----------|-------|-----------|----------|
+| ----------- | ------- | ----------- | ---------- |
 | Feed | 4:5 | 1080×1350 | Up to 241 min |
 | Reels | 9:16 | 1080×1920 | ≤90s (rec 15-30s) |
 | Stories | 9:16 | 1080×1920 | ≤120s |
@@ -117,18 +120,21 @@ When Advantage+ Creative enhancements are enabled, Meta may:
 ## Image Generation Prompt Modifiers
 
 **For Feed (4:5 and 1:1):**
+
 - `"vertical composition"` or `"square composition"`
 - `"subject fills upper portion of frame"`
 - `"clean, scroll-stopping visual"`
 - `"no text overlay"` (text added via ad copy fields)
 
 **For Stories/Reels (9:16):**
+
 - `"vertical composition, subject in top 60% of frame"`
 - `"bottom third is clear background or soft gradient"`
 - `"bold, high-contrast visual"`
 - `"mobile-first, designed for small screen viewing"`
 
 **Always avoid:**
+
 - Cluttered backgrounds (compete with feed content)
 - Low contrast (thumb-stop requires visual pop)
 - Faces cropped at edges (Instagram crops aggressively on some placements)

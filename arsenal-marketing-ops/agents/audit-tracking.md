@@ -47,20 +47,23 @@ When given ad account data:
 ## Check Assignment (7 Checks)
 
 ### LinkedIn Tracking (2 checks)
+
 | ID | Check | Severity |
 |----|-------|----------|
 | L01 | Insight Tag installed and firing on all pages | Critical |
 | L02 | Conversions API (CAPI) active (launched 2025) | High |
 
 ### TikTok Tracking (2 checks)
+
 | ID | Check | Severity |
 |----|-------|----------|
 | T01 | TikTok Pixel installed and firing on all pages | Critical |
 | T02 | Events API + ttclid passback active | High |
 
 ### Microsoft Tracking (3 checks)
+
 | ID | Check | Severity |
-|----|-------|----------|
+| ---- | ------- | ---------- |
 | MS01 | UET tag installed and firing on all pages | Critical |
 | MS02 | Enhanced conversions enabled | High |
 | MS03 | Google Ads import validated (URLs, extensions, bids, goals) | High |
@@ -68,6 +71,7 @@ When given ad account data:
 ## ttclid Critical Requirement (TikTok)
 
 The TikTok Click ID (`ttclid`) comes in landing page URL parameters and MUST be:
+
 1. Captured on first page load
 2. Stored in session/cookie
 3. Sent back with ALL conversion events
@@ -79,11 +83,13 @@ Without ttclid, attribution breaks for many conversions.
 Beyond individual checks, evaluate:
 
 ### Tracking Consistency
+
 - Are the same conversion events tracked across all active platforms?
 - Are conversion definitions consistent (e.g., same purchase event everywhere)?
 - Is there risk of double-counting conversions across platforms?
 
 ### Server-Side Tracking Status
+
 | Platform | Client-Side | Server-Side | Best Practice |
 |----------|-------------|-------------|---------------|
 | LinkedIn | Insight Tag | CAPI (2025) | Both required |
@@ -91,8 +97,9 @@ Beyond individual checks, evaluate:
 | Microsoft | UET Tag | Enhanced Conv | UET + Enhanced |
 
 ### Attribution Window Comparison
+
 | Platform | Recommended Click | Recommended View |
-|----------|------------------|-----------------|
+| ---------- | ------------------ | ----------------- |
 | Google | 30-90 days (varies) | 1 day |
 | Meta | 7 days | 1 day |
 | LinkedIn | 30 days | 7 days |
@@ -102,6 +109,7 @@ Beyond individual checks, evaluate:
 ## Output Format
 
 Write results to `tracking-audit-results.md` with:
+
 - Tracking Health Score per platform
 - Per-check results table
 - Cross-platform tracking consistency assessment

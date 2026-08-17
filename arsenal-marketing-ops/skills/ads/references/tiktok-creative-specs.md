@@ -57,7 +57,7 @@ the safe box. Anything outside this zone will be hidden behind UI overlays.
 ## Content Area Guidelines
 
 | Zone | Y Range | X Range | Action |
-|------|---------|---------|--------|
+| ------ | --------- | --------- | -------- |
 | Status bar | 0-150 | full | Keep clear |
 | Right side icons | 150-1470 | 940-1080 | Keep clear |
 | Caption/CTA bar | 1470-1920 | full | Keep clear |
@@ -71,7 +71,7 @@ upper 60% of the safe zone (Y:150-900). This ensures visibility even on smaller 
 ## Copy Limits
 
 | Component | Max | Notes |
-|-----------|-----|-------|
+| ----------- | ----- | ------- |
 | Ad text | 100 chars | Appears below video |
 | Display name | 25 chars | Brand name shown |
 | CTA button | Predefined list | Auto-placed in safe zone |
@@ -81,17 +81,20 @@ upper 60% of the safe zone (Y:150-900). This ensures visibility even on smaller 
 ## Ad Format Types
 
 ### In-Feed Ads (Non-Spark)
+
 - Appears in For You Page (FYP) between organic videos
 - Duration: 5-60 seconds (rec 9-15s for highest completion)
 - Must have audio; silent video severely underperforms
 - Generate: static thumbnail at 1080×1920 within safe zone
 
 ### Spark Ads
+
 - Promotes existing organic TikTok posts
 - Use organic video content; generate only the **thumbnail frame**
 - Thumbnail: 1080×1920, subject centered in safe zone
 
 ### TopView
+
 - First ad seen when app opens (premium placement)
 - Specs: 720×1280 minimum (1080×1920 recommended), 5-60s
 - Higher production quality expected
@@ -101,12 +104,14 @@ upper 60% of the safe zone (Y:150-900). This ensures visibility even on smaller 
 ## Generation Constraints
 
 **Always include in prompts:**
+
 - `"vertical composition, 9:16 aspect ratio"`
 - `"subject centered in upper portion of frame"`
 - `"bottom third is clear or minimal background"` (caption overlay area)
 - `"bold, eye-catching visual designed for mobile fullscreen"`
 
 **Forbidden in prompts:**
+
 - `"horizontal"`, `"landscape"`, `"widescreen"`; will generate wrong orientation
 - `"text in bottom third"`: will be covered by caption UI
 - `"logo in bottom corner"`: will be covered by TikTok navigation
@@ -119,6 +124,7 @@ specify `"text in upper center of frame, within 900px wide safe zone"`.
 ## Sound-On Platform Rule
 
 **Never run silent video on TikTok.** Audio is expected.
+
 - All video assets must have audio track
 - For static image ads: no audio required, but platform may add music
 - For generation: this constraint applies to video, not static image generation
@@ -134,6 +140,7 @@ TikTok has one option: **1080×1920 (9:16)**. No alternatives.
 ## Smart+ Specs
 
 Smart+ campaigns auto-generate creative variations:
+
 - Up to 50 creatives per asset group
 - Symphony AI generates variations from your base asset
 - Generate 1 high-quality base image; Smart+ handles variations

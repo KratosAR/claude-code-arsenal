@@ -12,6 +12,7 @@ guidance. Use alongside `copy-frameworks.md` for ad copy structure.
 ## Product Launch
 
 **Creative assets needed:**
+
 - Hero product shot (white background, studio lighting)
 - Lifestyle image (product in real-world context)
 - Carousel showcasing 3 to 5 key features
@@ -28,6 +29,7 @@ guidance. Use alongside `copy-frameworks.md` for ad copy structure.
 ## Sale / Promotion
 
 **Creative assets needed:**
+
 - Bold sale banner with discount percentage
 - Before/after price comparison graphic
 - Countdown timer overlay for urgency
@@ -44,6 +46,7 @@ guidance. Use alongside `copy-frameworks.md` for ad copy structure.
 ## Seasonal
 
 **Creative assets needed:**
+
 - Themed hero image (holiday, back-to-school, summer, etc.)
 - Gift guide carousel (5 to 8 products per guide)
 - Lifestyle video showing seasonal product use (15 seconds)
@@ -60,6 +63,7 @@ guidance. Use alongside `copy-frameworks.md` for ad copy structure.
 ## Retargeting
 
 **Creative assets needed:**
+
 - Dynamic product ad (auto-populated from catalog)
 - Cart abandonment reminder with product image
 - Customer review spotlight (star rating overlay)
@@ -76,6 +80,7 @@ guidance. Use alongside `copy-frameworks.md` for ad copy structure.
 ## Brand Awareness
 
 **Creative assets needed:**
+
 - Brand story video (30 to 60 seconds, cinematic quality)
 - Founder or team behind-the-scenes footage
 - Value proposition infographic
@@ -92,21 +97,25 @@ guidance. Use alongside `copy-frameworks.md` for ad copy structure.
 ## Platform-Specific Creative Rules
 
 **Meta:**
+
 - Text overlay must cover less than 20% of image area for best delivery
 - Primary text truncates after 125 characters on mobile; front-load the hook
 - Reels outperform static images for awareness campaigns (2 to 3x reach)
 
 **Google:**
+
 - Shopping images require white or neutral background, no overlays or watermarks
 - RSA headlines: 30 chars max; descriptions: 90 chars max; pin sparingly
 - Performance Max asset groups need at least 5 images, 1 video, 5 headlines
 
 **TikTok:**
+
 - First 3 seconds determine watch-through rate; start with a hook, not a logo
 - Vertical 9:16 only; repurposed landscape content underperforms by 40 to 60%
 - Native, lo-fi aesthetics outperform polished studio ads
 
 **LinkedIn:**
+
 - Single image ads: 1.91:1 ratio for sponsored content
 - Carousel cards: 1:1 ratio, up to 10 cards
 - Professional tone; avoid aggressive sales language or emoji-heavy copy

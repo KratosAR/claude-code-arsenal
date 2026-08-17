@@ -13,7 +13,7 @@ Use [scripts/ws_listener.py](../scripts/ws_listener.py) to connect and dump even
 ### Event Channels
 
 | Channel | Source | Content |
-|---------|--------|---------|
+| --------- | -------- | --------- |
 | `capture_session` | Session lifecycle | Status changes |
 | `transcript` | `start_transcript()` | Speech-to-text |
 | `visual_index` / `scene_index` | `index_visuals()` | Visual analysis |
@@ -23,7 +23,7 @@ Use [scripts/ws_listener.py](../scripts/ws_listener.py) to connect and dump even
 ### Session Lifecycle Events
 
 | Event | Status | Key Data |
-|-------|--------|----------|
+| ------- | -------- | ---------- |
 | `capture_session.created` | `created` | — |
 | `capture_session.starting` | `starting` | — |
 | `capture_session.active` | `active` | `rtstreams[]` |
@@ -35,6 +35,7 @@ Use [scripts/ws_listener.py](../scripts/ws_listener.py) to connect and dump even
 ### Event Structures
 
 **Transcript event:**
+
 ```json
 {
   "channel": "transcript",
@@ -50,6 +51,7 @@ Use [scripts/ws_listener.py](../scripts/ws_listener.py) to connect and dump even
 ```
 
 **Visual index event:**
+
 ```json
 {
   "channel": "visual_index",
@@ -64,6 +66,7 @@ Use [scripts/ws_listener.py](../scripts/ws_listener.py) to connect and dump even
 ```
 
 **Audio index event:**
+
 ```json
 {
   "channel": "audio_index",
@@ -78,6 +81,7 @@ Use [scripts/ws_listener.py](../scripts/ws_listener.py) to connect and dump even
 ```
 
 **Session active event:**
+
 ```json
 {
   "event": "capture_session.active",
@@ -94,6 +98,7 @@ Use [scripts/ws_listener.py](../scripts/ws_listener.py) to connect and dump even
 ```
 
 **Session exported event:**
+
 ```json
 {
   "event": "capture_session.exported",
@@ -136,11 +141,13 @@ VIDEODB_EVENTS_DIR=/path/to/output python scripts/ws_listener.py --clear &
 The script outputs `WS_ID=<connection_id>` on the first line, then listens indefinitely.
 
 **Get the ws_id:**
+
 ```bash
 cat "${VIDEODB_EVENTS_DIR:-$HOME/.local/state/videodb}/videodb_ws_id"
 ```
 
 **Stop the listener:**
+
 ```bash
 kill "$(cat "${VIDEODB_EVENTS_DIR:-$HOME/.local/state/videodb}/videodb_ws_pid")"
 ```
@@ -153,11 +160,13 @@ kill "$(cat "${VIDEODB_EVENTS_DIR:-$HOME/.local/state/videodb}/videodb_ws_pid")"
 | RTStream methods | See [rtstream-reference.md](rtstream-reference.md) |
 
 **Output files** (in output directory, default `${XDG_STATE_HOME:-$HOME/.local/state}/videodb`):
+
 - `videodb_ws_id` - WebSocket connection ID
 - `videodb_events.jsonl` - All events
 - `videodb_ws_pid` - Process ID for easy termination
 
 **Features:**
+
 - `--clear` flag to clear events file on start (use for new sessions)
 - Auto-reconnect with exponential backoff on connection drops
 - Graceful shutdown on SIGINT/SIGTERM
@@ -223,7 +232,7 @@ ws_id = ws.connection_id
 ### Connection Methods
 
 | Method | Returns | Description |
-|--------|---------|-------------|
+| -------- | --------- | ------------- |
 | `conn.create_capture_session(end_user_id, collection_id, ws_connection_id, metadata)` | `CaptureSession` | Create a new capture session |
 | `conn.get_capture_session(capture_session_id)` | `CaptureSession` | Retrieve an existing capture session |
 | `conn.generate_client_token()` | `str` | Generate a client-side authentication token |
@@ -279,7 +288,7 @@ client = CaptureClient(client_token=token)
 ### CaptureClient Methods
 
 | Method | Returns | Description |
-|--------|---------|-------------|
+| -------- | --------- | ------------- |
 | `await client.request_permission(type)` | `None` | Request device permission (`"microphone"`, `"screen_capture"`) |
 | `await client.list_channels()` | `Channels` | Discover available audio/video channels |
 | `await client.start_capture_session(capture_session_id, channels, primary_video_channel_id)` | `None` | Start streaming selected channels |
@@ -330,7 +339,7 @@ system_audio = channels.system_audio.default
 ### Channel Groups
 
 | Property | Type | Description |
-|----------|------|-------------|
+| ---------- | ------ | ------------- |
 | `channels.mics` | `ChannelGroup` | Available microphones |
 | `channels.displays` | `ChannelGroup` | Available screen displays |
 | `channels.system_audio` | `ChannelGroup` | Available system audio sources |
@@ -345,7 +354,7 @@ system_audio = channels.system_audio.default
 ### Channel Properties
 
 | Property | Type | Description |
-|----------|------|-------------|
+| ---------- | ------ | ------------- |
 | `ch.id` | `str` | Unique channel ID |
 | `ch.type` | `str` | Channel type (`"mic"`, `"display"`, `"system_audio"`) |
 | `ch.name` | `str` | Human-readable channel name |

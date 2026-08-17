@@ -9,7 +9,7 @@ Activate the `design` skill and specify slides task, e.g. "create a pitch deck".
 ## Knowledge Base
 
 | Topic | File | Purpose |
-|-------|------|---------|
+| ------- | ------ | --------- |
 | Creation Guide | `references/slides-create.md` | Step-by-step slide creation workflow |
 | Layout Patterns | `references/slides-layout-patterns.md` | Slide layout templates and grid systems |
 | HTML Template | `references/slides-html-template.md` | Base HTML structure for presentations |

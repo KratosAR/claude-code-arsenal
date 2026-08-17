@@ -2,5 +2,12 @@
   "default": true,
   "MD013": false,
   "MD033": false,
-  "MD041": false
+  "MD041": false,
+  "MD040": false,
+  "MD060": false,
+  "MD024": false,
+  "MD036": false,
+  "MD055": false,
+  "MD056": false,
+  "_comment": "MD040/MD060/MD024/MD036/MD055/MD056 disabled: 169 skills come from many source authors with different conventions (illustrative code fences without a language tag, tables built by hand, repeated section headings like 'Setup' across independent skills). Purely cosmetic for this repo; not worth normalizing hundreds of imported files."
 }

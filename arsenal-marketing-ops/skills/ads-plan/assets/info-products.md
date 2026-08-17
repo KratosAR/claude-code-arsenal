@@ -14,7 +14,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | Meta (FB/IG) | Primary | 35-40% | Precise interest targeting, video-heavy, retargeting |
 | YouTube | Primary | 35-40% | Long-form content, VSL pre-rolls, intent-based audiences |
 | Email | Supporting | 15-20% | Nurture sequences, launch campaigns, repeat buyers |
@@ -62,6 +62,7 @@ Account; YouTube
 ## Creative Strategy
 
 ### What Works for Info Products
+
 - **Founder-to-camera video**: authentic, personal, story-driven
 - **Student testimonials**: specific results with numbers ("made $10K in 30 days")
 - **Free value content**: teach something valuable, then pitch the course
@@ -71,8 +72,9 @@ Account; YouTube
 - **UGC-style**: casual, phone-recorded testimonials (TikTok/Reels)
 
 ### Funnel-Specific Creative
+
 | Funnel Stage | Creative Type | CTA |
-|-------------|--------------|-----|
+| ------------- | -------------- | ----- |
 | Lead magnet | Free guide/checklist ad | "Download Free" |
 | Webinar | Founder video, value preview | "Save My Spot" |
 | VSL/Sales page | Problem-agitation-solution video | "Watch Free Training" |
@@ -81,6 +83,7 @@ Account; YouTube
 | High-ticket ($1K+) | Case study, founder credibility | "Apply Now" |
 
 ### Video Ad Structure (Meta/YouTube)
+
 1. **Hook** (0-3s): pattern interrupt, bold claim, or question
 2. **Problem** (3-15s): agitate the pain point
 3. **Solution** (15-45s): introduce your framework/method
@@ -90,6 +93,7 @@ Account; YouTube
 ## Targeting Strategy
 
 ### Meta
+
 - **Interests**: Tony Robbins, Gary Vee, Marie Forleo (or niche equivalents)
 - **Behaviors**: engaged shoppers, recent online course purchasers
 - **Lookalikes**: 1% of purchasers (best), 1% of email list, 1% of webinar attendees
@@ -97,6 +101,7 @@ Account; YouTube
 - **Exclusions**: existing purchasers of the same product, email unsubscribes
 
 ### YouTube
+
 - **Custom intent**: search terms for your topic ("learn [skill]", "[topic] course")
 - **Competitor channels**: target viewers of competitor YouTube channels
 - **In-market**: education, online courses
@@ -104,6 +109,7 @@ Account; YouTube
 - **Placements**: specific high-traffic videos in your niche
 
 ### Email List Integration (Critical)
+
 - Upload customer lists monthly for exclusions and lookalikes
 - Segment by: purchasers, webinar attendees, email opens, lead magnet downloads
 - Dynamic retargeting based on funnel stage
@@ -111,7 +117,7 @@ Account; YouTube
 ## Budget Guidelines
 
 | Metric | Info Products Benchmark |
-|--------|----------------------|
+| -------- | ---------------------- |
 | Meta CPC | $0.50-$2.00 |
 | Meta CPL (lead magnet) | $2-$8 |
 | Meta CPA (tripwire $7-$27) | $5-$15 |
@@ -123,8 +129,9 @@ Account; YouTube
 | Min monthly budget | $2,000+ (Meta-first approach) |
 
 ### Budget by Funnel Type
+
 | Funnel Type | Cold Traffic % | Retargeting % | Buyer % |
-|------------|---------------|---------------|---------|
+| ------------ | --------------- | --------------- | --------- |
 | Lead magnet → email nurture | 60% | 30% | 10% |
 | Webinar funnel | 50% | 35% | 15% |
 | Direct-to-offer (low ticket) | 70% | 20% | 10% |
@@ -133,7 +140,7 @@ Account; YouTube
 ## Bidding Strategy Selection
 
 | Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
+| ---------- | -------------------- | -------------------- |
 | Meta | Default | Lowest Cost (volume during launch) |
 | Meta | Efficiency priority | Cost Cap at target CPA |
 | Meta | Revenue tracking | ROAS Goal (3-5x blended target) |
@@ -147,7 +154,7 @@ Account; YouTube
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | CPL (lead magnet) | <$8 | <$5 | <$4 |
 | Webinar registration CPA | <$15 | <$10 | <$8 |
 | Front-end ROAS | 1.0 (break even) | 1.5 | 2.0+ |

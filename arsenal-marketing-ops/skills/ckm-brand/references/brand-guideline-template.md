@@ -50,8 +50,9 @@ Use this template to create comprehensive brand guidelines for any project.
 ```
 
 ### Type Scale
+
 | Element | Font | Weight | Size (Desktop/Mobile) | Line Height |
-|---------|------|--------|----------------------|-------------|
+| --------- | ------ | -------- | ---------------------- | ------------- |
 | H1 | {font} | 700 | 48px / 32px | 1.2 |
 | H2 | {font} | 600 | 36px / 28px | 1.25 |
 | H3 | {font} | 600 | 28px / 24px | 1.3 |
@@ -63,19 +64,23 @@ Use this template to create comprehensive brand guidelines for any project.
 ## 3. Logo Usage
 
 ### Variants
+
 - **Primary:** Full horizontal logo with wordmark
 - **Stacked:** Vertical arrangement for square spaces
 - **Icon:** Symbol only for favicons, app icons
 - **Monochrome:** Single color for limited palettes
 
 ### Clear Space
+
 Minimum clear space = height of logo mark
 
 ### Minimum Size
+
 - Digital: 80px width minimum
 - Print: 25mm width minimum
 
 ### Don'ts
+
 - Don't rotate or skew
 - Don't change colors outside approved palette
 - Don't add effects (shadows, gradients)
@@ -85,43 +90,51 @@ Minimum clear space = height of logo mark
 ## 4. Voice & Tone
 
 ### Brand Personality
+
 {Trait 1}: {Description}
 {Trait 2}: {Description}
 {Trait 3}: {Description}
 
 ### Voice Chart
+
 | Trait | We Are | We Are Not |
 |-------|--------|------------|
 | {Trait} | {Description} | {Anti-description} |
 
 ### Tone by Context
+
 | Context | Tone | Example |
-|---------|------|---------|
+| --------- | ------ | --------- |
 | Marketing | {tone} | "{example}" |
 | Support | {tone} | "{example}" |
 | Error Messages | {tone} | "{example}" |
 | Success | {tone} | "{example}" |
 
 ### Prohibited Terms
+
 - {term 1} (reason)
 - {term 2} (reason)
 
 ## 5. Imagery Guidelines
 
 ### Photography Style
+
 - {Lighting preference}
 - {Subject guidelines}
 - {Color treatment}
 
 ### Illustrations
+
 - Style: {description}
 - Colors: Brand palette only
 - Stroke: {weight}px
 
 ### Icons
+
 - Style: {outlined/filled/duotone}
 - Size: 24px base grid
 - Corner radius: {value}px
+
 ```
 
 ## Usage

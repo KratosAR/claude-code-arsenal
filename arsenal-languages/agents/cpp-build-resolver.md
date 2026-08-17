@@ -41,7 +41,7 @@ cppcheck --enable=all src/ 2>/dev/null || echo "cppcheck not available"
 ## Common Fix Patterns
 
 | Error | Cause | Fix |
-|-------|-------|-----|
+| ------- | ------- | ----- |
 | `undefined reference to X` | Missing implementation or library | Add source file or link library |
 | `no matching function for call` | Wrong argument types | Fix types or add overload |
 | `expected ';'` | Syntax error | Fix syntax |
@@ -72,6 +72,7 @@ cmake --build build --clean-first
 ## Stop Conditions
 
 Stop and report if:
+
 - Same error persists after 3 fix attempts
 - Fix introduces more errors than it resolves
 - Error requires architectural changes beyond scope

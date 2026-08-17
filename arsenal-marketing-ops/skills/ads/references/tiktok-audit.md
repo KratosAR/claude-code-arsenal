@@ -7,7 +7,7 @@
 ## Quick Reference
 
 | Category | Weight | Check Count |
-|----------|--------|-------------|
+| ---------- | -------- | ------------- |
 | Creative Quality | 30% | T05-T10 + T20-T25 (12 checks) |
 | Technical Setup | 25% | T01-T02 (2 checks) |
 | Bidding & Learning | 20% | T11-T13 (3 checks) |
@@ -19,7 +19,7 @@
 ## Creative Quality (30% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | T05 | Creative volume | Critical | ≥6 creative assets per ad group | 3-5 creatives | <3 creatives per ad group |
 | T06 | Vertical video format | Critical | All video assets 9:16 (1080x1920) | Mixed ratios with some vertical | No vertical video (landscape only) |
 | T07 | Native-looking content | High | Ads look organic / creator-style (not polished corporate) | Semi-native style | Clearly corporate/polished ads |
@@ -43,7 +43,9 @@
 | T02 | Events API + ttclid | High | Server-side events via Events API with ttclid passback | Events API active but no ttclid passback | No server-side tracking |
 
 ### ttclid Critical Note
+
 The TikTok Click ID (`ttclid`) comes in landing page URL parameters and MUST be:
+
 1. Captured on first page load
 2. Stored in session/cookie
 3. Sent back with ALL conversion events
@@ -55,12 +57,13 @@ Without ttclid, attribution breaks for many conversions. This is TikTok's key te
 ## Bidding & Learning (20% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | T11 | Bid strategy | High | Lowest Cost for volume; Cost Cap for efficiency | N/A | Bid Cap set too aggressively (severe under-delivery) |
 | T12 | Budget sufficiency | High | Daily budget ≥50x target CPA per ad group | 20-49x CPA | <20x CPA per ad group |
 | T13 | Learning phase | High | Ad groups achieving ≥50 conversions/week | 25-50 conversions/week | <25 conversions/week (stuck in learning) |
 
 ### Learning Phase Rules
+
 - Exit criteria: ~50 conversions in 7 days per ad group
 - Campaign minimum budget: $50/day
 - Ad group minimum budget: $20/day
@@ -72,7 +75,7 @@ Without ttclid, attribution breaks for many conversions. This is TikTok's key te
 ## Structure & Settings (15% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | T03 | Campaign structure | High | Separate campaigns for prospecting vs retargeting | N/A | Prospecting and retargeting mixed |
 | T04 | Smart+ utilization | Medium | Smart+ campaigns tested with modular automation (per-module: targeting, budget, creative, placement) | N/A | Not tested (42% adoption, 1.41-1.67 median ROAS; modular since Oct 2025) |
 | T14 | Search Ads Toggle | High | Search Ads Toggle enabled for all campaigns | N/A | Search Ads Toggle OFF |
@@ -84,7 +87,7 @@ Without ttclid, attribution breaks for many conversions. This is TikTok's key te
 ## Performance (10% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | T17 | CTR benchmark | High | CTR ≥1.0% for in-feed ads | CTR 0.5-1.0% | CTR <0.5% |
 | T18 | CPA target | High | CPA within target range | CPA 1.5-3x target | CPA >3x target (trigger 3x Kill Rule) |
 | T19 | Video completion rate | Medium | Average video watch time ≥6 seconds | 3-6 seconds | <3 seconds average watch time |
@@ -94,7 +97,7 @@ Without ttclid, attribution breaks for many conversions. This is TikTok's key te
 ## Quick Wins (TikTok)
 
 | Check | Fix | Time |
-|-------|-----|------|
+| ------- | ----- | ------ |
 | T14: Search Ads Toggle | Enable Search Ads Toggle in campaign settings | 2 min |
 | T06: Vertical video | Convert existing assets to 9:16 format | 10 min |
 | T24: CTA button | Select appropriate CTA (not default) | 2 min |
@@ -107,7 +110,7 @@ Without ttclid, attribution breaks for many conversions. This is TikTok's key te
 ## TikTok-Specific Context
 
 | Fact | Value |
-|------|-------|
+| ------ | ------- |
 | Smart+ adoption | 42% of US TikTok performance campaigns (surged from 9% in early 2025) |
 | Smart+ capacity | 30 ad groups/campaign, 50 creatives/asset group |
 | GMV Max | Default for TikTok Shop Ads (July 2025) |

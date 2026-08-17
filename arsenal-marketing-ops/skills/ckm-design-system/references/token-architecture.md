@@ -20,7 +20,7 @@ Three-layer token system for scalable, themeable design systems.
 ## Why Three Layers?
 
 | Layer | Purpose | When to Change |
-|-------|---------|----------------|
+| ------- | --------- | ---------------- |
 | Primitive | Base values (colors, sizes) | Rarely - foundational |
 | Semantic | Meaning assignment | Theme switching |
 | Component | Component customization | Per-component needs |
@@ -149,7 +149,7 @@ Examples:
 ## Categories
 
 | Category | Examples |
-|----------|----------|
+| ---------- | ---------- |
 | color | primary, secondary, muted, destructive |
 | space | 1, 2, 4, 8, section, component |
 | font-size | xs, sm, base, lg, xl |
@@ -186,12 +186,14 @@ Or single file with layer comments:
 ## Migration from Flat Tokens
 
 Before (flat):
+
 ```css
 --button-primary-bg: #2563EB;
 --button-secondary-bg: #F3F4F6;
 ```
 
 After (three-layer):
+
 ```css
 /* Primitive */
 --color-blue-600: #2563EB;

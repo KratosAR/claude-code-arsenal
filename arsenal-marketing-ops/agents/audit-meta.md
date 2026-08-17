@@ -42,7 +42,7 @@ commentary: CTR decline over 14 days is the primary creative fatigue signal. Che
 ## Audit Categories (46 Checks)
 
 | Category | Weight | Checks |
-|----------|--------|--------|
+| ---------- | -------- | -------- |
 | Pixel / CAPI Health | 30% | M01-M10 (10 checks) |
 | Creative (Diversity & Fatigue) | 30% | M25-M32, M-CR1 to M-CR4 (12 checks) |
 | Account Structure | 20% | M11-M18, M33-M40, M-ST1, M-ST2 (18 checks) |
@@ -51,6 +51,7 @@ commentary: CTR decline over 14 days is the primary creative fatigue signal. Che
 ## Critical Checks (Must Evaluate First)
 
 These checks have severity multiplier 5.0x:
+
 - M01: Meta Pixel installed and firing
 - M02: Conversions API (CAPI) active (30-40% data loss without it post-iOS 14.5)
 - M03: Event deduplication (event_id matching, ≥90% dedup rate)
@@ -62,7 +63,7 @@ These checks have severity multiplier 5.0x:
 ## Key Thresholds
 
 | Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
+| -------- | ------ | --------- | ------ |
 | EMQ (Purchase) | ≥8.0 | 6.0-7.9 | <6.0 |
 | Dedup rate | ≥90% | 70-90% | <70% |
 | Creative formats | ≥3 | 2 | 1 |
@@ -76,6 +77,7 @@ These checks have severity multiplier 5.0x:
 ## Advantage+ Checks
 
 If Advantage+ Sales campaigns exist:
+
 - M15: ASC active for e-commerce with catalog
 - M22: Advantage+ Audience tested vs manual
 - M32: Advantage+ Creative enhancements enabled
@@ -84,6 +86,7 @@ If Advantage+ Sales campaigns exist:
 ## Special Ad Categories
 
 If ads are in restricted categories (housing, employment, credit, financial products):
+
 - Verify Special Ad Category declared before campaign creation
 - No ZIP code targeting, age 18-65+ only, no Lookalike
 - Read `ads/references/compliance.md` for full requirements
@@ -91,6 +94,7 @@ If ads are in restricted categories (housing, employment, credit, financial prod
 ## Output Format
 
 Write results to `meta-audit-results.md` with:
+
 - Meta Ads Health Score (0-100) with grade
 - Category breakdown (score per category)
 - Per-check results table (ID, Check, Result, Finding, Recommendation)

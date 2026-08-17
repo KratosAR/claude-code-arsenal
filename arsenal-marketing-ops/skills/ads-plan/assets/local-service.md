@@ -14,7 +14,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | Google Local Services Ads (LSA) | Primary | 40-50% | Pay-per-lead, Google Guaranteed badge, top placement, cheapest CPL ($25-$75) |
 | Google Search PPC | Primary | 20-25% | High-intent local queries ("near me", "[service] [city]") |
 | Meta (FB/IG) | Secondary | 15-20% | Local awareness, retargeting, seasonal promotions |
@@ -53,6 +53,7 @@ Account; Meta
 ## Creative Strategy
 
 ### What Works for Local Services
+
 - **Before/after photos**: transformation content (roofing, landscaping, painting)
 - **Team/truck photos**: real people, real vehicles, builds trust
 - **Video testimonials**: local customers sharing their experience
@@ -61,8 +62,9 @@ Account; Meta
 - **Review highlights**: screenshot or quote from Google reviews
 
 ### Ad Copy Priorities
+
 | Element | Priority | Example |
-|---------|----------|---------|
+| --------- | ---------- | --------- |
 | Location | Must have | "Serving [City] & Surrounding Areas" |
 | Phone number | Must have | Call extensions on every campaign |
 | Offer | High | "$50 Off First Visit" or "Free Estimate" |
@@ -70,6 +72,7 @@ Account; Meta
 | Urgency | Medium | "Same-Day Service Available" |
 
 ### Extensions (Google)
+
 - **Call extension**: on every campaign (primary conversion)
 - **Location extension**: linked to Google Business Profile
 - **Sitelinks**: services, reviews, about us, contact
@@ -79,6 +82,7 @@ Account; Meta
 ## Targeting Strategy
 
 ### Google
+
 - **Location**: 10-20 mile radius around service area (or specific ZIP codes)
 - **Keywords**: [service] + [city], [service] near me, emergency [service]
 - **Match type**: Exact and Phrase (Broad only with smart bidding and sufficient data)
@@ -86,12 +90,14 @@ Account; Meta
 - **Ad schedule**: match business hours unless 24/7 emergency service
 
 ### Meta
+
 - **Radius targeting**: 10-20 miles from business location
 - **Age**: 25-65 (homeowners, decision makers)
 - **Interests**: homeownership, home improvement, recently moved
 - **Exclusions**: renters (if targeting homeowners), existing customers (if new-only)
 
 ### Call Tracking (Critical)
+
 - Google forwarding numbers on all ads
 - Separate tracking numbers for LSA vs Search vs Meta
 - Call recording enabled (legal compliance check per state)
@@ -101,7 +107,7 @@ Account; Meta
 ## Budget Guidelines
 
 | Metric | Local Service Benchmark |
-|--------|----------------------|
+| -------- | ---------------------- |
 | Google Search CPC | $7.85-$30 (varies by service type) |
 | Google Search CTR | 5.50-6.37% |
 | Google Search CVR | 7.33-15.0% |
@@ -112,8 +118,9 @@ Account; Meta
 | Min monthly budget | $1,500+ (Google Search + LSA) |
 
 ### Budget by Service Type (Monthly Minimums)
+
 | Service Type | Google Min | LSA Min | Meta Min |
-|-------------|------------|---------|----------|
+| ------------- | ------------ | --------- | ---------- |
 | HVAC | $2,000 | $500 | $500 |
 | Plumbing | $1,500 | $500 | $300 |
 | Roofing | $2,500 | $500 | $500 |
@@ -124,7 +131,7 @@ Account; Meta
 ## Bidding Strategy Selection
 
 | Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
+| ---------- | -------------------- | -------------------- |
 | Google | <15 | Maximize Clicks (cap CPC) |
 | Google | 15-29 | Maximize Conversions |
 | Google | 30+ | Target CPA (recommended for local) |
@@ -135,7 +142,7 @@ Account; Meta
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | CPL (Search) | Baseline | Target +20% | Target |
 | CPL (LSA) | Baseline | Optimize | <$50 |
 | Call Volume | Track | +20% | +40% |
@@ -145,7 +152,7 @@ Account; Meta
 ## Seasonal Strategy
 
 | Season | Action |
-|--------|--------|
+| -------- | -------- |
 | Spring | Ramp up: HVAC tune-ups, landscaping, spring cleaning |
 | Summer | Peak: AC repair, outdoor services, pest control |
 | Fall | Transition: heating prep, gutter cleaning, winterization |

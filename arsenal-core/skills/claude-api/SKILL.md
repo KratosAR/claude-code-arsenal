@@ -19,7 +19,7 @@ Build applications with the Anthropic Claude API and SDKs.
 ## Model Selection
 
 | Model | ID | Best For |
-|-------|-----|----------|
+| ------- | ----- | ---------- |
 | Opus 4.1 | `claude-opus-4-1` | Complex reasoning, architecture, research |
 | Sonnet 4 | `claude-sonnet-4-0` | Balanced coding, most development tasks |
 | Haiku 3.5 | `claude-3-5-haiku-latest` | Fast responses, high-volume, cost-sensitive |
@@ -298,7 +298,7 @@ while True:
 ## Cost Optimization
 
 | Strategy | Savings | When to Use |
-|----------|---------|-------------|
+| ---------- | --------- | ------------- |
 | Prompt caching | Up to 90% on cached tokens | Repeated system prompts or context |
 | Batches API | 50% | Non-time-sensitive bulk processing |
 | Haiku instead of Sonnet | ~75% | Simple tasks, classification, extraction |

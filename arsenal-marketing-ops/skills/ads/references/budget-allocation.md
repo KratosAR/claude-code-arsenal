@@ -6,7 +6,7 @@
 ## Platform Selection Matrix by Business Type
 
 | Business Type | Platform 1 | Platform 2 | Platform 3 | Other | Min Monthly | Primary KPI | Time to Profit |
-|--------------|------------|------------|------------|-------|-------------|-------------|---------------|
+| -------------- | ------------ | ------------ | ------------ | ------- | ------------- | ------------- | --------------- |
 | SaaS B2B | Google 35-45% | LinkedIn 30-40% | Meta 15-25% | YouTube 10% | $5,000 | Pipeline ROI, LTV:CAC | 3-6 months |
 | E-commerce DTC | Meta 50-68% | Google PMax 23-30% | TikTok 5-15% | Email 5% | $3,000 | ROAS, MER, POAS | 0-2 months |
 | Local Service | Google LSA/Search 60% | Meta 30% | Bing 10% | N/A | $1,500 | Cost Per Lead/Booking | 1 month |
@@ -30,6 +30,7 @@
 ## Scaling Decision Tree
 
 ### 20% Rule (Scale Up)
+
 ```
 IF actual_CPA < target_CPA by > 10%
 AND conversions_last_7d >= learning_threshold
@@ -40,6 +41,7 @@ THEN increase budget by 20%
 ```
 
 ### 3× Kill Rule (Pause)
+
 ```
 IF spend > 3× target_CPA
 AND conversions == 0
@@ -49,6 +51,7 @@ THEN pause ad/ad set/campaign immediately
 ```
 
 ### Decreasing Returns Detection
+
 ```
 IF CPA increased > 15% after last budget increase
 THEN roll back to previous budget level
@@ -57,8 +60,9 @@ THEN roll back to previous budget level
 ```
 
 ### Saturation Signals
+
 | Platform | Signal | Threshold | Action |
-|----------|--------|-----------|--------|
+| ---------- | -------- | ----------- | -------- |
 | Google | Impression Share | >80% | Diminishing returns; diversify |
 | Meta | Frequency (7-day) | >4.0 | Audience exhausted; refresh creative or expand |
 | TikTok | Frequency | >3.0 | Creative fatigue; replace assets |
@@ -71,12 +75,13 @@ MER = Total Revenue / Total Ad Spend (all platforms combined)
 ```
 
 | Business Type | Healthy MER | Excellent MER | Danger Zone |
-|--------------|-------------|---------------|-------------|
+| -------------- | ------------- | --------------- | ------------- |
 | E-commerce | 3.0-5.0 | >5.0 | <2.0 |
 | SaaS | Use LTV:CAC (3:1 target) | >4:1 | <2:1 |
 | Lead Gen | Revenue/Lead × CVR / CPL | N/A | <1.5 |
 
 **Why MER over ROAS:**
+
 - ROAS is platform-reported (overclaims by 20-40%)
 - MER captures true business economics
 - Cross-platform; not inflated by attribution overlap
@@ -84,6 +89,7 @@ MER = Total Revenue / Total Ad Spend (all platforms combined)
 ## Seasonality Adjustments
 
 ### Q4 (October-December)
+
 - CPMs increase 30-50%
 - Reduce ROAS targets by 20%
 - Front-load creative testing in September
@@ -91,16 +97,19 @@ MER = Total Revenue / Total Ad Spend (all platforms combined)
 - Meta: Advantage+ Sales performs best during peaks
 
 ### Q1 (January-March)
+
 - CPMs decrease 20-30% post-holiday
 - Best time for new campaign testing
 - Aggressive customer acquisition (lower competition)
 - Meta Jan 2026 CPC: $0.85 (24% below prior January)
 
 ### Q2 (April-June)
+
 - Steady CPMs, good testing window
 - Mother's Day / Father's Day spikes for retail
 
 ### Q3 (July-September)
+
 - LinkedIn CPC peaks in Q3 ($15.72 average)
 - Back-to-school surge for education
 - Good time to build retargeting pools for Q4
@@ -108,18 +117,21 @@ MER = Total Revenue / Total Ad Spend (all platforms combined)
 ## Incrementality Testing (Geo-Lift)
 
 ### Setup
+
 - Duration: 2-4 weeks minimum
 - Holdout: 10% of geographic regions (matched pairs)
 - Method: Compare conversion rates exposed vs holdout
 - Statistical significance: p < 0.05
 
 ### Tools
+
 - Meta: Robyn (R-based, open source), best for ~80% of orgs
 - Google: Meridian (Python, Bayesian, geo-level)
 - Advanced: PyMC-Marketing (fully customizable)
 - Budget: Significant; allocate 10% of monthly spend for testing
 
 ### Post-Purchase Surveys
+
 - Fill ~30% of attribution gap that digital tracking misses
 - Question: "How did you first hear about us?"
 - Implement on order confirmation page
@@ -128,7 +140,7 @@ MER = Total Revenue / Total Ad Spend (all platforms combined)
 ## Minimum Viable Budgets
 
 | Platform | Minimum Monthly | Rationale |
-|----------|----------------|-----------|
+| ---------- | ---------------- | ----------- |
 | Google Ads | $1,000 | 15+ conv/month minimum for Smart Bidding |
 | Meta Ads | $600-$800 | 50 conv/week/ad set × $CPA |
 | LinkedIn Ads | $3,000 | High CPCs; $10/day minimum × multiple campaigns |

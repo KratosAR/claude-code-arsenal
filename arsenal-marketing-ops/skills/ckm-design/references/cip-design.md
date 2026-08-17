@@ -5,7 +5,7 @@ Corporate Identity Program design with 50+ deliverables, 20 styles, 20 industrie
 ## Scripts
 
 | Script | Purpose |
-|--------|---------|
+| -------- | --------- |
 | `scripts/cip/search.py` | Search deliverables, styles, industries; generate CIP briefs |
 | `scripts/cip/generate.py` | Generate CIP mockups with Gemini (Flash/Pro) |
 | `scripts/cip/render-html.py` | Render HTML presentation from CIP mockups |
@@ -69,7 +69,7 @@ python3 ~/.claude/skills/design/scripts/cip/render-html.py --brand "TopGroup" --
 ## Deliverable Categories
 
 | Category | Items |
-|----------|-------|
+| ---------- | ------- |
 | Core Identity | Logo, Logo Variations |
 | Stationery | Business Card, Letterhead, Envelope, Folder, Notebook, Pen |
 | Security/Access | ID Badge, Lanyard, Access Card |
@@ -84,7 +84,7 @@ python3 ~/.claude/skills/design/scripts/cip/render-html.py --brand "TopGroup" --
 ## Design Styles
 
 | Style | Colors | Best For |
-|-------|--------|----------|
+| ------- | -------- | ---------- |
 | Corporate Minimal | Navy, White, Blue | Finance, Legal, Consulting |
 | Modern Tech | Purple, Cyan, Green | Tech, Startups, SaaS |
 | Luxury Premium | Black, Gold, White | Fashion, Jewelry, Hotels |

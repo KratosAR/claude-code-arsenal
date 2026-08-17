@@ -12,7 +12,7 @@ for use by `/ads create`, `/ads generate`, and `/ads photoshoot`.
 ## Quick Reference
 
 | Command | What it does |
-|---------|-------------|
+| --------- | ------------- |
 | `/ads dna <url>` | Full brand extraction → `brand-profile.json` |
 | `/ads dna https://acme.com --quick` | Fast extraction (homepage only) |
 
@@ -21,7 +21,7 @@ for use by `/ads create`, `/ads generate`, and `/ads photoshoot`.
 ### Step 1: Collect URL
 
 If the user hasn't provided a URL, ask:
-> "What website URL should I analyze for brand DNA? (e.g. https://yoursite.com)"
+> "What website URL should I analyze for brand DNA? (e.g. <https://yoursite.com>)"
 
 ### Step 2: Fetch Pages
 
@@ -31,6 +31,7 @@ Use the **WebFetch tool** to retrieve each page. For each URL, use this fetch pr
 > values found on this page."
 
 Fetch in this order:
+
 1. **Homepage** (`<url>`)
 2. **About page**: try `<url>/about`, then `<url>/about-us`, then `<url>/our-story`
 3. **Product/Services page**: try `<url>/product`, then `<url>/products`, then `<url>/services`
@@ -49,21 +50,27 @@ Pomelli uses to anchor ad images to the actual brand aesthetic.
 Capture the following:
 
 1. **Homepage hero section** (above the fold):
+
 ```bash
 python ~/.claude/skills/ads/scripts/capture_screenshot.py [url]
 ```
+
 Saves: `./brand-screenshots/{domain}_homepage.png`
 
-2. **Product or services page**:
+1. **Product or services page**:
+
 ```bash
 python ~/.claude/skills/ads/scripts/capture_screenshot.py [url]/products
 ```
+
 Saves: `./brand-screenshots/{domain}_product.png`
 
-3. **About page** (brand personality):
+1. **About page** (brand personality):
+
 ```bash
 python ~/.claude/skills/ads/scripts/capture_screenshot.py [url]/about
 ```
+
 Saves: `./brand-screenshots/{domain}_about.png`
 
 If a page is not found or returns an error, skip it gracefully and continue
@@ -72,6 +79,7 @@ with the remaining pages.
 **If `--quick` flag was provided**: skip screenshot capture entirely.
 
 **If capture fails** (Playwright not installed, network error, JS-heavy SPA that times out):
+
 - Log: `"Screenshot capture skipped; run: python3 -m playwright install chromium"`
 - Continue without screenshots
 - Do NOT set the `screenshots` field in brand-profile.json
@@ -81,6 +89,7 @@ with the remaining pages.
 From the fetched HTML, extract:
 
 **Colors:**
+
 - `og:image` meta tag → analyze dominant colors (note 2-3 prominent hex values)
 - CSS `background-color` on `body`, `header`, `.hero`, `.btn-primary`
 - CSS `color` on `h1`, `h2`, `.btn`
@@ -88,6 +97,7 @@ From the fetched HTML, extract:
 - Identify: primary (most prominent brand color), secondary (supporting colors), background, text
 
 **Typography:**
+
 - `@import url(https://fonts.googleapis.com/...)` → extract font names from URL path
 - CSS `font-family` on `h1`, `h2`, `body`, `.headline`
 - If Google Fonts URL contains `family=Inter:wght@...`, heading_font = "Inter"
@@ -97,7 +107,7 @@ Analyze hero headline, subheadline, About page intro, and CTA button text.
 Score each axis 1-10 using these heuristics:
 
 | Signal | Score direction |
-|--------|----------------|
+| -------- | ---------------- |
 | Uses "you/your" frequently | formal_casual → casual (+2) |
 | Uses technical jargon | expert_accessible → expert (-2) |
 | Short punchy sentences (≤8 words) | bold_subtle → bold (+2) |
@@ -107,11 +117,13 @@ Score each axis 1-10 using these heuristics:
 | Industry awards, "trusted by X" | traditional_innovative → traditional (-1) |
 
 **Imagery style** (from og:image and any visible hero image descriptions):
+
 - Photography vs. illustration vs. flat design
 - Subject matter (people, product, abstract, data)
 - Composition style (clean/minimal vs. busy/editorial)
 
 **Forbidden elements** (infer from brand positioning):
+
 - Enterprise/B2B brands → add "cheesy stock photos", "consumer lifestyle imagery"
 - Healthcare → add "unqualified medical claims", "before/after imagery"
 - Finance → add "get rich quick imagery", "unrealistic wealth displays"
@@ -125,6 +137,7 @@ Construct the JSON object following the schema precisely. Use `null` for any
 field that cannot be confidently extracted; do not guess.
 
 Example of a low-confidence field:
+
 ```json
 "typography": {
   "heading_font": null,
@@ -139,6 +152,7 @@ Write the JSON to `./brand-profile.json` in the current working directory
 (where the user is running Claude Code).
 
 If screenshots were captured successfully in Step 2b, include a `screenshots` field:
+
 ```json
 "screenshots": {
   "homepage": "./brand-screenshots/{domain}_homepage.png",
@@ -146,6 +160,7 @@ If screenshots were captured successfully in Step 2b, include a `screenshots` fi
   "about": "./brand-screenshots/{domain}_about.png"
 }
 ```
+
 Include only the screenshots that were successfully captured. If a page was not
 found or errored, omit that key. Omit the `screenshots` field entirely if Step 2b
 was skipped or all captures failed.
@@ -153,6 +168,7 @@ was skipped or all captures failed.
 ### Step 6: Confirm and Summarize
 
 Show the user:
+
 ```
 ✓ brand-profile.json saved to ./brand-profile.json
 

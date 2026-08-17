@@ -12,7 +12,7 @@ profile and optional audit data. Outputs `campaign-brief.md` for use by `/ads ge
 ## Quick Reference
 
 | Command | What it does |
-|---------|-------------|
+| --------- | ------------- |
 | `/ads create` | Full campaign brief → `campaign-brief.md` |
 | `/ads create --platforms meta google` | Brief for specific platforms only |
 | `/ads create --objective leads` | Brief optimized for lead generation |
@@ -30,6 +30,7 @@ Look for `brand-profile.json` in the current directory.
   > 2. Describe your brand manually (I'll create a basic profile from your description)"
 
 If the user chooses manual, collect:
+
 - Brand name and website
 - Primary color (or "unsure")
 - 3 words that describe the brand voice
@@ -49,6 +50,7 @@ If `--platforms` or `--objective` flags were provided in the command, use those 
 and skip the corresponding questions below.
 
 Ask (combine into one message; omit any already provided via flags):
+
 1. **Platforms**: Which ad platforms? (Meta · Google · LinkedIn · TikTok · YouTube · Microsoft · All)
 2. **Objective**: Sales/Revenue · Leads/Demos · App Installs · Brand Awareness · Retargeting
 3. **Offer or brief**: Any specific offer, promotion, or message to highlight? (optional)
@@ -60,7 +62,7 @@ Read `ads/references/copy-frameworks.md` and recommend a framework based on
 campaign goal + platform + audience temperature:
 
 | Framework | Best For |
-|-----------|----------|
+| ----------- | ---------- |
 | AIDA (Attention, Interest, Desire, Action) | Cold audiences, awareness campaigns |
 | PAS (Problem, Agitate, Solve) | Pain-point products, problem-aware audiences |
 | BAB (Before, After, Bridge) | Transformation offers, coaching, fitness |
@@ -80,6 +82,7 @@ This agent creates `campaign-brief.md` and writes the strategic sections:
 `## Brand DNA Summary`, `## Campaign Concepts`, `## Image Generation Briefs`, `## Next Steps`.
 
 Additional instructions for `creative-strategist`:
+
 - For e-commerce businesses, also read `skills/ads-plan/assets/ecommerce-creative.md`
   and select the appropriate creative playbook (Product Launch, Sale/Promotion,
   Seasonal, Retargeting, Brand Awareness)
@@ -94,10 +97,11 @@ After `creative-strategist` completes, spawn `copy-writer`. It reads the existin
 headlines, primary text, and CTAs.
 
 Additional instructions for `copy-writer`:
+
 - Read `ads/references/copy-frameworks.md` and apply the selected framework
   structure to all ad copy
 - Generate 2 framework variants per platform: primary (recommended framework)
-  + secondary (alternative for A/B testing)
+  - secondary (alternative for A/B testing)
 
 Wait for `copy-writer` to complete before proceeding to Step 6.
 
@@ -106,6 +110,7 @@ Wait for `copy-writer` to complete before proceeding to Step 6.
 After both agents complete, confirm `campaign-brief.md` exists and is complete.
 
 Present a summary to the user:
+
 ```
 ✓ campaign-brief.md generated
 

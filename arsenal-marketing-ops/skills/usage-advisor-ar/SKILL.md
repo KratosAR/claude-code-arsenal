@@ -29,6 +29,7 @@ Equivale a 5am–11am PT, cuando Anthropic reduce los límites de sesión de 5 h
 ## Banners según horario
 
 ### 🔴 HORARIO PICO (10:00–16:00 AR, lunes a viernes)
+
 ```
 ⚠️ MOMENTO! Estas en horario pico 🔴
 Tu cuota corre MAS RAPIDO ahora (lun-vie 10-16hs AR)
@@ -36,12 +37,14 @@ Tu cuota corre MAS RAPIDO ahora (lun-vie 10-16hs AR)
 ```
 
 ### 🟢 FUERA DE PICO
+
 ```
 🟢 LET'S GO! Estas fuera del horario pico
 Cuota a ritmo normal, dale con todo 💪
 ```
 
 ### 🌙 MADRUGADA / FIN DE SEMANA
+
 ```
 🌙 MODO TURBO — sin restricciones extra
 El mejor momento para sesiones intensas 🚀

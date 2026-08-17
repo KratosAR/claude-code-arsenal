@@ -13,7 +13,7 @@ and 9:16 (TikTok/Reels/Stories).
 ## Quick Reference
 
 | Command | What it does |
-|---------|-------------|
+| --------- | ------------- |
 | `/ads photoshoot` | Interactive: ask for product + styles |
 | `/ads photoshoot --styles studio floating` | Generate only selected styles |
 | `/ads photoshoot --product shoe.jpg` | Start with a product image file |
@@ -29,6 +29,7 @@ Run `/banana setup` to configure API key and MCP.
 ### Step 1: Collect Product Information
 
 Ask (combine into one message):
+
 1. **Product image**: Path to product image file (local) OR product URL OR text description
    > "Provide a product image path (e.g. ./product.jpg), a URL, or describe your product"
 2. **Product description**: What is it? Key features to highlight? (helps prompt quality)
@@ -42,6 +43,7 @@ Ask (combine into one message):
 Check for `brand-profile.json` in the current directory.
 
 If found, extract for style injection:
+
 - `colors.primary` → inject into backgrounds and accent elements
 - `aesthetic.mood_keywords` → inject as atmosphere descriptors
 - `target_audience` → use for Lifestyle and In Use context
@@ -59,9 +61,11 @@ display setup instructions and exit.
 For each selected style, build the prompt using the template + product description + brand DNA.
 
 #### Style 1: Studio
+
 Clean, e-commerce style product shot.
 
 **Base template:**
+
 ```
 "[product description], professional product photography, clean white seamless
 background, even studio lighting, soft drop shadow, high detail product focus,
@@ -73,9 +77,11 @@ top-down or 3/4 angle, no distractions, catalog quality"
 **Output sizes:** 1080×1080, 1080×1920
 
 #### Style 2: Floating
+
 Dramatic levitation effect.
 
 **Base template:**
+
 ```
 "[product description] floating in mid-air, dramatic floating product shot,
 [brand.colors.primary or brand.aesthetic.mood_keywords[0]] gradient background,
@@ -87,9 +93,11 @@ clean modern aesthetic, high contrast, striking visual"
 **Output sizes:** 1080×1080, 1080×1920
 
 #### Style 3: Ingredient
+
 Flat lay with components.
 
 **Base template:**
+
 ```
 "[product description] centered flat lay, surrounded by its key ingredients
 or materials artfully arranged, top-down overhead view, clean light background,
@@ -101,9 +109,11 @@ intentional negative space, editorial food photography style"
 **Output sizes:** 1080×1080 (optimal for this style)
 
 #### Style 4: In Use
+
 Authentic usage context.
 
 **Base template:**
+
 ```
 "person's hands using [product description] in natural context, lifestyle
 photography, focus on product-hand interaction, shallow depth of field,
@@ -116,9 +126,11 @@ implied context, [brand.aesthetic.mood_keywords] atmosphere"
 **Output sizes:** 1080×1080, 1080×1920
 
 #### Style 5: Lifestyle
+
 Aspirational full-context shot.
 
 **Base template:**
+
 ```
 "[product description] in aspirational lifestyle scene, [brand.target_audience.age_range]
 demographic implied environment, [brand.target_audience.profession] context,
@@ -133,11 +145,13 @@ product clearly visible and prominent"
 ### Step 5: Generate Images
 
 **Domain mode selection per style:**
+
 - Use banana **Product** mode for Studio, Floating, and Ingredient styles
 - Use banana **Editorial** mode for In Use and Lifestyle styles
 - Set resolution to 2K (default) for all generations
 
 **Aspect ratio setup:** Use banana MCP `set_aspect_ratio` before each generation:
+
 - For 1080x1080: set ratio to 1:1
 - For 1080x1920: set ratio to 9:16
 
@@ -150,6 +164,7 @@ Track results. If a generation fails, retry once with a simplified prompt.
 ### Step 6: Organize and Report
 
 **Output directory structure:**
+
 ```
 ./product-photos/
   studio/
@@ -169,6 +184,7 @@ Track results. If a generation fails, retry once with a simplified prompt.
 ```
 
 **Summary:**
+
 ```
 ✓ Product photos generated: [N] images
 
@@ -192,6 +208,7 @@ Track results. If a generation fails, retry once with a simplified prompt.
 ## Cost Estimate
 
 Before generating, show:
+
 - Number of styles selected x 2 sizes = total images
 - Estimated cost based on banana pricing tiers
 - If >$0.50, ask for confirmation
@@ -199,7 +216,7 @@ Before generating, show:
 ## Platform Recommendations
 
 | Style | Best Platforms | Rationale |
-|-------|---------------|-----------|
+| ------- | --------------- | ----------- |
 | Studio | Meta Feed, LinkedIn, Google PMax | Universal, clean, platform-safe |
 | Floating | Meta Reels, TikTok, Stories | High visual impact on vertical placements |
 | Ingredient | Meta Feed, Pinterest | Works best as square; tells product story |

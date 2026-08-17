@@ -3,6 +3,7 @@
 Curated visual styles for `frontend-slides`.
 
 Use this file for:
+
 - the mandatory viewport-fitting CSS base
 - preset selection and mood mapping
 - CSS gotchas and validation rules
@@ -24,7 +25,7 @@ Never scroll inside a slide.
 ### Density Limits
 
 | Slide Type | Maximum Content |
-|------------|-----------------|
+| ------------ | ----------------- |
 | Title slide | 1 heading + 1 subtitle + optional tagline |
 | Content slide | 1 heading + 4-6 bullets or 2 paragraphs |
 | Feature grid | 6 cards maximum |
@@ -176,7 +177,7 @@ img, .image-container {
 ## Mood to Preset Mapping
 
 | Mood | Good Presets |
-|------|--------------|
+| ------ | -------------- |
 | Impressed / Confident | Bold Signal, Electric Studio, Dark Botanical |
 | Excited / Energized | Creative Voltage, Neon Cyber, Split Pastel |
 | Calm / Focused | Notebook Tabs, Paper & Ink, Swiss Modern |
@@ -287,7 +288,7 @@ If the user already knows the style they want, let them pick directly from the p
 ## Animation Feel Mapping
 
 | Feeling | Motion Direction |
-|---------|------------------|
+| --------- | ------------------ |
 | Dramatic / Cinematic | slow fades, parallax, large scale-ins |
 | Techy / Futuristic | glow, particles, grid motion, scramble text |
 | Playful / Friendly | springy easing, rounded shapes, floating motion |
@@ -316,6 +317,7 @@ margin-left: calc(-1 * min(10vw, 100px));
 ## Validation Sizes
 
 Test at minimum:
+
 - Desktop: `1920x1080`, `1440x900`, `1280x720`
 - Tablet: `1024x768`, `768x1024`
 - Mobile: `375x667`, `414x896`
@@ -324,6 +326,7 @@ Test at minimum:
 ## Anti-Patterns
 
 Do not use:
+
 - purple-on-white startup templates
 - Inter / Roboto / Arial as the visual voice unless the user explicitly wants utilitarian neutrality
 - bullet walls, tiny type, or code blocks that require scrolling

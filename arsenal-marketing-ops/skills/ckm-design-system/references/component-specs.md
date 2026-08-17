@@ -7,7 +7,7 @@ Detailed specs for core components with states and variants.
 ### Variants
 
 | Variant | Background | Text | Border | Use Case |
-|---------|------------|------|--------|----------|
+| --------- | ------------ | ------ | -------- | ---------- |
 | default | primary | white | none | Primary actions |
 | secondary | gray-100 | gray-900 | none | Secondary actions |
 | outline | transparent | foreground | border | Tertiary actions |
@@ -18,7 +18,7 @@ Detailed specs for core components with states and variants.
 ### Sizes
 
 | Size | Height | Padding X | Padding Y | Font Size | Icon Size |
-|------|--------|-----------|-----------|-----------|-----------|
+| ------ | -------- | ----------- | ----------- | ----------- | ----------- |
 | sm | 32px | 12px | 6px | 14px | 16px |
 | default | 40px | 16px | 8px | 14px | 18px |
 | lg | 48px | 24px | 12px | 16px | 20px |
@@ -27,7 +27,7 @@ Detailed specs for core components with states and variants.
 ### States
 
 | State | Background | Text | Opacity | Cursor |
-|-------|------------|------|---------|--------|
+| ------- | ------------ | ------ | --------- | -------- |
 | default | token | token | 1 | pointer |
 | hover | darker | token | 1 | pointer |
 | active | darkest | token | 1 | pointer |
@@ -52,7 +52,7 @@ Detailed specs for core components with states and variants.
 ### Variants
 
 | Variant | Description |
-|---------|-------------|
+| --------- | ------------- |
 | default | Standard text input |
 | textarea | Multi-line text |
 | select | Dropdown selection |
@@ -63,7 +63,7 @@ Detailed specs for core components with states and variants.
 ### Sizes
 
 | Size | Height | Padding | Font Size |
-|------|--------|---------|-----------|
+| ------ | -------- | --------- | ----------- |
 | sm | 32px | 8px 12px | 14px |
 | default | 40px | 8px 12px | 14px |
 | lg | 48px | 12px 16px | 16px |
@@ -71,7 +71,7 @@ Detailed specs for core components with states and variants.
 ### States
 
 | State | Border | Background | Ring |
-|-------|--------|------------|------|
+| ------- | -------- | ------------ | ------ |
 | default | gray-300 | white | none |
 | hover | gray-400 | white | none |
 | focus | primary | white | primary/20% |
@@ -95,7 +95,7 @@ Helper text or error message
 ### Variants
 
 | Variant | Shadow | Border | Use Case |
-|---------|--------|--------|----------|
+| --------- | -------- | -------- | ---------- |
 | default | sm | 1px | Standard card |
 | elevated | lg | none | Prominent content |
 | outline | none | 1px | Subtle container |
@@ -121,7 +121,7 @@ Helper text or error message
 ### Spacing
 
 | Area | Padding |
-|------|---------|
+| ------ | --------- |
 | header | 24px 24px 0 |
 | content | 24px |
 | footer | 0 24px 24px |
@@ -134,7 +134,7 @@ Helper text or error message
 ### Variants
 
 | Variant | Background | Text |
-|---------|------------|------|
+| --------- | ------------ | ------ |
 | default | primary | white |
 | secondary | gray-100 | gray-900 |
 | outline | transparent | foreground |
@@ -145,7 +145,7 @@ Helper text or error message
 ### Sizes
 
 | Size | Padding | Font Size | Height |
-|------|---------|-----------|--------|
+| ------ | --------- | ----------- | -------- |
 | sm | 4px 8px | 11px | 20px |
 | default | 4px 10px | 12px | 24px |
 | lg | 6px 12px | 14px | 28px |
@@ -157,7 +157,7 @@ Helper text or error message
 ### Variants
 
 | Variant | Icon | Background | Border |
-|---------|------|------------|--------|
+| --------- | ------ | ------------ | -------- |
 | default | info | gray-50 | gray-200 |
 | destructive | alert | red-50 | red-200 |
 | success | check | green-50 | green-200 |
@@ -179,7 +179,7 @@ Helper text or error message
 ### Sizes
 
 | Size | Max Width | Use Case |
-|------|-----------|----------|
+| ------ | ----------- | ---------- |
 | sm | 384px | Simple confirmations |
 | default | 512px | Standard dialogs |
 | lg | 640px | Complex forms |
@@ -210,7 +210,7 @@ Helper text or error message
 ### Row States
 
 | State | Background | Use Case |
-|-------|------------|----------|
+| ------- | ------------ | ---------- |
 | default | white | Normal row |
 | hover | gray-50 | Mouse over |
 | selected | primary/10% | Selected row |
@@ -219,7 +219,7 @@ Helper text or error message
 ### Cell Alignment
 
 | Content Type | Alignment |
-|--------------|-----------|
+| -------------- | ----------- |
 | Text | Left |
 | Numbers | Right |
 | Status/Badge | Center |
@@ -228,7 +228,7 @@ Helper text or error message
 ### Spacing
 
 | Element | Value |
-|---------|-------|
+| --------- | ------- |
 | cell padding | 12px 16px |
 | header padding | 12px 16px |
 | row height (compact) | 40px |

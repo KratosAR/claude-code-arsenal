@@ -7,7 +7,7 @@
 ## Quick Reference
 
 | Category | Weight | Check Count |
-|----------|--------|-------------|
+| ---------- | -------- | ------------- |
 | Conversion Tracking | 25% | G42-G49 (8 checks) + G-CT1 through G-CT3 (3 extended) |
 | Wasted Spend / Negatives | 20% | G13-G19 (7 checks) + G-WS1 (1 extended) |
 | Account Structure | 15% | G01-G12 (12 checks) |
@@ -21,7 +21,7 @@
 ## Conversion Tracking (25% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G42 | Conversion actions defined | Critical | ≥1 primary conversion action configured | N/A | No active conversion actions |
 | G43 | Enhanced conversions enabled | Critical | Enhanced conversions active for primary conversions | Enabled but not verified | Not enabled |
 | G44 | Server-side tracking | High | Server-side GTM or Google Ads API conversion import active | Planned but not deployed | No server-side tracking |
@@ -43,7 +43,7 @@
 ## Wasted Spend / Negatives (20% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G13 | Search term audit recency | Critical | Search terms reviewed within last 14 days | Reviewed within 30 days | Not reviewed in >30 days |
 | G14 | Negative keyword lists exist | Critical | ≥3 theme-based lists (Competitor, Jobs, Free, Irrelevant) | 1-2 lists exist | No negative keyword lists |
 | G15 | Account-level negatives applied | High | Negative lists applied at account or all-campaign level | Applied to some campaigns only | Not applied |
@@ -66,7 +66,7 @@
 ## Account Structure (15% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G01 | Campaign naming convention | Medium | Consistent pattern (e.g., [Brand]_[Type]_[Geo]_[Target]) | Partially consistent | No naming convention |
 | G02 | Ad group naming convention | Medium | Matches campaign naming pattern | Partially consistent | No naming convention |
 | G03 | Single theme ad groups | High | Each ad group targets 1 keyword theme (≤10 keywords) | 11-20 keywords with consistent theme | Ad groups with 20+ unrelated keywords (theme drift) |
@@ -93,7 +93,7 @@
 ## Keywords & Quality Score (15% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G20 | Average Quality Score | High | Account-wide impression-weighted QS ≥7 | QS 5-6 | QS ≤4 |
 | G21 | Critical QS keywords | Critical | <10% of keywords with QS ≤3 | 10-25% with QS ≤3 | >25% with QS ≤4 |
 | G22 | Expected CTR component | High | <20% of keywords with "Below Average" expected CTR | 20-35% Below Average | >35% Below Average |
@@ -108,7 +108,7 @@
 ## Ads & Assets (15% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G26 | RSA per ad group | High | ≥1 RSA per ad group (≥2 recommended) | 1 RSA per ad group | Ad groups without any RSA |
 | G27 | RSA headline count | High | ≥8 unique headlines per RSA (ideal: 12-15) | 3-7 headlines | <3 headlines |
 | G28 | RSA description count | Medium | ≥3 descriptions per RSA (ideal: 4) | 2 descriptions | <2 descriptions |
@@ -127,7 +127,7 @@
 ## Settings & Targeting (10% weight)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G50 | Sitelink extensions | High | ≥4 sitelinks per campaign | 1-3 sitelinks | No sitelinks |
 | G51 | Callout extensions | Medium | ≥4 callouts per campaign | 1-3 callouts | No callouts |
 | G52 | Structured snippets | Medium | ≥1 structured snippet set | N/A | No structured snippets |
@@ -146,7 +146,7 @@
 ## Performance Max Extended (scored within Ads & Assets)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G-PM1 | Audience signals configured | High | Custom audience signals per asset group | Generic signals only | No audience signals |
 | G-PM2 | PMax Ad Strength | High | "Good" or "Excellent" | "Average" | "Poor" |
 | G-PM3 | Brand cannibalization | High | <15% of PMax conversions from brand terms | 15-30% from brand terms | >30% from brand terms |
@@ -167,7 +167,7 @@
 ## Bidding & Budget (scored within Settings & Targeting)
 
 | ID | Check | Severity | Pass | Warning | Fail |
-|----|-------|----------|------|---------|------|
+| ---- | ------- | ---------- | ------ | --------- | ------ |
 | G36 | Smart bidding strategy active | High | All campaigns with ≥15 conv/30d use automated bidding | Partially automated | Manual CPC on campaigns with sufficient data |
 | G37 | Target CPA/ROAS reasonableness | Critical | Targets within 20% of historical performance | Targets 20-50% off historical | Target CPA <50% of actual CPA |
 | G38 | Learning phase status | High | <25% of campaigns in "Learning" or "Learning Limited" | 25-40% in learning | >40% in learning |
@@ -182,7 +182,7 @@
 Items flagged as Quick Win when severity is Critical or High AND fix takes <15 minutes:
 
 | Check | Fix | Time |
-|-------|-----|------|
+| ------- | ----- | ------ |
 | G43: Enhanced conversions | Enable in Google Ads conversion settings | 5 min |
 | G11: Location targeting | Switch to "People in" your targeted locations | 2 min |
 | G14: Negative keyword lists | Create initial themed negative lists | 10 min |

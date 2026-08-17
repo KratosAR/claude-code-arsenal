@@ -17,7 +17,7 @@ S_total = Σ(C_pass × W_sev × W_cat) / Σ(C_total × W_sev × W_cat) × 100
 ## Severity Multipliers
 
 | Severity | Multiplier | Criteria |
-|----------|-----------|----------|
+| ---------- | ----------- | ---------- |
 | Critical | 5.0 | Immediate revenue/data loss risk. Remediation urgent. |
 | High | 3.0 | Significant performance drag. Fix within 7 days. |
 | Medium | 1.5 | Optimization opportunity. Fix within 30 days. |
@@ -26,7 +26,7 @@ S_total = Σ(C_pass × W_sev × W_cat) / Σ(C_total × W_sev × W_cat) × 100
 ## Scoring Per Check Item
 
 | Result | Points Earned |
-|--------|--------------|
+| -------- | -------------- |
 | PASS | Full severity × category weight |
 | WARNING | 50% of full points |
 | FAIL | 0 points |
@@ -35,8 +35,9 @@ S_total = Σ(C_pass × W_sev × W_cat) / Σ(C_total × W_sev × W_cat) × 100
 ## Category Weights by Platform
 
 ### Google Ads
+
 | Category | Weight | Rationale |
-|----------|--------|-----------|
+| ---------- | -------- | ----------- |
 | Conversion Tracking | 25% | Foundation for all optimization; Enhanced Conv + Consent Mode |
 | Wasted Spend / Negatives | 20% | Direct money leak; search terms, negative lists |
 | Account Structure | 15% | Campaign organization, brand/non-brand separation |
@@ -45,16 +46,18 @@ S_total = Σ(C_pass × W_sev × W_cat) / Σ(C_total × W_sev × W_cat) × 100
 | Settings & Targeting | 10% | Location, network, audiences, landing pages |
 
 ### Meta Ads
+
 | Category | Weight | Rationale |
-|----------|--------|-----------|
+| ---------- | -------- | ----------- |
 | Pixel / CAPI Health | 30% | 87% of advertisers have poor EMQ; foundational signal |
 | Creative (Diversity & Fatigue) | 30% | Creative = 70% of campaign results per Meta |
 | Account Structure | 20% | Learning phase, CBO/ABO, campaign consolidation |
 | Audience & Targeting | 20% | Overlap, exclusions, Advantage+ testing |
 
 ### LinkedIn Ads
+
 | Category | Weight | Rationale |
-|----------|--------|-----------|
+| ---------- | -------- | ----------- |
 | Technical Setup | 25% | Insight Tag + CAPI essential for B2B attribution |
 | Audience Quality | 25% | LinkedIn's targeting precision is its differentiator |
 | Creative & Formats | 20% | TLA + format diversity; video efficiency varies |
@@ -62,8 +65,9 @@ S_total = Σ(C_pass × W_sev × W_cat) / Σ(C_total × W_sev × W_cat) × 100
 | Bidding & Budget | 15% | High CPCs ($5-$35) require careful management |
 
 ### TikTok Ads
+
 | Category | Weight | Rationale |
-|----------|--------|-----------|
+| ---------- | -------- | ----------- |
 | Creative Quality | 30% | Native-feel content is #1 success factor |
 | Technical Setup | 25% | Pixel + Events API + ttclid passback |
 | Bidding & Learning | 20% | 50 conv/week to exit learning; budget sufficiency |
@@ -71,8 +75,9 @@ S_total = Σ(C_pass × W_sev × W_cat) / Σ(C_total × W_sev × W_cat) × 100
 | Performance | 10% | CTR, CPA, completion rate benchmarks |
 
 ### Microsoft Ads
+
 | Category | Weight | Rationale |
-|----------|--------|-----------|
+| ---------- | -------- | ----------- |
 | Technical Setup | 25% | UET tag, import validation, Enhanced Conv |
 | Syndication & Bidding | 20% | Partner network control, Copilot placement |
 | Structure & Audience | 20% | LinkedIn targeting (unique), campaign structure |
@@ -82,7 +87,7 @@ S_total = Σ(C_pass × W_sev × W_cat) / Σ(C_total × W_sev × W_cat) × 100
 ## Grading Thresholds
 
 | Grade | Score | Label | Action Required |
-|-------|-------|-------|-----------------|
+| ------- | ------- | ------- | ----------------- |
 | A | 90-100 | Excellent | Minor optimizations only |
 | B | 75-89 | Good | Some improvement opportunities |
 | C | 60-74 | Needs Improvement | Notable issues need attention |
@@ -99,6 +104,7 @@ PRIORITY: Quick Wins sorted by (severity × estimated_impact) DESC
 ```
 
 Quick Win examples:
+
 - Enable Enhanced Conversions (Critical, 5 min)
 - Turn on Search Ads Toggle in TikTok (High, 2 min)
 - Add negative keyword lists (Critical, 10 min)
@@ -108,6 +114,7 @@ Quick Win examples:
 ## Weighting Rationale
 
 Category weights are calibrated for paid advertising accounts where conversion tracking infrastructure is the highest-impact factor (25-30% weight across platforms). This differs from generic scoring systems because:
+
 - Broken tracking invalidates all optimization decisions downstream
 - Creative and targeting quality follow tracking in priority
 - Settings and compliance are important but have lower direct revenue impact

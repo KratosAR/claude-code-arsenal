@@ -59,6 +59,7 @@ Results from all locations are merged and deduplicated by agent name. Project-lo
 ### Step 1: Discover Available Agents
 
 Glob agent directories using the probe order above. Exclude README files. For each file found:
+
 - **Subdirectory layout:** extract the domain from the parent folder name
 - **Flat layout:** collect all filename prefixes (text before the first `-`). A prefix qualifies as a domain only if it appears in 2 or more filenames (e.g., `engineering-security-engineer.md` and `engineering-software-architect.md` both start with `engineering` → Engineering domain). Files with unique prefixes (e.g., `code-reviewer.md`, `tdd-guide.md`) are grouped under "General"
 - Extract the agent name from the first `# Heading`. If no heading is found, derive the name from the filename (strip `.md`, replace hyphens with spaces, title-case)
@@ -83,6 +84,7 @@ Pick domains or name specific agents (e.g., "1,3" or "security + seo"):
 ### Step 3: Handle Selection
 
 Accept flexible input:
+
 - Numbers: "1,3" selects all agents from Engineering and Sales
 - Names: "security + seo" fuzzy-matches against discovered agents
 - "all from engineering" selects every agent in that domain
@@ -90,6 +92,7 @@ Accept flexible input:
 If more than 5 agents are selected, list them alphabetically and ask the user to narrow down: "You selected N agents (max 5). Pick which to keep, or say 'first 5' to use the first five alphabetically."
 
 Confirm selection:
+
 ```
 Selected: Security Engineer + SEO Specialist
 What should they work on? (describe the task):
@@ -108,6 +111,7 @@ What should they work on? (describe the task):
 ### Step 5: Synthesize Results
 
 Collect all outputs and present a unified report:
+
 - Results grouped by agent
 - Synthesis section highlighting:
   - Agreements across agents

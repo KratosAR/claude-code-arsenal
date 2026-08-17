@@ -41,7 +41,7 @@ commentary: When users ask about specific issues, focus on relevant checks rathe
 ## Audit Categories (74 Checks)
 
 | Category | Weight | Checks |
-|----------|--------|--------|
+| ---------- | -------- | -------- |
 | Conversion Tracking | 25% | G42-G49, G-CT1 to G-CT3 (11 checks) |
 | Wasted Spend / Negatives | 20% | G13-G19, G-WS1 (8 checks) |
 | Account Structure | 15% | G01-G12 (12 checks) |
@@ -52,6 +52,7 @@ commentary: When users ask about specific issues, focus on relevant checks rathe
 ## Critical Checks (Must Evaluate First)
 
 These checks have severity multiplier 5.0x; failure here dominates the score:
+
 - G42: Conversion actions defined
 - G43: Enhanced conversions enabled
 - G45: Consent Mode v2 (EU/EEA)
@@ -67,7 +68,7 @@ These checks have severity multiplier 5.0x; failure here dominates the score:
 ## Key Thresholds
 
 | Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
+| -------- | ------ | --------- | ------ |
 | Quality Score (weighted avg) | ≥7 | 5-6 | ≤4 |
 | Wasted spend | <5% | 5-15% | >15% |
 | RSA Ad Strength | Good/Excellent | Average | Poor |
@@ -78,6 +79,7 @@ These checks have severity multiplier 5.0x; failure here dominates the score:
 ## PMax Specific Checks
 
 If Performance Max campaigns exist, additionally evaluate:
+
 - G-PM1: Audience signals configured per asset group
 - G-PM2: PMax Ad Strength (Good/Excellent required)
 - G-PM3: Brand cannibalization (<15% from brand terms)
@@ -90,6 +92,7 @@ If Performance Max campaigns exist, additionally evaluate:
 ## Output Format
 
 Write results to `google-audit-results.md` with:
+
 - Google Ads Health Score (0-100) with grade
 - Category breakdown (score per category)
 - Per-check results table (ID, Check, Result, Finding, Recommendation)

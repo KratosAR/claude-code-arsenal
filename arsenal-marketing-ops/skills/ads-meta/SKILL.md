@@ -19,6 +19,7 @@ user-invokable: false
 ## What to Analyze
 
 ### Pixel / CAPI Health (30% weight)
+
 - Meta Pixel installed and firing on all pages
 - Conversions API (CAPI) active (30-40% data loss without it post-iOS 14.5)
 - Event deduplication configured (event_id matching, ≥90% dedup rate)
@@ -31,6 +32,7 @@ user-invokable: false
 - Pixel fires with correct currency and value parameters
 
 ### Creative (30% weight)
+
 - ≥3 creative formats active (image, video, carousel, collection)
 - ≥5 creatives per ad set (Meta recommendation)
 - Creative fatigue detection: CTR drop >20% over 14 days = FAIL
@@ -41,6 +43,7 @@ user-invokable: false
 - Creative refresh cadence: every 2-4 weeks for high-spend
 
 ### Account Structure (20% weight)
+
 - Campaign Budget Optimization (CBO) vs Ad Set Budget (ABO) intentional
 - Campaign consolidation: ≤5 active campaigns per objective type
 - Learning phase health: <30% ad sets in "Learning Limited" (FAIL >50%)
@@ -51,6 +54,7 @@ user-invokable: false
 - Simplified campaign structure (fewer, larger ad sets preferred)
 
 ### Audience & Targeting (20% weight)
+
 - Prospecting frequency (7-day): <3.0 (WARNING 3-5, FAIL >5)
 - Retargeting frequency (7-day): <8.0 (WARNING 8-12, FAIL >12)
 - Custom Audiences: website visitors, customer lists, engagement
@@ -63,6 +67,7 @@ user-invokable: false
 ## Advantage+ Assessment
 
 If Advantage+ features are in use:
+
 - **ASC (Shopping Campaigns)**: catalog connected, existing customer cap set
 - **Advantage+ Audience**: performance vs manual audience compared
 - **Advantage+ Creative**: enhancements enabled (text, brightness, music)
@@ -72,6 +77,7 @@ If Advantage+ features are in use:
 ## Special Ad Categories
 
 If ads are in restricted categories:
+
 - Special Ad Category declared before campaign creation
 - Targeting restrictions verified (no ZIP, age 18-65+ only, no Lookalike)
 - Creative compliance with category-specific policies
@@ -80,13 +86,14 @@ If ads are in restricted categories:
 ## EMQ Optimization Guide
 
 | EMQ Score | Status | Action |
-|-----------|--------|--------|
+| ----------- | -------- | -------- |
 | 8.0-10.0 | Excellent | Maintain current setup |
 | 6.0-7.9 | Good | Add more customer_information parameters |
 | 4.0-5.9 | Fair | Implement CAPI, improve data quality |
 | <4.0 | Poor | Critical: CAPI + Enhanced Matching required |
 
 Key parameters to maximize EMQ:
+
 - `em` (email): highest match rate signal
 - `ph` (phone): second highest match signal
 - `fn`, `ln` (first/last name): improves match accuracy
@@ -96,7 +103,7 @@ Key parameters to maximize EMQ:
 ## Key Thresholds
 
 | Metric | Pass | Warning | Fail |
-|--------|------|---------|------|
+| -------- | ------ | --------- | ------ |
 | EMQ (Purchase) | ≥8.0 | 6.0-7.9 | <6.0 |
 | Dedup rate | ≥90% | 70-90% | <70% |
 | CTR | ≥1.0% | 0.5-1.0% | <0.5% |
@@ -119,6 +126,7 @@ Audience:            XX/100  █████░░░░░  (20%)
 ```
 
 ### Deliverables
+
 - `META-ADS-REPORT.md`: Full 46-check findings with pass/warning/fail
 - EMQ improvement roadmap
 - Creative fatigue alerts (any creative with CTR declining >20%)

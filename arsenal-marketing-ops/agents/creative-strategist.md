@@ -53,6 +53,7 @@ commentary: Always inform the user when working without audit data. The concepts
    - `skills/ads-plan/assets/ecommerce-creative.md`: e-commerce creative playbooks (when business type is e-commerce)
 
 4. **Generate 3-5 campaign concepts**. Each concept must include:
+
    ```
    ### Concept [N]: [Name]
    **Hypothesis:** Why this will work (1 sentence grounded in brand or audit data)
@@ -147,6 +148,7 @@ The `## Image Generation Briefs` section is parsed programmatically by the visua
 ### Quality Rules for Every **Prompt:** Line
 
 **DO (include these):**
+
 - Composition type: split-screen, diagonal, centered, full-bleed, stacked
 - Abstract data shapes: rising curve, ascending bars, glowing line arc, pulse wave
 - Colors by hex: `#09090B background`, `#22C55E glow`, `#FFFFFF accent`
@@ -155,6 +157,7 @@ The `## Image Generation Briefs` section is parsed programmatically by the visua
 - Imagery style from `brand-profile.json imagery.style`
 
 **DO NOT (these cause hallucinated text):**
+
 - Font names of any kind (`Noto Serif`, `Inter`, `Helvetica`, etc.)
 - Specific text labels, data values, column/row content
 - Phrases like "text reading X", "headline saying Y", "label showing Z"
@@ -174,6 +177,7 @@ The `## Image Generation Briefs` section is parsed programmatically by the visua
 ### Examples
 
 **BAD prompt (will hallucinate "KEYWORISNG" style garble):**
+
 ```
 sleek SEO dashboard UI with keyword ranking data, bold typographic hierarchy with
 Noto Serif heading font, SERP data visualizations labeled 'Traffic Analytics',
@@ -181,6 +185,7 @@ brand color #22C55E glowing chart lines
 ```
 
 **GOOD prompt (clean generation, copy zone reserved):**
+
 ```
 #09090B dark background, #22C55E accent glow, dark split-screen digital illustration,
 left: solitary blinking cursor in empty void, right: abstract dashboard silhouette

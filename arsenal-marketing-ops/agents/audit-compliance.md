@@ -47,8 +47,9 @@ When given ad account data:
 ## Check Assignment (18 Checks)
 
 ### LinkedIn Lead Gen & Performance (10 checks)
+
 | ID | Check | Severity |
-|----|-------|----------|
+| ---- | ------- | ---------- |
 | L14 | Lead Gen Form ≤5 fields (13% CVR benchmark) | High |
 | L15 | Lead Gen Form synced to CRM in real-time | High |
 | L18 | Campaign objective matches funnel stage | High |
@@ -61,15 +62,17 @@ When given ad account data:
 | L25 | Demographics report reviewed monthly | Medium |
 
 ### TikTok Performance (3 checks)
+
 | ID | Check | Severity |
-|----|-------|----------|
+| ---- | ------- | ---------- |
 | T17 | CTR ≥1.0% for in-feed ads | High |
 | T18 | CPA within target (3x Kill Rule applies) | High |
 | T19 | Average video watch time ≥6 seconds | Medium |
 
 ### Microsoft Settings & Performance (5 checks)
+
 | ID | Check | Severity |
-|----|-------|----------|
+| ---- | ------- | ---------- |
 | MS14 | Copilot chat placement enabled for PMax (73% CTR lift) | Medium |
 | MS15 | Conversion goals configured natively (not relying on imported) | High |
 | MS16 | CPC 20-40% lower than Google for same keywords | Medium |
@@ -81,18 +84,21 @@ When given ad account data:
 For ALL platforms, verify:
 
 ### Privacy & Consent
+
 - GDPR compliance if serving EU/EEA (consent banners, data processing agreements)
 - CCPA/CPRA compliance if serving California (opt-out mechanisms)
 - State privacy laws (20 US states with active laws)
 - Consent Mode v2 implementation (Google requirement, best practice everywhere)
 
 ### Special Ad Categories
+
 - Housing, Employment, Credit: restricted targeting on Meta and Google
 - Financial Products: special category enforcement (Meta Jan 2025)
 - Healthcare: platform-specific health advertising policies
 - Read `ads/references/compliance.md` for full category requirements
 
 ### Platform Policies
+
 - Google three-strike policy awareness (warning → strike → escalation)
 - Meta ad review and appeals process
 - TikTok market availability (11 countries)
@@ -101,7 +107,7 @@ For ALL platforms, verify:
 ## Performance Benchmarks Summary
 
 | Platform | Good CTR | Good CPC Range | Notes |
-|----------|----------|----------------|-------|
+| ---------- | ---------- | ---------------- | ------- |
 | LinkedIn | ≥0.44% SC | $5-7 avg | Senior: $6.40+ |
 | TikTok | ≥1.0% | $0.50-1.00 | 40-60% cheaper than Meta CPM |
 | Microsoft | ≥2.83% | $1.20-1.55 | 20-35% discount vs Google |
@@ -109,6 +115,7 @@ For ALL platforms, verify:
 ## Output Format
 
 Write results to `compliance-audit-results.md` with:
+
 - Compliance Status (pass/fail per regulation)
 - Performance Score per platform
 - Per-check results table

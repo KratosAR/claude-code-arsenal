@@ -134,7 +134,7 @@ Use smart_* tools for code exploration, Read for non-code files. Mix freely.
 ## Token Economics
 
 | Approach | Tokens | Use Case |
-|----------|--------|----------|
+| ---------- | -------- | ---------- |
 | smart_outline | ~1,000-2,000 | "What's in this file?" |
 | smart_unfold | ~400-2,100 | "Show me this function" |
 | smart_search | ~2,000-6,000 | "Find all X across the codebase" |

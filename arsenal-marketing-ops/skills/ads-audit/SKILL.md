@@ -26,6 +26,7 @@ user-invokable: false
 ## Data Collection
 
 Ask the user for available data. Accept any combination:
+
 - Google Ads: account export, Change History, Search Terms Report
 - Meta Ads: Ads Manager export, Events Manager screenshot, EMQ scores
 - LinkedIn Ads: Campaign Manager export, Insight Tag status
@@ -41,7 +42,7 @@ Read `ads/references/scoring-system.md` for full algorithm.
 ### Per-Platform Weights
 
 | Platform | Category Weights |
-|----------|-----------------|
+| ---------- | ----------------- |
 | Google | Conversion 25%, Waste 20%, Structure 15%, Keywords 15%, Ads 15%, Settings 10% |
 | Meta | Pixel/CAPI 30%, Creative 30%, Structure 20%, Audience 20% |
 | LinkedIn | Tech 25%, Audience 25%, Creative 20%, Lead Gen 15%, Budget 15% |
@@ -64,6 +65,7 @@ Grade: A (90-100), B (75-89), C (60-74), D (40-59), F (<40)
 ## Report Structure
 
 ### Executive Summary
+
 - Aggregate Ads Health Score (0-100) with grade
 - Per-platform scores
 - Business type detected
@@ -72,19 +74,23 @@ Grade: A (90-100), B (75-89), C (60-74), D (40-59), F (<40)
 - Top 5 quick wins across all platforms
 
 ### Per-Platform Sections
+
 Each platform section includes:
+
 - Platform Health Score with grade
 - Category breakdown with pass/warning/fail per check
 - Platform-specific Quick Wins
 - Detailed findings with remediation steps
 
 ### Cross-Platform Analysis
+
 - Budget allocation assessment (actual vs recommended)
 - Tracking consistency (are all platforms tracking the same events?)
 - Creative consistency (is messaging aligned across platforms?)
 - Attribution overlap (are platforms double-counting conversions?)
 
 ### Strategic Recommendations
+
 - Platform prioritization based on business type
 - Budget reallocation recommendations
 - Scaling opportunities (platforms/campaigns ready to scale)

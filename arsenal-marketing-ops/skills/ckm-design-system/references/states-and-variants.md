@@ -7,7 +7,7 @@ Component state definitions and variant patterns.
 ### State Definitions
 
 | State | Trigger | Visual Change |
-|-------|---------|---------------|
+| ------- | --------- | --------------- |
 | default | None | Base appearance |
 | hover | Mouse over | Slight color shift |
 | focus | Tab/click | Focus ring |
@@ -38,7 +38,7 @@ When multiple states apply, priority (highest to lowest):
 ```
 
 | Transition | Duration | Easing |
-|------------|----------|--------|
+| ------------ | ---------- | -------- |
 | Color changes | 150ms | ease-in-out |
 | Background | 150ms | ease-in-out |
 | Transform | 200ms | ease-out |
@@ -59,7 +59,7 @@ When multiple states apply, priority (highest to lowest):
 ```
 
 | Property | Value |
-|----------|-------|
+| ---------- | ------- |
 | Ring width | 2px |
 | Ring offset | 2px |
 | Ring color | primary (blue-500) |
@@ -87,7 +87,7 @@ When multiple states apply, priority (highest to lowest):
 ```
 
 | Property | Disabled Value |
-|----------|----------------|
+| ---------- | ---------------- |
 | Opacity | 50% |
 | Pointer events | none |
 | Cursor | not-allowed |
@@ -105,7 +105,7 @@ When multiple states apply, priority (highest to lowest):
 ### Spinner Placement
 
 | Component | Spinner Position |
-|-----------|------------------|
+| ----------- | ------------------ |
 | Button | Replace icon or center |
 | Input | Trailing position |
 | Card | Center overlay |
@@ -146,7 +146,7 @@ When multiple states apply, priority (highest to lowest):
 ```
 
 | Element | Error Treatment |
-|---------|-----------------|
+| --------- | ----------------- |
 | Input border | red-500 |
 | Input focus ring | red/20% |
 | Helper text | red-600 |
@@ -211,7 +211,7 @@ When multiple states apply, priority (highest to lowest):
 ### Color Contrast
 
 | Element | Minimum Ratio |
-|---------|---------------|
+| --------- | --------------- |
 | Normal text | 4.5:1 |
 | Large text (18px+) | 3:1 |
 | UI components | 3:1 |

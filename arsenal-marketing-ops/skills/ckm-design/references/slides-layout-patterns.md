@@ -5,7 +5,7 @@
 ## Layout Selection by Use Case
 
 | Layout | Use Case | Animation |
-|--------|----------|-----------|
+| -------- | ---------- | ----------- |
 | Title Slide | Opening/first impression | `animate-fade-up` |
 | Problem Statement | Establish pain point | `animate-stagger` |
 | Solution Overview | Introduce solution | `animate-scale` |
@@ -24,6 +24,7 @@
 ## CSS Structures
 
 ### Title Slide
+
 ```css
 .slide-title {
     display: flex;
@@ -35,6 +36,7 @@
 ```
 
 ### Two Column Split
+
 ```css
 .slide-split {
     display: grid;
@@ -48,6 +50,7 @@
 ```
 
 ### Feature Grid (3 columns)
+
 ```css
 .slide-features {
     display: grid;
@@ -63,6 +66,7 @@
 ```
 
 ### Metrics Dashboard (4 columns)
+
 ```css
 .slide-metrics {
     display: grid;
@@ -80,8 +84,9 @@
 ## Component Variants
 
 ### Card Styles
+
 | Style | CSS Class | Use For |
-|-------|-----------|---------|
+| ------- | ----------- | --------- |
 | Icon Left | `.card-icon-left` | Features with icons |
 | Accent Bar | `.card-accent-bar` | Highlighted features |
 | Metric Card | `.card-metric` | Numbers/stats |
@@ -89,8 +94,9 @@
 | Pricing Card | `.card-pricing` | Price tiers |
 
 ### Metric Styles
+
 | Style | Effect |
-|-------|--------|
+| ------- | -------- |
 | `gradient-number` | Gradient text on numbers |
 | `oversized` | Extra large (120px+) |
 | `sparkline` | Small inline chart |
@@ -99,7 +105,7 @@
 ## Visual Treatments
 
 | Treatment | When to Use |
-|-----------|-------------|
+| ----------- | ------------- |
 | `gradient-glow` | Title slides, CTAs |
 | `subtle-border` | Problem statements |
 | `icon-top` | Feature grids |

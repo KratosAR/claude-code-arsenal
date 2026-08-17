@@ -14,7 +14,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | Meta (FB/IG) | Primary | 50-68% | Prospecting + Advantage+ Shopping Campaigns, highest scale for DTC |
 | Google Shopping/PMax | Secondary | 23-30% | High-intent product searches, Shopping ads |
 | TikTok | Secondary | 5-15% | Product discovery, UGC, TikTok Shop |
@@ -59,6 +59,7 @@ Account; TikTok
 ## Creative Strategy
 
 ### What Works for E-commerce
+
 - **UGC unboxing/review**: authentic customer content outperforms studio (Spark Ads ~3% CTR vs ~2% standard)
 - **Product demos**: show product in use, feature close-ups
 - **Before/after**: transformation content for applicable products
@@ -67,14 +68,16 @@ Account; TikTok
 - **Lifestyle imagery**: product in context, aspirational
 
 ### Creative Volume Requirements
+
 | Platform | Min Active Creatives | Refresh Cadence |
-|----------|---------------------|-----------------|
+| ---------- | --------------------- | ----------------- |
 | Meta ASC | 150+ in campaign | 2-4 weeks |
 | Meta Standard | 5+ per ad set | 2-4 weeks |
 | TikTok | 6+ per ad group | 5-7 days |
 | Google PMax | Text + 20 images + 5 videos per asset group | 4-8 weeks |
 
 ### Seasonal Creative Calendar
+
 - **Q1**: New year deals, resolution products
 - **Q2**: Mother's Day, spring/summer launch
 - **Q3**: Back-to-school, Labor Day, early fall
@@ -83,17 +86,20 @@ Account; TikTok
 ## Targeting Strategy
 
 ### Google
+
 - **Shopping/PMax**: feed-driven, optimize product titles and descriptions
 - **Search**: category terms, "buy [product]", "[product] near me"
 - **Exclusions**: negative keywords for informational queries, competitor brands (unless strategic)
 
 ### Meta
+
 - **Advantage+ Audiences**: let Meta's algorithm optimize (broad works with good creative)
 - **Lookalike**: top 5% purchasers, high AOV customers
 - **Interest stacks**: combine 3-5 interests for refined prospecting
 - **Exclusions**: past purchasers (unless cross-sell campaign)
 
 ### Product Feed Optimization (Critical)
+
 - Product titles: [Brand] + [Product Name] + [Key Attribute] + [Size/Color]
 - High-quality images: white background for Shopping, lifestyle for PMax
 - Accurate pricing and availability (stale data = disapprovals)
@@ -103,7 +109,7 @@ Account; TikTok
 ## Budget Guidelines
 
 | Metric | E-commerce Benchmark |
-|--------|---------------------|
+| -------- | --------------------- |
 | Google Shopping CPC | $0.50-$1.50 |
 | Google Search CPC | $1.15 |
 | Google Search CTR | 4.13% |
@@ -118,7 +124,7 @@ Account; TikTok
 ### Bidding Strategy Selection
 
 | Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
+| ---------- | -------------------- | -------------------- |
 | Google | <15 | Maximize Clicks (cap CPC) |
 | Google | 15-29 | Maximize Conversions |
 | Google | 30+ | Target CPA |
@@ -130,6 +136,7 @@ Account; TikTok
 | TikTok | 50+ conversions/week | Cost Cap |
 
 ### Seasonal Budget Adjustments
+
 - **Q4 (Oct-Dec)**: increase 2-3x (CPMs rise 30-50%, but CVR rises too)
 - **January**: reduce to baseline or below (post-holiday dip)
 - **Sale events**: allocate 20% budget surge 3 days before through event
@@ -137,7 +144,7 @@ Account; TikTok
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | ROAS | 2.0 (learning) | 3.0 | 4.0+ |
 | CPA | Baseline | -15% | -25% |
 | AOV | Baseline | +5% (bundles) | +10% |

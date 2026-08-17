@@ -14,7 +14,7 @@
 ## Recommended Platform Mix
 
 | Platform | Role | Budget % | Why |
-|----------|------|----------|-----|
+| ---------- | ------ | ---------- | ----- |
 | LinkedIn | Primary | 40-55% | Decision-maker targeting by title, company, industry, ABM |
 | Google Search | Secondary | 25-35% | High-intent category and solution queries |
 | ABM Display | Secondary | 10-15% | Programmatic account-based display targeting |
@@ -59,6 +59,7 @@ Account; Google
 ## Creative Strategy
 
 ### What Works for B2B Enterprise
+
 - **Thought Leader Ads (LinkedIn)**: exec-authored content (CPC $2.29-$4.14 vs $13.23 standard)
 - **Customer case studies**: specific metrics (ROI, time saved, revenue impact)
 - **Industry research**: original data and insights (gated as lead magnet)
@@ -67,14 +68,16 @@ Account; Google
 - **Document Ads (LinkedIn)**: gated content preview; native PDF viewer
 
 ### Content by Buyer Stage
+
 | Stage | Content Type | Platform |
-|-------|-------------|----------|
+| ------- | ------------- | ---------- |
 | Awareness | Industry insights, trend reports | LinkedIn TLA, YouTube |
 | Consideration | Whitepapers, ROI calculators, webinars | LinkedIn, Google |
 | Decision | Case studies, product demos, free trial | Google, LinkedIn, Meta retargeting |
 | Expansion | Feature updates, customer advisory | Meta retargeting, LinkedIn |
 
 ### ABM Creative Personalization
+
 - Company-name personalization in ad copy (LinkedIn matched audiences)
 - Industry-specific pain points for vertical campaigns
 - Role-specific messaging (IT vs Finance vs Operations)
@@ -83,6 +86,7 @@ Account; Google
 ## Targeting Strategy
 
 ### LinkedIn (Primary)
+
 - **Job titles**: VP, Director, C-suite of [target function]
 - **Company size**: 500-1000, 1000-5000, 5000+ (match your ICP)
 - **Industries**: your top-converting verticals
@@ -91,13 +95,15 @@ Account; Google
 - **Exclusions**: competitors, existing customers, job seekers
 
 ### Google
+
 - **Keywords**: enterprise [solution], [solution] for [industry], [competitor] alternative
 - **RLSA**: bid up 50-100% for past website visitors searching category terms
 - **Audience layers**: in-market audiences for B2B software, business services
 
 ### Account-Based Marketing Tiers
+
 | Tier | Accounts | Budget/Account | Personalization |
-|------|----------|----------------|-----------------|
+| ------ | ---------- | ---------------- | ----------------- |
 | Tier 1 | 10-50 | $500-2,000/mo | Fully personalized |
 | Tier 2 | 50-200 | $100-500/mo | Industry personalized |
 | Tier 3 | 200-1,000 | $20-100/mo | ICP personalized |
@@ -105,7 +111,7 @@ Account; Google
 ## Budget Guidelines
 
 | Metric | B2B Enterprise Benchmark |
-|--------|------------------------|
+| -------- | ------------------------ |
 | LinkedIn CPC | $5-$35 (TLA: $2.29-$4.14) |
 | LinkedIn CPL | $60-$150+ |
 | LinkedIn CPM | $31-$38 |
@@ -116,8 +122,9 @@ Account; Google
 | Min monthly budget | $10,000+ (LinkedIn + Google minimum viable for ABM) |
 
 ### Budget Allocation for ABM
+
 | Component | % of Budget |
-|-----------|-------------|
+| ----------- | ------------- |
 | LinkedIn ABM + TLA | 40% |
 | Google Search (high intent) | 30% |
 | Retargeting (cross-platform) | 15% |
@@ -127,7 +134,7 @@ Account; Google
 ## Bidding Strategy Selection
 
 | Platform | Monthly Conversions | Recommended Strategy |
-|----------|--------------------|--------------------|
+| ---------- | -------------------- | -------------------- |
 | LinkedIn | Default | Maximum Delivery |
 | LinkedIn | Efficiency priority | Manual CPC or Cost Cap |
 | LinkedIn | Accelerate campaigns | Auto-optimized (42% lower CPA, 21% lower CPL) |
@@ -148,7 +155,7 @@ Account; Google
 ## KPI Targets
 
 | Metric | Month 1 | Month 3 | Month 6 |
-|--------|---------|---------|---------|
+| -------- | --------- | --------- | --------- |
 | MQL Volume | Baseline | Stable | Stable |
 | MQL → SQL Rate | Track | 15%+ | 25%+ |
 | Pipeline Generated | Track | 5x spend | 8x spend |

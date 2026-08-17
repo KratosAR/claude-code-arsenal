@@ -44,7 +44,7 @@ go mod tidy -v
 ## Common Fix Patterns
 
 | Error | Cause | Fix |
-|-------|-------|-----|
+| ------- | ------- | ----- |
 | `undefined: X` | Missing import, typo, unexported | Add import or fix casing |
 | `cannot use X as type Y` | Type mismatch, pointer/value | Type conversion or dereference |
 | `X does not implement Y` | Missing method | Implement method with correct receiver |
@@ -76,6 +76,7 @@ go clean -modcache && go mod download  # Fix checksum issues
 ## Stop Conditions
 
 Stop and report if:
+
 - Same error persists after 3 fix attempts
 - Fix introduces more errors than it resolves
 - Error requires architectural changes beyond scope

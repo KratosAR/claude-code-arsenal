@@ -48,7 +48,7 @@ The **OpenNext Cloudflare adapter** (`@opennextjs/cloudflare`) transforms Next.j
 ### Critical Differences from Standard Next.js
 
 | Aspect | Standard Next.js | Cloudflare Workers |
-|--------|------------------|-------------------|
+| -------- | ------------------ | ------------------- |
 | Runtime | Node.js or Edge | Node.js (via nodejs_compat) |
 | Dev Server | `next dev` | `next dev` + `opennextjs-cloudflare preview` |
 | Deployment | Platform-specific | `opennextjs-cloudflare deploy` |
@@ -68,6 +68,7 @@ npm create cloudflare@latest -- my-next-app --framework=next
 ```
 
 **What this does**:
+
 1. Runs Next.js official setup tool (`create-next-app`)
 2. Installs `@opennextjs/cloudflare` adapter
 3. Creates `wrangler.jsonc` with correct configuration
@@ -76,6 +77,7 @@ npm create cloudflare@latest -- my-next-app --framework=next
 6. Optionally deploys immediately to Cloudflare
 
 **Development workflow**:
+
 ```bash
 npm run dev      # Next.js dev server (fast reloads)
 npm run preview  # Test in workerd runtime (production-like)
@@ -103,6 +105,7 @@ npm install --save-dev @opennextjs/cloudflare
 ```
 
 **Critical configuration**:
+
 - `compatibility_date`: **Minimum `2025-05-05`** (for FinalizationRegistry support)
 - `compatibility_flags`: **Must include `nodejs_compat`** (for Node.js runtime)
 
@@ -132,6 +135,7 @@ export default defineCloudflareConfig({
 ```
 
 **Script purposes**:
+
 - `dev`: Next.js development server (fast iteration)
 - `preview`: Build + run in workerd runtime (test before deploy)
 - `deploy`: Build + deploy to Cloudflare
@@ -287,18 +291,20 @@ export async function GET(request: NextRequest) {
 **Cause**: Workers Free plan limits Worker size to 3 MiB (gzip-compressed)
 
 **Solutions**:
+
 - Upgrade to Workers Paid plan (10 MiB limit)
 - Analyze bundle size and remove unused dependencies
 - Use dynamic imports to code-split large dependencies
 
 **Bundle analysis**:
+
 ```bash
 npx opennextjs-cloudflare build
 cd .open-next/server-functions/default
 # Analyze handler.mjs.meta.json with ESBuild Bundle Analyzer
 ```
 
-**Source**: https://opennext.js.org/cloudflare/troubleshooting#worker-size-limits
+**Source**: <https://opennext.js.org/cloudflare/troubleshooting#worker-size-limits>
 
 ---
 
@@ -309,12 +315,13 @@ cd .open-next/server-functions/default
 **Cause**: Unnecessary code bundled into Worker
 
 **Debug workflow**:
+
 1. Run `npx opennextjs-cloudflare build`
 2. Navigate to `.open-next/server-functions/default`
 3. Analyze `handler.mjs.meta.json` using ESBuild Bundle Analyzer
 4. Identify and remove/externalize large dependencies
 
-**Source**: https://opennext.js.org/cloudflare/troubleshooting#worker-size-limits
+**Source**: <https://opennext.js.org/cloudflare/troubleshooting#worker-size-limits>
 
 ---
 
@@ -332,7 +339,7 @@ cd .open-next/server-functions/default
 }
 ```
 
-**Source**: https://opennext.js.org/cloudflare/troubleshooting#finalizationregistry-is-not-defined
+**Source**: <https://opennext.js.org/cloudflare/troubleshooting#finalizationregistry-is-not-defined>
 
 ---
 
@@ -343,6 +350,7 @@ cd .open-next/server-functions/default
 **Cause**: Database client created globally and reused across requests
 
 **Problem code**:
+
 ```typescript
 // ❌ WRONG: Global DB client
 import { Pool } from 'pg';
@@ -381,7 +389,7 @@ export async function GET(request: NextRequest) {
 }
 ```
 
-**Source**: https://opennext.js.org/cloudflare/troubleshooting#cannot-perform-io-on-behalf-of-a-different-request
+**Source**: <https://opennext.js.org/cloudflare/troubleshooting#cannot-perform-io-on-behalf-of-a-different-request>
 
 ---
 
@@ -406,7 +414,7 @@ WRANGLER_BUILD_CONDITIONS=""
 WRANGLER_BUILD_PLATFORM="node"
 ```
 
-**Source**: https://opennext.js.org/cloudflare/troubleshooting#npm-packages-fail-to-import
+**Source**: <https://opennext.js.org/cloudflare/troubleshooting#npm-packages-fail-to-import>
 
 ---
 
@@ -427,7 +435,7 @@ WRANGLER_BUILD_PLATFORM="node"
 }
 ```
 
-**Source**: https://opennext.js.org/cloudflare/troubleshooting#failed-to-load-chunk
+**Source**: <https://opennext.js.org/cloudflare/troubleshooting#failed-to-load-chunk>
 
 ---
 
@@ -445,7 +453,7 @@ npm install --save-dev @opennextjs/cloudflare@^1.3.0
 
 **Impact**: Allows unauthenticated users to proxy arbitrary remote content
 
-**Source**: https://github.com/advisories/GHSA-rvpw-p7vw-wj3m
+**Source**: <https://github.com/advisories/GHSA-rvpw-p7vw-wj3m>
 
 ---
 
@@ -459,7 +467,7 @@ npm install --save-dev @opennextjs/cloudflare@^1.3.0
 
 **Alternative** (to suppress warning): Define Durable Objects in separate Worker with own config
 
-**Source**: https://opennext.js.org/cloudflare/known-issues#caching-durable-objects
+**Source**: <https://opennext.js.org/cloudflare/known-issues#caching-durable-objects>
 
 ---
 
@@ -471,7 +479,7 @@ npm install --save-dev @opennextjs/cloudflare@^1.3.0
 
 **Workaround**: Initialize Prisma client in route handlers, not middleware
 
-**Source**: https://github.com/opennextjs/opennextjs-cloudflare/issues/471
+**Source**: <https://github.com/opennextjs/opennextjs-cloudflare/issues/471>
 
 ---
 
@@ -491,7 +499,7 @@ const response = await fetch('https://api.example.com/data');
 // import fetch from 'cross-fetch';
 ```
 
-**Source**: https://opennext.js.org/cloudflare/troubleshooting
+**Source**: <https://opennext.js.org/cloudflare/troubleshooting>
 
 ---
 
@@ -502,16 +510,17 @@ const response = await fetch('https://api.example.com/data');
 **Cause**: Underlying Next.js tooling issues on Windows
 
 **Solutions**:
+
 - Use WSL (Windows Subsystem for Linux)
 - Use virtual machine with Linux
 - Use Linux-based CI/CD for deployments
 
-**Source**: https://opennext.js.org/cloudflare#windows-support
+**Source**: <https://opennext.js.org/cloudflare#windows-support>
 
 ## Feature Support Matrix
 
 | Feature | Status | Notes |
-|---------|--------|-------|
+| --------- | -------- | ------- |
 | **App Router** | ✅ Fully Supported | Latest App Router features work |
 | **Pages Router** | ✅ Fully Supported | Legacy Pages Router supported |
 | **Route Handlers** | ✅ Fully Supported | API routes work as expected |
@@ -529,7 +538,7 @@ const response = await fetch('https://api.example.com/data');
 | **Node.js Middleware (15.2+)** | ❌ Not Supported | Future support planned |
 | **Edge Runtime** | ❌ Not Supported | Use Node.js runtime |
 
-**Source**: https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#next-js-supported-features
+**Source**: <https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/#next-js-supported-features>
 
 ## Integration with Cloudflare Services
 
@@ -562,6 +571,7 @@ export async function POST(request: NextRequest) {
 ```
 
 **Wrangler config**:
+
 ```jsonc
 {
   "d1_databases": [
@@ -640,6 +650,7 @@ export async function POST(request: NextRequest) {
 ```
 
 **Wrangler config**:
+
 ```jsonc
 {
   "ai": {
@@ -712,7 +723,7 @@ export default function Avatar() {
 
 **Billing**: Cloudflare Images usage is billed separately
 
-**Docs**: https://developers.cloudflare.com/images/
+**Docs**: <https://developers.cloudflare.com/images/>
 
 ## Caching Configuration
 
@@ -786,6 +797,7 @@ npm run deploy
 ```
 
 **Examples**:
+
 - GitHub Actions: `.github/workflows/deploy.yml`
 - GitLab CI: `.gitlab-ci.yml`
 - Cloudflare Workers Builds: Auto-detects `npm run deploy`
@@ -886,16 +898,19 @@ Same process as Vercel migration - the adapter handles Next.js standard features
 ## Resources
 
 ### Official Documentation
-- **OpenNext Cloudflare**: https://opennext.js.org/cloudflare
-- **Cloudflare Next.js Guide**: https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/
-- **Next.js Docs**: https://nextjs.org/docs
+
+- **OpenNext Cloudflare**: <https://opennext.js.org/cloudflare>
+- **Cloudflare Next.js Guide**: <https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/>
+- **Next.js Docs**: <https://nextjs.org/docs>
 
 ### Troubleshooting
-- **Troubleshooting Guide**: https://opennext.js.org/cloudflare/troubleshooting
-- **Known Issues**: https://opennext.js.org/cloudflare/known-issues
-- **GitHub Issues**: https://github.com/opennextjs/opennextjs-cloudflare/issues
+
+- **Troubleshooting Guide**: <https://opennext.js.org/cloudflare/troubleshooting>
+- **Known Issues**: <https://opennext.js.org/cloudflare/known-issues>
+- **GitHub Issues**: <https://github.com/opennextjs/opennextjs-cloudflare/issues>
 
 ### Related Skills
+
 - `cloudflare-worker-base` - Base Worker setup with Hono + Vite + React
 - `cloudflare-d1` - D1 database integration
 - `cloudflare-r2` - R2 object storage

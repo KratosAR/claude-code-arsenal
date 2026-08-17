@@ -5,7 +5,7 @@ When to use each design sub-skill.
 ## Skill Overview
 
 | Skill | Purpose | Key Files |
-|-------|---------|-----------|
+| ------- | --------- | ----------- |
 | brand | Brand identity, voice, assets | SKILL.md + 10 references + 3 scripts |
 | design-system | Token architecture, specs | SKILL.md + 7 references + 2 scripts |
 | ui-styling | Component implementation | SKILL.md + 7 references + 2 scripts |
@@ -18,6 +18,7 @@ When to use each design sub-skill.
 ## Routing by Task Type
 
 ### Brand Identity Tasks
+
 **→ brand**
 
 - Define brand colors and typography
@@ -28,6 +29,7 @@ When to use each design sub-skill.
 - Audit brand consistency
 
 ### Token System Tasks
+
 **→ design-system**
 
 - Create design tokens JSON
@@ -38,6 +40,7 @@ When to use each design sub-skill.
 - Document state and variants
 
 ### Implementation Tasks
+
 **→ ui-styling**
 
 - Add shadcn/ui components
@@ -47,6 +50,7 @@ When to use each design sub-skill.
 - Build accessible components
 
 ### Logo Design Tasks
+
 **→ logo-design**
 
 - Create logos with AI (Gemini Nano Banana)
@@ -55,6 +59,7 @@ When to use each design sub-skill.
 - Explore 55+ styles (minimalist, vintage, luxury, geometric, etc.)
 
 ### Corporate Identity Program Tasks
+
 **→ cip-design**
 
 - Generate CIP deliverables (business cards, letterheads, signage, vehicles, apparel)
@@ -63,6 +68,7 @@ When to use each design sub-skill.
 - Render HTML presentations from CIP mockups
 
 ### Presentation Tasks
+
 **→ slides**
 
 - Create strategic HTML presentations
@@ -71,6 +77,7 @@ When to use each design sub-skill.
 - Use layout patterns and design tokens
 
 ### Banner Design Tasks
+
 **→ banner-design**
 
 - Design banners for social media (Facebook, Twitter, LinkedIn, YouTube, Instagram)
@@ -80,6 +87,7 @@ When to use each design sub-skill.
 - 22 art direction styles (minimalist, bold typography, gradient, glassmorphism, etc.)
 
 ### Icon Design Tasks
+
 **→ icon-design**
 
 - Generate SVG icons with AI (Gemini 3.1 Pro Preview)
@@ -91,7 +99,7 @@ When to use each design sub-skill.
 ## Routing by Question Type
 
 | Question | Skill |
-|----------|-------|
+| ---------- | ------- |
 | "What color should this be?" | brand |
 | "How do I create a token for X?" | design-system |
 | "How do I build a button component?" | ui-styling |
@@ -163,18 +171,21 @@ Application Code
 ## Quick Commands
 
 **Brand:**
+
 ```bash
 node .claude/skills/brand/scripts/inject-brand-context.cjs
 node .claude/skills/brand/scripts/validate-asset.cjs <path>
 ```
 
 **Tokens:**
+
 ```bash
 node .claude/skills/design-system/scripts/generate-tokens.cjs -c tokens.json
 node .claude/skills/design-system/scripts/validate-tokens.cjs -d src/
 ```
 
 **Components:**
+
 ```bash
 npx shadcn@latest add button card input
 ```
@@ -182,26 +193,34 @@ npx shadcn@latest add button card input
 ## When to Use Multiple Skills
 
 Use **all eight** when:
+
 - Complete brand package from scratch (logo → CIP → presentation)
 
 Use **brand + design-system + ui-styling** when:
+
 - Design system setup and implementation
 
 Use **logo-design + cip-design** when:
+
 - Complete brand identity package with deliverable mockups
 
 Use **logo-design + cip-design + slides** when:
+
 - Brand pitch: generate logo, create CIP mockups, build pitch deck
 
 Use **banner-design + brand** when:
+
 - Social media presence: branded banners across all platforms
 
 Use **icon-design + design-system** when:
+
 - Custom icon set matching design tokens and component specs
 
 Use **brand + design-system** when:
+
 - Defining design language without implementation
 
 Use **design-system + ui-styling** when:
+
 - Implementing existing brand in code
 - Building component library

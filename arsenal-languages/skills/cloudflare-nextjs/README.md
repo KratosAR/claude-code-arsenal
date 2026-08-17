@@ -7,6 +7,7 @@ Deploy Next.js applications to Cloudflare Workers using the OpenNext adapter for
 This skill should be automatically discovered when the user mentions:
 
 ### Primary Keywords
+
 - **next.js cloudflare**
 - **nextjs workers**
 - **deploy next.js to cloudflare**
@@ -16,6 +17,7 @@ This skill should be automatically discovered when the user mentions:
 - **cloudflare next app**
 
 ### Framework Features
+
 - **next.js app router cloudflare**
 - **next.js pages router workers**
 - **next.js ssr cloudflare**
@@ -25,12 +27,14 @@ This skill should be automatically discovered when the user mentions:
 - **next.js middleware cloudflare**
 
 ### Migration Keywords
+
 - **migrate next.js to cloudflare**
 - **vercel to cloudflare nextjs**
 - **next.js serverless cloudflare**
 - **next.js edge cloudflare**
 
 ### Integration Keywords
+
 - **next.js d1 database**
 - **next.js r2 storage**
 - **next.js workers ai**
@@ -38,6 +42,7 @@ This skill should be automatically discovered when the user mentions:
 - **next.js cloudflare images**
 
 ### Error-Related Keywords
+
 - **worker size limit nextjs**
 - **finalizationregistry nextjs**
 - **cannot perform i/o nextjs**
@@ -48,6 +53,7 @@ This skill should be automatically discovered when the user mentions:
 ## What This Skill Covers
 
 ### Setup & Configuration
+
 - ✅ New Next.js project scaffolding with C3
 - ✅ Existing Next.js project migration
 - ✅ Wrangler configuration (compatibility_date, compatibility_flags)
@@ -55,12 +61,14 @@ This skill should be automatically discovered when the user mentions:
 - ✅ Package.json scripts for dev/preview/deploy
 
 ### Development Workflow
+
 - ✅ Dual testing strategy (Next.js dev server + workerd preview)
 - ✅ Local development best practices
 - ✅ Production-like testing before deployment
 - ✅ TypeScript types generation for bindings
 
 ### Cloudflare Integration
+
 - ✅ D1 Database access from Next.js
 - ✅ R2 Storage integration
 - ✅ KV storage patterns
@@ -69,6 +77,7 @@ This skill should be automatically discovered when the user mentions:
 - ✅ Custom domains setup
 
 ### Error Prevention (10+ Documented Errors)
+
 - ✅ Worker size limit errors (3 MiB / 10 MiB)
 - ✅ FinalizationRegistry compatibility
 - ✅ Database connection scoping
@@ -81,6 +90,7 @@ This skill should be automatically discovered when the user mentions:
 - ✅ Windows development caveats
 
 ### Feature Support
+
 - ✅ App Router and Pages Router
 - ✅ SSR, SSG, and ISR
 - ✅ React Server Components
@@ -169,17 +179,20 @@ npm run deploy   # Deploy
 ## Resources Included
 
 ### Scripts
+
 - `setup-new-project.sh` - Scaffold new Next.js project with C3
 - `setup-existing-project.sh` - Add OpenNext adapter to existing project
 - `analyze-bundle.sh` - Debug worker size issues
 
 ### Templates
+
 - `wrangler.jsonc` - Complete wrangler configuration
 - `open-next.config.ts` - OpenNext adapter config
 - `package.json` - Scripts for dev/preview/deploy
 - `.env` - Environment variables for package exports
 
 ### Documentation
+
 - `troubleshooting.md` - All common errors and solutions
 - `feature-support.md` - Feature compatibility matrix
 - `workflow-diagram.md` - Development workflow visualization
@@ -187,7 +200,7 @@ npm run deploy   # Deploy
 ## Key Differences from Standard Next.js
 
 | Aspect | Standard Next.js | Cloudflare Workers |
-|--------|------------------|-------------------|
+| -------- | ------------------ | ------------------- |
 | Runtime | Node.js or Edge | Node.js (via nodejs_compat) |
 | Dev Server | `next dev` only | `next dev` + `opennextjs-cloudflare preview` |
 | Worker Size | No limit | 3 MiB (free) / 10 MiB (paid) |
@@ -209,7 +222,7 @@ npm run deploy   # Deploy
 **Estimated Token Savings**: ~59%
 
 | Scenario | Without Skill | With Skill | Savings |
-|----------|---------------|------------|---------|
+| ---------- | --------------- | ------------ | --------- |
 | New project setup | ~15k tokens | ~6k tokens | ~60% |
 | Existing migration | ~18k tokens | ~7k tokens | ~61% |
 | Troubleshooting | ~10k tokens | ~3k tokens | ~70% |
@@ -219,29 +232,33 @@ npm run deploy   # Deploy
 ## Version Information
 
 **Package Versions** (verified 2025-10-21):
+
 - `@opennextjs/cloudflare`: ^1.3.0 (security fix for CVE-2025-6087)
 - `next`: ^14.2.0 || ^15.0.0
 - `wrangler`: latest
 
 **Compatibility Requirements**:
+
 - `compatibility_date`: 2025-05-05 minimum
 - `compatibility_flags`: ["nodejs_compat"]
 
 **Next.js Version Support**:
+
 - Next.js 14.x (latest minor release)
 - Next.js 15.x (all minor/patch versions)
 
 ## Official Documentation
 
-- **OpenNext Cloudflare**: https://opennext.js.org/cloudflare
-- **Cloudflare Next.js Guide**: https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/
-- **Troubleshooting**: https://opennext.js.org/cloudflare/troubleshooting
-- **Known Issues**: https://opennext.js.org/cloudflare/known-issues
-- **GitHub**: https://github.com/opennextjs/opennextjs-cloudflare
+- **OpenNext Cloudflare**: <https://opennext.js.org/cloudflare>
+- **Cloudflare Next.js Guide**: <https://developers.cloudflare.com/workers/framework-guides/web-apps/nextjs/>
+- **Troubleshooting**: <https://opennext.js.org/cloudflare/troubleshooting>
+- **Known Issues**: <https://opennext.js.org/cloudflare/known-issues>
+- **GitHub**: <https://github.com/opennextjs/opennextjs-cloudflare>
 
 ## Production Status
 
 ✅ **Production Ready**
+
 - Official Cloudflare support
 - Active maintenance and community
 - Security updates (latest: CVE-2025-6087 fix in v1.3.0)

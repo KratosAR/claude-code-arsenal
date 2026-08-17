@@ -21,6 +21,7 @@ user-invokable: false
 ## Per-Platform Assessment
 
 ### Google Ads Creative
+
 - RSA: ≥8 unique headlines, ≥3 descriptions per ad group
 - RSA ad strength: "Good" or "Excellent"
 - Pin usage: minimal and strategic (over-pinning kills RSA flexibility)
@@ -29,6 +30,7 @@ user-invokable: false
 - YouTube: video quality, hook, subtitles (see ads-youtube sub-skill)
 
 ### Meta Ads Creative
+
 - Format diversity: ≥3 formats active (image, video, carousel, collection)
 - Creative volume: ≥5 creatives per ad set
 - Fatigue detection: CTR declining >20% over 14 days = FAIL
@@ -38,6 +40,7 @@ user-invokable: false
 - Headline under 40 chars, primary text under 125 chars
 
 ### LinkedIn Creative
+
 - Thought Leader Ads active, ≥30% budget for B2B
 - Format diversity: ≥2 formats tested (single image, carousel, video, document)
 - Video ads tested
@@ -45,6 +48,7 @@ user-invokable: false
 - Professional tone appropriate for platform
 
 ### TikTok Creative
+
 - ≥6 creatives per ad group (Critical requirement)
 - All video 9:16 vertical 1080x1920 (non-negotiable)
 - Native-looking content (not corporate)
@@ -56,6 +60,7 @@ user-invokable: false
 - Trending audio used
 
 ### Microsoft Creative
+
 - RSA: ≥8 headlines, ≥3 descriptions
 - Multimedia Ads tested (unique rich format)
 - Ad copy optimized for Bing demographics (older, higher income, professional)
@@ -65,8 +70,9 @@ user-invokable: false
 ## Creative Fatigue Detection
 
 ### Signals of Fatigue
+
 | Signal | Threshold | Action |
-|--------|-----------|--------|
+| -------- | ----------- | -------- |
 | CTR declining | >20% over 14 days | Refresh creative |
 | Frequency (Meta) | >5.0 prospecting, >12.0 retargeting | New audience or creative |
 | Watch time declining (TikTok) | <3s average | New hook needed |
@@ -74,8 +80,9 @@ user-invokable: false
 | Engagement rate drop | >30% decline | Full creative overhaul |
 
 ### Refresh Cadence by Platform
+
 | Platform | Recommended Refresh |
-|----------|-------------------|
+| ---------- | ------------------- |
 | Google Search | Every 8-12 weeks |
 | Meta | Every 2-4 weeks |
 | LinkedIn | Every 4-6 weeks |
@@ -88,7 +95,7 @@ user-invokable: false
 Evaluate which formats are active per platform:
 
 | Format | Google | Meta | LinkedIn | TikTok | Microsoft |
-|--------|--------|------|----------|--------|-----------|
+| -------- | -------- | ------ | ---------- | -------- | ----------- |
 | Static Image | RSA image ext | ✅ | ✅ | ❌ | Multimedia |
 | Video | YouTube, PMax | ✅ | ✅ | ✅ (required) | ❌ |
 | Carousel | ❌ | ✅ | ✅ | ❌ | ❌ |
@@ -99,11 +106,13 @@ Evaluate which formats are active per platform:
 ## Universal Creative Best Practices
 
 ### Cross-Platform Safe Zone
+
 - 900x1000px usable area works across all vertical placements
 - Keep critical elements centered and within safe margins
 - Test on mobile devices (75%+ of ad impressions are mobile)
 
 ### Ad Copy Principles
+
 - Lead with benefit, not feature
 - Include clear CTA (what should they do next?)
 - Match ad message to landing page (message match)
@@ -111,6 +120,7 @@ Evaluate which formats are active per platform:
 - Test emotional vs rational appeals
 
 ### Video Production Standards
+
 - H.264 codec, AAC audio, MP4 container
 - Minimum 720p (1080p preferred)
 - Subtitles/captions always (accessibility + sound-off viewing)
@@ -131,6 +141,7 @@ Microsoft:  ████████░░  X/X checks passing
 ```
 
 ### Deliverables
+
 - `CREATIVE-AUDIT-REPORT.md`: Per-platform creative assessment
 - Fatigue alerts (any creative past refresh cadence)
 - Format diversity gaps per platform
