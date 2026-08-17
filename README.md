@@ -24,7 +24,7 @@ Stop spending hours configuring your AI assistant. Install this once and get:
 - **Content & creative** — ad copy, UI/UX, article writing, research with citations
 - **Build error resolvers** for 7 stacks — gets your build green fast
 
-> Pairs well with codebase-context tools like [graft](https://github.com/nanonets/graft) — graft gets Claude the *what* (your codebase structure), arsenal gets it the *how* (battle-tested workflows).
+> Pairs well with codebase-context tools like [graft](https://github.com/nanonets/graft) — graft gets Claude the *what* (your codebase structure), arsenal gets it the *how* (battle-tested workflows). → [docs/using-with-graft.md](./docs/using-with-graft.md)
 
 ---
 
